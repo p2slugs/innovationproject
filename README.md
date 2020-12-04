@@ -10,9 +10,9 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 
 ## Collaborators
 
-| Team Member   | Githubs Contributions |
+| Team Member | Github Contributions  |
 | ------------- |:---------------------:|
-| Eva           | [Github](https://github.com/evagravin)|
-| Ali           | [Github](https://github.com/Ali-Saad)|
-| Sophie        | [Github](https://github.com/sophieleeajh)|
-| Linda         | [Github](https://github.com/lindalonglong)|
+| Eva         | [Github](https://github.com/evagravin)|
+| Ali         | [Github](https://github.com/Ali-Saad)|
+| Sophie      | [Github](https://github.com/sophieleeajh)|
+| Linda       | [Github](https://github.com/lindalonglong)|
