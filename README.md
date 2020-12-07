@@ -1,7 +1,9 @@
 # P2 Slugs - Innovation Project
 Welcome to our Trimester 2 Portfolio! This is where you can find and access our code and important pieces throughout the course.
 
-## Link to our [Scrum Board](https://github.com/orgs/p2slugs/projects/1)
+### Link to our [Scrum Board](https://github.com/orgs/p2slugs/projects/1)
+
+### Link to [Google Doc Project Plan](https://docs.google.com/document/d/1j8Poc5Uar2J0xh_4jdK0nkSDv1neLWqGaCXjXDnQRRg/edit?usp=sharing)
 
 ## Weekly Changes
 - Dec 4: filmed video, planned goals on scrum board, and created a table of collaborators
