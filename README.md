@@ -3,13 +3,7 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 
 ### Link to our [Scrum Board](https://github.com/orgs/p2slugs/projects/1) | Link to [Google Doc Project Plan](https://docs.google.com/document/d/1j8Poc5Uar2J0xh_4jdK0nkSDv1neLWqGaCXjXDnQRRg/edit?usp=sharing)
 
-## Weekly Changes
-- Dec 7: updated repo name, moved Google Doc project plan to readme
-- Dec 4: filmed video, planned goals on scrum board, and created a table of collaborators
-- Dec 3: created [project plan](https://docs.google.com/document/d/1j8Poc5Uar2J0xh_4jdK0nkSDv1neLWqGaCXjXDnQRRg/edit?usp=sharing) and wrote in new recipes for data collection, each member was responsible for finding one breakfast recipe and putting it on the [recipe doc](https://docs.google.com/document/d/14oFXFl3pcBhb3CPn6F3FZB0GHa1upJOBGRTt-Ql9KWw/edit?usp=sharing)
-- Dec 2: created new organization and repo
-
-## RecProject Overview
+## Project Overview
 A cooking website that has recipes. They will be organized into different categories, all using data. There will also be forms to add recipes.
 
 ## Project Components
@@ -26,6 +20,11 @@ A cooking website that has recipes. They will be organized into different catego
   - dinner
   - dessert
 
+## Weekly Changes
+- Dec 7: updated repo name, moved Google Doc project plan to readme
+- Dec 4: filmed video, planned goals on scrum board, and created a table of collaborators
+- Dec 3: created [project plan](https://docs.google.com/document/d/1j8Poc5Uar2J0xh_4jdK0nkSDv1neLWqGaCXjXDnQRRg/edit?usp=sharing) and wrote in new recipes for data collection, individual tasks were to find a breakfast recipe and put it on the [recipe doc](https://docs.google.com/document/d/14oFXFl3pcBhb3CPn6F3FZB0GHa1upJOBGRTt-Ql9KWw/edit?usp=sharing)
+- Dec 2: created new organization and repo
 
 ## Collaborators
 
