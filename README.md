@@ -14,7 +14,7 @@ A cooking website that has recipes. They will be organized into different catego
   - introduce team members (goals, skills, etc.)
 - navigation bar will be implemented
 - recipe box / cooking tips / “like” a recipe feature?
-- categories of food
+- categories of food (16 types of food total)
   - breakfast
   - lunch
   - dinner
