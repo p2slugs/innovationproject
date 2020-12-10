@@ -27,6 +27,7 @@ A cooking website that has a database for recipes. We will use web scraping to f
 - College Board: May 13 (AP exam)
 
 ## Weekly Log
+- Dec 10: finalizing project plan desriptions and overviews; final updates to journals
 - Dec 8/9: tech talks and practice exam corrections; no new updates on project plan
 - Dec 7: updated repo name, moved Google Doc project plan to readme, organized responsibilities on scrum board
 - Dec 4: filmed video, planned goals on scrum board, and created a table of collaborators
