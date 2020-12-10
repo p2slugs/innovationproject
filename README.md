@@ -4,7 +4,7 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 ### [Scrum Board](https://github.com/orgs/p2slugs/projects/1) (tracking sheet + schedule) | [Google Doc Project Plan](https://docs.google.com/document/d/1j8Poc5Uar2J0xh_4jdK0nkSDv1neLWqGaCXjXDnQRRg/edit?usp=sharing)
 
 ## Project Overview
-A cooking website that has a database for recipes. They will be organized into different categories and pages. There will also be forms to add/create your own recipes.
+A cooking website that has a database for recipes. We will use webscraping to find recipes. They will be organized into different categories and pages. There will also be forms to add/create your own recipes.
 
 ## Project Components
 - home page
