@@ -1,23 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>recipebox</title>
-</head>
-<body>
+<title>recipe box</title>
 
-    <nav>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+ 
+<link href="https://fonts.googleapis.com/css?family=Karla:400,400italic,600,600italic" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+ 
+<style type="text/css">
+ 
+* { margin:0;padding:0; }
+ 
+ 
+@-webkit-keyframes fadein {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+ 
+@-moz-keyframes fadein {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+ 
+@keyframes fadein {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+  
+a {transition:0.15s ease-in;} 
+b,strong {color:#333;}
 
-    </nav>
+header {
+  padding: 40px;
+  text-align: center;
+  background: #f8d849;
+}
 
-</body>
-
-{% block content %}
-
-{% endblock %}
-
-<style>
+body {
+  font-family:'Karla';
+  font-size:14px;
+  line-height:190%;
+  letter-spacing:0px;
+  color:#666;
+  -webkit-animation-name: fadein;-webkit-animation-duration: 1s;
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+}
+ 
+a {
+  color:#333;
+  text-decoration:none;
+}
+ 
+a:hover  {
+  color:#333;
+}
+ 
+section {
+  width:calc(180px * 4);
+	margin:0 auto;
+  background:#fff;
+  text-align:center;
+  border-left:1px solid #eee;
+  border-right:1px solid #eee;
+}
+ 
+header {margin-bottom:100px;}
+h1 {font-style:italic;color:#333;font-weight:400;margin-bottom:5px;}
 
 </style>
-
+</head>
+<body>
+ 
+<section>
+<header>
+  <h1><b>recipe box</b></h1>
+  <a href="/">recipes</a> . 
+  <a href="/">about us</a> .
+  <a href="/">add recipes</a> . 
+  <a href="/">project overview</a>
+</header>
+ 
+</body>
 </html>
