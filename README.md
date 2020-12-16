@@ -27,6 +27,7 @@ A cooking website that has a database for recipes. We will use web scraping to f
 - College Board: May 13 (AP exam)
 
 ## Weekly Log
+- Dec 16: tech talks and scrum master presented an overview of project 
 - Dec 14: reflected on project plan in class and started working on codes
 - Dec 11: asynchronous day; each worked on individual assignment including ui mock-up, looking into CRUD, start of code, and gathering more data
 - Dec 10: finalizing project plan desriptions and overviews; final updates to journals
