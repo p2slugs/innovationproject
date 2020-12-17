@@ -19,6 +19,7 @@ A cooking website that has a database for recipes. We will use web scraping to f
   - lunch
   - dinner
   - dessert
+- Random Recipe Generator (API Webscraping)
 
 ## Delivery Plans & Milestones
 - Fridays: asynchronous days / end of every school week
