@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block title %}
+Add Recipes
+{% endblock %}
+
+{% block content %}
+
+<style>
+  table {
+    margin: auto;
+  }
+</style>
+
+<h1>Add Recipes</h1>
+<br>
+<table>
+            <tr><!--th is a row in a table -->
+                <th>Recipe Number</th><!--th is a header in a table -->
+                <th>Recipe Name</th>
+                <th>Ingredients</th>
+                <th>Steps</th>
+                <th>Creator</th>
+            </tr>
+            <!-- Loop through rows in table -->
+            {% for row in table %}
+                <!-- build elements in table -->
+                <tr>
+                    <th>{{ row['id'] }}</th>
+                    <th>{{ row['recipe_name'] }}</th>
+                    <th>{{ row['ingredients'] }}</th>
+                    <th>{{ row['steps'] }}</th>
+                    <th>{{ row['creator'] }}</th>
+                </tr>
+            {% endfor %}
+</table>
+
+<br>
+<h1>Create</h1>
+<div class = "add">
+  <form mehtod = 'POST' ID = 'myForm' >
+    <table>
+      <tr>
+        <th>Recipe Number</th><!--th is a header in a table -->
+        <th>Recipe Name</th>
+        <th>Ingredients</th>
+        <th>Steps</th>
+        <th>Creator</th>
+      </tr>
+      <tr>
+        <th><input type="text" name="Recipe Name"></th>
+        <th><input type="text" name="Ingredients"></th>
+        <th><input type="text" name="Steps"></th>
+        <th><input type="text" name="Creator"></th>
+        <th><input type="submit" value="Create"></th>
+      </tr>
+    </table>
+  </form>
+
+</div>
+
+<style>
+   <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+ 
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+</style>
+
+
+{% endblock %}
