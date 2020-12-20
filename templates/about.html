@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block title %}
+About Us
+{% endblock %}
+
+{% block content %}
+
+<div class = "info">
+  <h1>About Us</h1>
+  <br>
+      {% for about in aboutus: %}
+      {% set name = about["name"] %}
+      {% set image = about["image"] %}
+      {% set grade = about["grade"] %}
+      {% set funfact = about["funfact"] %}
+      <h3>Name: {{name}}</h3>
+      <img src="{{ url_for('static', filename= image) }}">
+      <li>Grade: {{grade}}</li>
+      <li>About: {{funfact}}</li>
+      <br>
+</div>
+    {% endfor %}
+
+{% endblock %}

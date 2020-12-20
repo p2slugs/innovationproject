@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block title %}
+Project Overview
+{% endblock %}
+
+{% block content %}
+<style type="text/css">
+h2 {font-family:georgia; color:#333;font-weight:400;margin-bottom:5px;text-align:left;padding-left:200px;}
+.summary {
+  font-family: 'serif'; margin-right: 600px;
+}
+.dot {
+  height: 350px;
+  float: right;
+  float: top;
+  margin-right: 100px;
+  width: 350px;
+  background-color: #FFE633;
+  border-radius: 50%;
+  border-color: black;
+}
+.po {
+  text-align: left;
+  text-size: 600px;
+  padding-left: 200px;
+  font-family: serif;
+  font-style: ;
+}
+</style>
+<h1 class = "po">Project Overview</h1>
+<br>
+<span class="dot"></span>
+<h2><b>Summary</b><h2>
+<p class = "summary">This website is a collection of recipes! You can generate random recipes from thousands of different ones. You can also create your own recipes in the <i>add recipes</i> section. Save the ones you like to get inspiration.</p>
+<br>
+<br>
+<br>
+<h2><b>Other Info</b><h2>
+<p class = "summary">This website was made by Linda Long, Sophie Lee, Ali Saad, and Eva Gravin. Additional links to other resources can be found here: <a href = "https://github.com/p2slugs/recipebox"><u>repository</u></a>, <a href = "https://github.com/orgs/p2slugs/projects/1"><u>scrum board</u></a></p>
+{% endblock %}
