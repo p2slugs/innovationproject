@@ -28,6 +28,9 @@ A cooking website that has a database for recipes. We will use web scraping to f
 - College Board: May 13 (AP exam)
 
 ## Weekly Log
+- Jan 6: tech talk about deployment and DevOps; 7 layers of the OSI model
+- Jan 5: test prep on data and the Internet; took a quiz on the student lecture we had; missed one question about IP addresses/how the binary sysytem is related to it
+- Jan 4: class discussion of 2 minute review for Thur/Fri, new year routine, and project reflections
 - Dec 16: tech talks and scrum master presented an overview of project 
 - Dec 14: reflected on project plan in class and started working on codes
 - Dec 11: asynchronous day; each worked on individual assignment including ui mock-up, looking into CRUD, start of code, and gathering more data
