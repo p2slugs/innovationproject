@@ -2,7 +2,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-Add Recipes
+Add Recipes <!-- text on the page tab -->
 {% endblock %}
 
 {% block content %}
@@ -11,13 +11,23 @@ Add Recipes
   table {
     margin: auto;
   }
+  th {
+  
+  }
+
+  input {
+    float: right;
+  }
 </style>
 
+<!-- makes the tables on the page-->
 <h1>Add Recipes</h1>
 <br>
+<h1>Recipes</h1>
 <table>
+
             <tr><!--th is a row in a table -->
-                <th>Recipe Number</th><!--th is a header in a table -->
+                <th>Recipe #</th><!--th is a header in a table -->
                 <th>Recipe Name</th>
                 <th>Ingredients</th>
                 <th>Steps</th>
@@ -27,7 +37,7 @@ Add Recipes
             {% for row in table %}
                 <!-- build elements in table -->
                 <tr>
-                    <th>{{ row['id'] }}</th>
+                    <th>{{ row['recipenum'] }}</th>
                     <th>{{ row['recipe_name'] }}</th>
                     <th>{{ row['ingredients'] }}</th>
                     <th>{{ row['steps'] }}</th>
@@ -42,23 +52,88 @@ Add Recipes
   <form mehtod = 'POST' ID = 'myForm' >
     <table>
       <tr>
-        <th>Recipe Number</th><!--th is a header in a table -->
+<!--th is a header in a table -->
         <th>Recipe Name</th>
         <th>Ingredients</th>
         <th>Steps</th>
-        <th>Creator</th>
+        <th>Creator (Your Name)</th>
       </tr>
       <tr>
-        <th><input type="text" name="Recipe Name"></th>
-        <th><input type="text" name="Ingredients"></th>
-        <th><input type="text" name="Steps"></th>
-        <th><input type="text" name="Creator"></th>
-        <th><input type="submit" value="Create"></th>
+        <th><input type="text" name="Recipe Name">
+            <br><br><br><br><br><br><br><br><br><br>
+        </th>
+        <th>
+            1. <input type="text" name="Ingredients">
+            <br>
+            2. <input type="text" name="Ingredients">
+            <br>
+            3. <input type="text" name="Ingredients">
+            <br>
+            4. <input type="text" name="Ingredients">
+            <br>
+            5. <input type="text" name="Ingredients">
+            <br>
+            6. <input type="text" name="Ingredients">
+            <br>
+            7. <input type="text" name="Ingredients">
+            <br>
+            8. <input type="text" name="Ingredients">
+            <br>
+            9. <input type="text" name="Ingredients">
+            <br>
+            10. <input type="text" name="Ingredients">
+            <br>
+        </th>
+        <th>1. <input type="text" name="Steps">
+            <br>
+            2. <input type="text" name="Steps">
+            <br>
+            3. <input type="text" name="Steps">
+            <br>
+            4. <input type="text" name="Steps">
+            <br>
+            5. <input type="text" name="Steps">
+            <br>
+            6. <input type="text" name="Steps">
+            <br>
+            7. <input type="text" name="Steps">
+            <br>
+            8. <input type="text" name="Steps">
+            <br>
+            9. <input type="text" name="Steps">
+            <br>
+            10. <input type="text" name="Steps">
+            <br>
+            
+        </th>
+        <th><input type="text" name="Creator">
+            <br><br><br><br><br><br><br><br><br><br>
+        </th>
       </tr>
+
     </table>
+    <br>
+    <input type="submit" value="Create" style="margin-right: 250px;">
   </form>
 
 </div>
+
+
+
+<div class = "read">
+    <br>
+    <h1>Read</h1>
+
+
+</div>
+<br>
+<h1>Update</h1>
+<br>
+<h1>Delete</h1>
+
+
+
+
 
 <style>
    <style>
