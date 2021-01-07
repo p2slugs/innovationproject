@@ -41,6 +41,13 @@ A cooking website that has a database for recipes. We will use web scraping to f
 - Dec 3: created [project plan](https://docs.google.com/document/d/1j8Poc5Uar2J0xh_4jdK0nkSDv1neLWqGaCXjXDnQRRg/edit?usp=sharing) and wrote in new recipes for data collection, individual tasks were to find a breakfast recipe and put it on the [recipe doc](https://docs.google.com/document/d/14oFXFl3pcBhb3CPn6F3FZB0GHa1upJOBGRTt-Ql9KWw/edit?usp=sharing)
 - Dec 2: created new organization and repo
 
+## Goals
+- get website deployed
+- do more with data and allow multiple ingredients and steps to be added to one recipe
+- solve intellij problems with running and commit more with intellij instead of repl to track progress
+- work on ui/html
+- solve webscrpaing/api
+
 ## Collaborators
 
 | Team Member | Github Contributions  |
