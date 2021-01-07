@@ -1,42 +1,84 @@
 <!DOCTYPE html>
-{% extends "base.html" %}
-
-{% block title %}
-Project Overview
-{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% block title %} Project Overview {% endblock %} {% block content %}
 <style type="text/css">
-h2 {font-family:georgia; color:#333;font-weight:400;margin-bottom:5px;text-align:left;padding-left:200px;}
-.summary {
-  font-family: 'serif'; margin-right: 600px;
-}
-.dot {
-  height: 350px;
-  float: right;
-  float: top;
-  margin-right: 100px;
-  width: 350px;
-  background-color: #FFE633;
-  border-radius: 50%;
-  border-color: black;
-}
-.po {
-  text-align: left;
-  text-size: 600px;
-  padding-left: 200px;
-  font-family: serif;
-  font-style: ;
-}
+	h2 {
+		font-family: georgia;
+		color: #333;
+		font-weight: 400;
+		margin-bottom: 5px;
+		text-align: left;
+		padding-left: 200px;
+	}
+
+	.summary {
+		font-family: 'serif';
+		margin-right: 600px;
+	}
+
+	.circle {
+		height: 350px;
+		float: right;
+		float: top;
+		margin-right: 100px;
+		width: 350px;
+		background-color: #f8d849;
+		border: 0.1875em solid #0F1C3F;
+		border-radius: 50%;
+		box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+		border-color: #f8d849;
+	}
+
+	.po {
+		text-align: left;
+		text-size: 600px;
+		padding-left: 200px;
+		font-family: serif;
+		font-style: ;
+	}
 </style>
-<h1 class = "po">Project Overview</h1>
+<h1 class="po">Project Overview</h1>
+
 <br>
-<span class="dot"></span>
+
+<span class="circle"></span>
+
 <h2><b>Summary</b><h2>
-<p class = "summary">This website is a collection of recipes! You can generate random recipes from thousands of different ones. You can also create your own recipes in the <i>add recipes</i> section. Save the ones you like to get inspiration.</p>
+
+<p class = "summary">This website is a collection of recipes! You can generate random recipes from thousands of different ones. You can also create your own recipes in the <i>add recipes</i> section. Recipe Box allows recipes to be created, stored, and and gathered into one place.</p>
+
 <br>
 <br>
 <br>
+
 <h2><b>Other Info</b><h2>
-<p class = "summary">This website was made by Linda Long, Sophie Lee, Ali Saad, and Eva Gravin. Additional links to other resources can be found here: <a href = "https://github.com/p2slugs/recipebox"><u>repository</u></a>, <a href = "https://github.com/orgs/p2slugs/projects/1"><u>scrum board</u></a></p>
+
+<p class = "summary">This website was made by Linda Long, Sophie Lee, Ali Saad, and Eva Gravin. Additional links to other resources can be found here:
+<br>
+  <u><a target="_blank" rel="noopener noreferrer" href="https://github.com/p2slugs/recipebox">repository</a></u> | 
+  <u><a target="_blank" rel="noopener noreferrer" href="https://github.com/orgs/p2slugs/projects/1">scrum board</a></u></p>
+  <br>
+
+<button type="button" class="btn btn-secondary clickhere" onclick="openForm()">More Info</button>
+
+<div class="container"
+  <div class="row"
+    <div class="row-3 chat-popup" id="myForm" style= "display: none;">
+        space to add more info
+      <button type="button" class="btn close" onclick="closeForm()">^</button>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+        document.getElementById("clickhere").style.display = "none";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+        document.getElementById("clickhere").style.display = "block";
+    }
+</script>
+
 {% endblock %}
