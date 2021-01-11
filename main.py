@@ -41,5 +41,9 @@ def recipe_generator():
   url = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/extract"
   return render_template('recipe_generator.html')
 
+@app.route('/sign')
+def sign():
+    return render_template('sign.html')
+
 if __name__ == '__main__':
     app.run(debug=True, port='3000')
