@@ -2,7 +2,6 @@
 #It is has the main navigation for our website
 from flask import Flask, render_template,redirect,url_for
 from flask_sqlalchemy import SQLAlchemy
-import data
 import aboutus
 
 
