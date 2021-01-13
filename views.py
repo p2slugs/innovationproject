@@ -2,17 +2,9 @@
 #It is has the main navigation for our website
 from flask import Flask, render_template,redirect,url_for
 from flask_sqlalchemy import SQLAlchemy
+from __init__ import app
 import aboutus
 
-
-#title = data.setup() from app route /
-
-app = Flask(__name__)
-dbURI = 'sqlite:///models/myDB.db'
-
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
-db = SQLAlchemy(app)
 
 @app.route('/')
 def home_route():
@@ -44,5 +36,4 @@ def generator():
 def sign():
     return render_template('sign.html')
 
-if __name__ == '__main__':
-    app.run(debug=True, port='3000')
+
