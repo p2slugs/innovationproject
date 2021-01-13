@@ -4,9 +4,9 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 ### [Scrum Board](https://github.com/orgs/p2slugs/projects/1) (tracking sheet + schedule) | [Google Doc Project Plan](https://docs.google.com/document/d/1j8Poc5Uar2J0xh_4jdK0nkSDv1neLWqGaCXjXDnQRRg/edit?usp=sharing)
 
 ## Big Tickets/Goals Completed Week 1/11-1/15
-1. 
-2.
-3.
+1. HTML
+2. Data -User Input Form and Add Recipes Table
+3. Deploy with Raspberry Pi
 
 ## Project Overview
 A cooking website that has a database for recipes. We will use web scraping to find recipes. They will be organized into different categories, all using data. There will also be forms to add recipes, which we will use GET, POST, and SQLalchemy for. Our project purpose is to create a website using more advanced techniques than Trimester 1 and present it to the community at Night At The Museum, our teacher, and College Board. We will learn how to do more with data, Python, Flask, SQLalchemy, HTML, and CSS. In addition, we will deploy our website on Raspberry Pi so people from wide area network can all access. 
