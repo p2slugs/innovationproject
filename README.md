@@ -7,8 +7,8 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 
 ## Big Tickets/Goals Completed Week 1/11-1/15
 1. HTML
-description:
-link to code:
+- description:
+- link to code:
 instructions to evaluate:
 2. Data -User Input Form and Add Recipes Table
 description:
