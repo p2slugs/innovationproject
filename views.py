@@ -26,19 +26,19 @@ def recipes():
 def p_overview():
     return render_template('p_overview.html')
 
-@app.route('/add_recipes')
-def add_recipes():
-    return render_template('add_recipes.html')
+@app.route('/add')
+def add():
+    return render_template('add.html')
 
 @app.route('/about')
 def about():
     return render_template('about.html', aboutus=aboutus.about())
 
-@app.route('/recipe_generator', methods=['GET','POST'])
+@app.route('/generator', methods=['GET','POST'])
 #call to web api 
-def recipe_generator():
+def generator():
   url = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/extract"
-  return render_template('recipe_generator.html')
+  return render_template('generator.html')
 
 @app.route('/sign')
 def sign():
