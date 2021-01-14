@@ -36,4 +36,8 @@ def generator():
 def sign():
     return render_template('sign.html')
 
+@app.route('/form')
+def form():
+    return render_template('form.html')
+
 
