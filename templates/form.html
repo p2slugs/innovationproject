@@ -174,8 +174,8 @@ p.show{
         <input type="radio" id="dislike" value="dislike" name="food"><label for="dislike" class="light">Still have space to improve. </label>
     </fieldset>
     ​
-    <label for="job">Favorite Snack</label>
-    <select id="job" name="user_job" required>
+    <label for="snack">Favorite Snack</label>
+    <select id="snack" name="user_snack" required>
         <option>click and select</option>
         <optgroup label="Chips">
             <option value="cheetos">Cheetos</option>
@@ -207,7 +207,6 @@ p.show{
 <script type="text/javascript">
     'use strict';
 ​
-//variables at the top ensure the whole program has access to them.
     const pass = document.querySelector('#password');
     const show = document.querySelector('p.show');
     const form = document.querySelector('#sign-up');
@@ -221,11 +220,10 @@ p.show{
     show.addEventListener('click', function(){
 
 ​
-        let text = this.textContent; //gets the current text value of the show element
-         //compares the value of the text
+        let text = this.textContent; 
         if(text === 'show password'){
-            this.textContent = 'hide password'; //sets the value of the text
-            pass.setAttribute('type', 'text'); //sets the type of input the password input box is.
+            this.textContent = 'hide password'; 
+            pass.setAttribute('type', 'text'); 
         }else{
             this.textContent = 'show password';
             pass.setAttribute('type', 'password');
@@ -233,24 +231,20 @@ p.show{
 ​
     })
 ​
-    //form validation:
-    //this event listener is attached to the form and listens for the submit event
+    
     form.addEventListener('submit', function(event){
-        //the event parameter/variable works like a local variable to capture the event object, which has lots of information about the event that occured. By having access to the event obect we can access its properties and methods.
-            let errors = []; //this is an empty array. it is here to store any error messages we need to output to the page to let the user know he needs to fix.
+            let errors = []; 
             let nameVal = name.value.trim();
             let emailVal = email.value.trim();
             let phoneVal = phone.value.trim();
-            let passVal = password.value.trim(); //trim clears whitespace on both sides of entry. " password " becomes "password"
-            //once these have been trimmed reinsert these values into the value attribute:
+            let passVal = password.value.trim(); 
             name.value = nameVal;
             email.value = emailVal;
             pass.value = passVal;
             phone.value = phoneVal;
 
-            //cannot place a required attribute on these, so I need to check to see if at least one is checked.
-            let radioButtons = document.querySelectorAll('[type="radio"]'); //all the radio buttons
-            let checkboxes = document.querySelectorAll('[type="checkbox"]'); //all the checkboxes
+            let radioButtons = document.querySelectorAll('[type="radio"]'); 
+            let checkboxes = document.querySelectorAll('[type="checkbox"]'); 
 ​
             if(nameVal === '' || nameVal == null){
                 errors.push('Name is required')
@@ -259,27 +253,22 @@ p.show{
             if(emailVal === '' || emailVal == null){
                 errors.push('email is required')
             }else{
-                //we know we have a value... let's check to see if it is a good one.
                 let atPos = emailVal.indexOf('@');
                 let dotPos = emailVal.lastIndexOf('.');
-                //check to see if that value is valid
                 if(atPos < 1 || (dotPos - atPos < 2)){
                     errors.push('Please enter a proper email address.')
                 }
             }
 ​
             if(phoneVal === '' || phoneVal == null){
-                //nothing was entered into the name field.
                 errors.push('Phone is required. ')
             }else if(phoneVal.length < 10 ){
-                //less than 10, incomplete
-                errors.push('Your phone number seems incomplete. Please check.'); //push is a method to add items to an array.
+                errors.push('Your phone number seems incomplete. Please check.'); 
             }else if(phoneVal.length > 12){
                 errors.push('Your phone number seems too long. Please check.')
             }
 ​
             if(passVal === '' || passVal == null){
-                //nothing was entered into the name field.
                 errors.push('Password is required. ');
             }else if(passVal.length < 8 || passVal.length > 20){
                 errors.push('password must be between 8 and 20 characters long.')
@@ -296,10 +285,7 @@ p.show{
             }
 ​
             if(errors.length > 0){
-                //this means we have at least one error message. So we need to prevent the form from submitting.
-                event.preventDefault(); //this is a method that prevents the event's typical behavior. So in this case we are preventing the page from submitting like it normally would.
-                //now we want to let the user know that they need to fill out stuff before they resubmit.
-                //populate the errorDiv with the content we want:
+                event.preventDefault(); 
                 errorDiv.innerHTML = errors.join('<br>');
 ​
             }
