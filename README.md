@@ -6,22 +6,22 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 ### Link to Running Code: http://99.88.196.26/
 
 ## Big Tickets/Goals Completed Week 1/11-1/15
-1. | HTML, Project Overview Page |
+###  1. HTML, Project Overview Page 
 - __description:__
 - __link to code:__
 - __instructions to evaluate:__
-2. | Sign Up Form |
+### 2. Sign Up Form 
 - __description:__
 - __link to code:__
 - __instructions to evaluate:__
-3. | Deploy with Raspberry Pi |
-- __description:__ getting the website deployed this week was Eva's big ticket. First, she had to get the site running well through Intellij, as there was a problem after transfering from repl. She edited the base.html to make room for other pages' content and allow the pages to be seen when navigated from the navabar. She edited the views.py file, made a wsgi.py file, made an init.py file, and a requirements1.txt file in prep of deployment. Following Mr. Mortensen's steps for deploying, she was able to get a virtual environment finally created but ran into more problems later on. By the running the website through her raspberry pi, she got the website up for everyone to see on her personal ip address (port forwarded).
-- __link to code:__ [wsgi.py](https://github.com/p2slugs/recipebox/blob/main/wsgi.py), [__init__.py](https://github.com/p2slugs/recipebox/blob/main/__init__.py), [views.py](https://github.com/p2slugs/recipebox/blob/main/views.py), [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html)
-- instructions to evaluate: the website can been seen from this link http://99.88.196.26/ ; Check Github Contributions below for specific changes
-4. | User Request Form Output/Storing Inputted Data |
+### 3. Deploy with Raspberry Pi 
+- __description:__ getting the website deployed this week was a big ticket which is a card in the Scrum Board called *deploy with raspberry pi*. First, Eva had to get the site running well through Intellij, as there was a problem after transfering from repl. She edited the base.html to make room for other pages' content and allow the pages to be seen when navigated from the navabar. She edited the views.py file, made a wsgi.py file, made an init.py file, and a requirements1.txt file in prep of deployment. Following Mr. Mortensen's steps for deploying, she was able to get a virtual environment finally created but ran into more problems later on. By the running the website through her raspberry pi, she got the website up for everyone to see on her personal ip address (port forwarded).
+- __link to code:__ [wsgi.py](https://github.com/p2slugs/recipebox/blob/main/wsgi.py), [init.py](https://github.com/p2slugs/recipebox/blob/main/__init__.py), [views.py](https://github.com/p2slugs/recipebox/blob/main/views.py), [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html); Check Github Contributions below for specific changes
+- __instructions to evaluate:__ the website can been viewed from this link http://99.88.196.26/ 
+### 4. User Request Form Output/Storing Inputted Data 
 - __description:__ after building a user input form, Ali's goal was to try and store a user's inputted name and comment on a seperate page or index by making a index template page to intake information from the input form. He was successful in getting the index page to work for the user's name, but it still working on finding a solution for the comment.
 - __link to code:__ 99.88.196.22 ; Check Github Contributions below for specific changes
-- instructions to evaluate:
+- __instructions to evaluate:__
 
 ## Scrum Master Grading Based on Above and Individual Support
 __Individual Support__
@@ -44,9 +44,10 @@ Sophie
 Eva
 1. tickets/cards: I completed the the raspberry pi big ticket item, also helped with minor changes like adding in the about us pictures
 2. evidence of code: code can be seen in links above in description of big ticket #3 as well as commits in repo
-3. guidance for running and reviewing code: to run and review code, you can view the running website, see that it works, the about us page, etc.
+3. guidance for running and reviewing code: to run and review code, you can view the running website and see the files in github
 
 
+__Grades From Scrum Master__
 | Team Member | Grade  | Reasoning |
 | ----------- | ------ | --------- |
 | Eva         |        |           |
