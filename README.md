@@ -10,7 +10,7 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 - description:
 - link to code:
 - instructions to evaluate:
-2. Data -User Input Form and Add Recipes Table
+2. Sign Up Form
 - description:
 - instructions to evaluate:
 - link to code:
