@@ -16,8 +16,8 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 - link to code:
 3. Deploy with Raspberry Pi
 - description: getting the website deployed this week was Eva's big ticket. First, she had to get the site running well through Intellij, as there was a problem after transfering from repl. She edited the base.html to make room for other pages' content and allow the pages to be seen when navigated from the navabar. She edited the views.py file, made a wsgi.py file, made an init.py file, and a requirements1.txt file in prep of deployment. Following Mr. Mortensen's steps for deploying, she was able to get a virtual environment finally created but ran into more problems later on. By the running the website through her raspberry pi, she got the website up for everyone to see on her personal ip address (port forwarded).
-- link to code: 
-- instructions to evaluate: the website can been seen from this link http://99.88.196.26/ 
+- link to code: [wsgi.py](https://github.com/p2slugs/recipebox/blob/main/wsgi.py) [__init__.py](https://github.com/p2slugs/recipebox/blob/main/__init__.py) [views.py](https://github.com/p2slugs/recipebox/blob/main/views.py) [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html)
+- instructions to evaluate: the website can been seen from this link http://99.88.196.26/ ; Check Github Contributions below for specific changes
 4. User Request Form Output/Storing Inputted Data
 - description: after building a user input form, Ali's goal was to try and store a user's inputted name and comment on a seperate page or index by making a index template page to intake information from the input form. He was successful in getting the index page to work for the user's name, but it still working on finding a solution for the comment.
 - link to code: 99.88.196.22 ; Check Github Contributions below for specific changes
