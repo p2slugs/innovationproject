@@ -1,7 +1,7 @@
 # P2 Slugs - Recipe Website
 Welcome to our Trimester 2 Portfolio! This is where you can find and access our code and important pieces throughout the course.
 
-### [Scrum Board](https://github.com/orgs/p2slugs/projects/1) (tracking sheet + schedule) | [Google Doc Project Plan](https://docs.google.com/document/d/1j8Poc5Uar2J0xh_4jdK0nkSDv1neLWqGaCXjXDnQRRg/edit?usp=sharing)
+### [Scrum Board](https://github.com/orgs/p2slugs/projects/1) (tracking sheet + schedule) | includes ticket items/cards
 
 ### Link to Running Code: http://99.88.196.26/
 
@@ -20,8 +20,39 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 - instructions to evaluate: the website can been seen from this link http://99.88.196.26/ ; Check Github Contributions below for specific changes
 4. | User Request Form Output/Storing Inputted Data |
 - __description:__ after building a user input form, Ali's goal was to try and store a user's inputted name and comment on a seperate page or index by making a index template page to intake information from the input form. He was successful in getting the index page to work for the user's name, but it still working on finding a solution for the comment.
-- __link to code:__ [views.py](https://github.com/p2slugs/recipebox/blob/main/views.py), [sign.html](https://github.com/p2slugs/recipebox/blob/main/templates/sign.html), [index.html](https://github.com/p2slugs/recipebox/blob/main/templates/index.html)
-- __instructions to evaluate:__ the website can been seen from this link http://99.88.196.26/ ; Check Github Contributions below for specific changes
+- __link to code:__ 99.88.196.22 ; Check Github Contributions below for specific changes
+- instructions to evaluate:
+
+## Scrum Master Grading Based on Above and Individual Support
+__Individual Support__
+
+Ali
+1. tickets/cards:
+2. evidence of code:
+3. guidance for running and reviewing code:
+
+Linda
+1. tickets/cards:
+2. evidence of code:
+3. guidance for running and reviewing code:
+
+Sophie
+1. tickets/cards:
+2. evidence of code:
+3. guidance for running and reviewing code:
+
+Eva
+1. tickets/cards:
+2. evidence of code:
+3. guidance for running and reviewing code:
+
+
+| Team Member | Grade  | Reasoning |
+| ----------- | ------ | --------- |
+| Eva         |        |           |
+| Ali         |        |           |
+| Sophie      |        |           |
+| Linda       |        |           |
 
 ## Project Overview
 A cooking website that has a database for recipes. We will use web scraping to find recipes. They will be organized into different categories, all using data. There will also be forms to add recipes, which we will use GET, POST, and SQLalchemy for. Our project purpose is to create a website using more advanced techniques than Trimester 1 and present it to the community at Night At The Museum, our teacher, and College Board. We will learn how to do more with data, Python, Flask, SQLalchemy, HTML, and CSS. In addition, we will deploy our website on Raspberry Pi so people from wide area network can all access. 
