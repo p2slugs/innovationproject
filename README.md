@@ -42,9 +42,9 @@ Sophie
 3. guidance for running and reviewing code:
 
 Eva
-1. tickets/cards:
-2. evidence of code:
-3. guidance for running and reviewing code:
+1. tickets/cards: I completed the the raspberry pi big ticket item, also helped with minor changes like adding in the about us pictures
+2. evidence of code: code can be seen in links above in description of big ticket #3 as well as commits in repo
+3. guidance for running and reviewing code: to run and review code, you can view the running website, see that it works, the about us page, etc.
 
 
 | Team Member | Grade  | Reasoning |
