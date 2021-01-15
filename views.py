@@ -40,4 +40,15 @@ def sign():
 def form():
     return render_template('form.html')
 
+@app.route('/index')
+def index():
+    return render_template('index.html')
+
+@app.route('/process', methods=['POST'])
+def process():
+  name = request.form['name']
+  comment = request.form['comment']
+  
+  return render_template('index.html', name=name, comment=comment)
+
 
