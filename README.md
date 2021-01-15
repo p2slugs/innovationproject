@@ -19,7 +19,7 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 - link to code:
 - instructions to evaluate:
 4. User Request Form Output/Storing Inputted Data
-- description
+- description: after building a user input form, Ali's goal was to try and store a user's inputted name and comment on a seperate page or index by making a index template page to intake information from the input form. He was successful in getting the index page to work for the user's name, but it still working on finding a solution for the comment.
 - link to code:
 - instructions to evaluate:
 
