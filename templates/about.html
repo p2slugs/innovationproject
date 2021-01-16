@@ -1,26 +1,28 @@
 <!DOCTYPE html>
+<!--about us page-->
 {% extends "base.html" %}
 
 {% block title %}
-About Us
+
 {% endblock %}
 
 {% block content %}
 
 <div class = "info">
-  <h1 style="text-align: center">About Us</h1>
+  <h1>About Us</h1>
   <br>
-      {% for about in aboutus: %}
+      {% for about in aboutus: %} <!-- for loop displays the data -->
       {% set name = about["name"] %}
       {% set image = about["image"] %}
       {% set grade = about["grade"] %}
       {% set funfact = about["funfact"] %}
-      <h3 style="text-align: center;">Name: {{name}}</h3>
-      <img src="{{ url_for('static', filename= image) }}" style="float: center;">
-      <li style="text-align: center;">Grade: {{grade}}</li>
-      <li style="text-align: center;">About: {{funfact}}</li>
+      <h3>{{name}}</h3>
+      <img src="{{ url_for('static', filename= image) }}">
+      <li>Grade: {{grade}}</li>
+      <li>A little about them: {{funfact}}</li>
       <br>
 </div>
+
     {% endfor %}
 
 {% endblock %}
