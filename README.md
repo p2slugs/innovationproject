@@ -7,9 +7,9 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 
 ## Big Tickets/Goals Completed Week 1/11-1/15
 ###  1. HTML, Project Overview Page 
-- __description:__ Changing the look of the website included updating the color palette, the fonts, font size, and formatting of the text. The CSS was updated to make the website more interactive and user-friendly. Although there are some pages that are not up to date, the recipes page is working well with the new format.
-- __link to code:__ [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html) and [overview.html](https://github.com/p2slugs/recipebox/blob/main/templates/overview.html)
-- __instructions to evaluate:__ review [here](http://99.88.196.26/)
+- __description:__
+- __link to code:__
+- __instructions to evaluate:__
 ### 2. Sign Up Form 
 - __description:__
 - __link to code:__
@@ -32,14 +32,14 @@ Ali 19/20
 3. guidance for running and reviewing code: the website can been viewed from this link http://99.88.196.26/. Click on the recipe request page and you will see a fill-in section. After clicking submit, a page redirect should occur where the name typed in should be stored.
 
 Linda
-1. tickets/cards:
+1. tickets/cards: I completed the sign up form, and helped a little on solving issues with deployment. I learned from Ms. Trish Ladd's lectures and her templates to create a sign up page with html/css/js with our project's theme. Together with Eva, we found out specific files that needed to be added and Eva did the deployment.
 2. evidence of code:
 3. guidance for running and reviewing code:
 
-Sophie 19/20
-1. tickets/cards: 1) Find out how to filter recipes with tags - successful; can check progress on recipes.html or the recipes page, 2) Clean up appearance of site and make main pages look similar - definitely made the website more aesthetically pleasing on the main pages, but some other pages (such as sign up and about us) did not match the css, thus -1pt.
-2. evidence of code: Check out [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html), [recipes.html](https://github.com/p2slugs/recipebox/blob/main/templates/recipes.html), and [overview.html](https://github.com/p2slugs/recipebox/blob/main/templates/overview.html) for my updates on the code.
-3. guidance for running and reviewing code: the website can be viewed at http://99.88.196.26/. The "recipes" page should feature a filtering system where you can select what you want to see based on meal types and 
+Sophie
+1. tickets/cards:
+2. evidence of code:
+3. guidance for running and reviewing code:
 
 Eva
 1. tickets/cards: I completed the the raspberry pi big ticket item, also helped with minor changes like adding in the about us pictures. I did a lot for getting the website able to run and it worked out in the end! I had to fix our Intellij problem, make an init.py, wsgi.py file, and edit the views.py file as well. I plan to get it running solely with the new way later on.
@@ -53,7 +53,7 @@ __Grades From Scrum Master__
 | Eva (SM)    |   18/20   |      I focused most of my attention on getting our website to run with the raspberry pi this week. I setup our project with the following files: wsgi.py, init.py, requirements1.txt, and edited files like about.py, views.py, and imported images. I would have liked to get the website running with the new way that Mr. M provided directions for, but after getting the virtual environment to work I ran into more problems. I still fufilled my task of getting it running but plan to do it the new way in the following week(s) by going to tutorial again. For this reason, I'm taking off 2 points.        |
 | Ali         |   19/20   |     Ali got the recipe request form to store user's inputs and display what they entered. There is also a link that takes you back to the main page. It was much needed in our website. I agree with his score and give him 19/20.      |
 | Sophie      |        |           |
-| Linda       |        |           |
+| Linda       |   19/20   |           |
 
 ## Project Overview
 A cooking website that has a database for recipes. We will use web scraping to find recipes. They will be organized into different categories, all using data. There will also be forms to add recipes, which we will use GET, POST, and SQLalchemy for. Our project purpose is to create a website using more advanced techniques than Trimester 1 and present it to the community at Night At The Museum, our teacher, and College Board. We will learn how to do more with data, Python, Flask, SQLalchemy, HTML, and CSS. In addition, we will deploy our website on Raspberry Pi so people from wide area network can all access. 
