@@ -7,9 +7,9 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 
 ## Big Tickets/Goals Completed Week 1/11-1/15
 ###  1. HTML, Project Overview Page 
-- __description:__
-- __link to code:__
-- __instructions to evaluate:__
+- __description:__ Changing the look of the website included updating the color palette, the fonts, font size, and formatting of the text. The CSS was updated to make the website more interactive and user-friendly. Although there are some pages that are not up to date, the recipes page is working well with the new format.
+- __link to code:__ [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html) and [overview.html](https://github.com/p2slugs/recipebox/blob/main/templates/overview.html)
+- __instructions to evaluate:__ review [here](http://99.88.196.26/) to see updates on the filtering system and overall appearance.
 ### 2. Sign Up Form 
 - __description:__
 - __link to code:__
@@ -36,10 +36,10 @@ Linda
 2. evidence of code:
 3. guidance for running and reviewing code:
 
-Sophie
-1. tickets/cards:
-2. evidence of code:
-3. guidance for running and reviewing code:
+Sophie 19/20
+1. tickets/cards: 1) Find out how to filter recipes with tags - successful; can check progress on recipes.html or the recipes page, 2) Clean up appearance of site and make main pages look similar - definitely made the website more aesthetically pleasing on the main pages, but some other pages (such as sign up and about us) did not match the css, thus -1pt.
+2. evidence of code: Check out [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html), [recipes.html](https://github.com/p2slugs/recipebox/blob/main/templates/recipes.html), and [overview.html](https://github.com/p2slugs/recipebox/blob/main/templates/overview.html) for my updates on the code.
+3. guidance for running and reviewing code: the website can be viewed at http://99.88.196.26/. The "recipes" page should feature a filtering system where you can select what you want to see based on meal types and dietary preferences.
 
 Eva
 1. tickets/cards: I completed the the raspberry pi big ticket item, also helped with minor changes like adding in the about us pictures. I did a lot for getting the website able to run and it worked out in the end! I had to fix our Intellij problem, make an init.py, wsgi.py file, and edit the views.py file as well. I plan to get it running solely with the new way later on.
@@ -52,7 +52,7 @@ __Grades From Scrum Master__
 | ----------- | ------ | --------- |
 | Eva (SM)    |   18/20   |      I focused most of my attention on getting our website to run with the raspberry pi this week. I setup our project with the following files: wsgi.py, init.py, requirements1.txt, and edited files like about.py, views.py, and imported images. I would have liked to get the website running with the new way that Mr. M provided directions for, but after getting the virtual environment to work I ran into more problems. I still fufilled my task of getting it running but plan to do it the new way in the following week(s) by going to tutorial again. For this reason, I'm taking off 2 points.        |
 | Ali         |   19/20   |     Ali got the recipe request form to store user's inputs and display what they entered. There is also a link that takes you back to the main page. It was much needed in our website. I agree with his score and give him 19/20.      |
-| Sophie      |        |           |
+| Sophie      |   20/20   |     Sophie changed the css of the website, added the recipe cards, formatted the aboutus page better, as well as the add recipes page and overview page, and definitely put in a lot of work. It was a hard task and I think her score should be 20 instead of 19.      |
 | Linda       |   19/20   |           |
 
 ## Project Overview
