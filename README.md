@@ -36,10 +36,10 @@ Linda
 2. evidence of code:
 3. guidance for running and reviewing code:
 
-Sophie
-1. tickets/cards:
-2. evidence of code:
-3. guidance for running and reviewing code:
+Sophie 19/20
+1. tickets/cards: 1) Find out how to filter recipes with tags - successful; can check progress on recipes.html or the recipes page, 2) Clean up appearance of site and make main pages look similar - definitely made the website more aesthetically pleasing on the main pages, but some other pages (such as submit and sign up) did not match the css, thus -1pt.
+2. evidence of code: Check out [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html), [recipes.html](https://github.com/p2slugs/recipebox/blob/main/templates/recipes.html), and [overview.html](https://github.com/p2slugs/recipebox/blob/main/templates/overview.html) for my updates on the code.
+3. guidance for running and reviewing code: the website can be viewed at http://99.88.196.26/. The "recipes" page should feature a filtering system where you can select what you want to see based on meal types and 
 
 Eva
 1. tickets/cards: I completed the the raspberry pi big ticket item, also helped with minor changes like adding in the about us pictures. I did a lot for getting the website able to run and it worked out in the end! I had to fix our Intellij problem, make an init.py, wsgi.py file, and edit the views.py file as well. I plan to get it running solely with the new way later on.
