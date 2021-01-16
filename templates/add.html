@@ -1,54 +1,30 @@
 <!DOCTYPE html>
-{% extends "base.html" %}
-
-{% block title %}
-Add Recipes <!-- text on the page tab -->
-{% endblock %}
-
-{% block content %}
-
-<style>
-  table {
-    margin: auto;
-  }
-  th {
-  
-  }
-
-  h1 {
-  text-align: center;
-  }
-
-
-  input {
-    float: right;
-  }
-</style>
+{% extends "base.html" %} {% block title %} Add Recipes
+<!-- text on the page tab -->
+{% endblock %} {% block content %}
 
 <!-- makes the tables on the page-->
-<h1>Add Recipes</h1>
-<br>
-<h1>Recipes</h1>
+</p>
 <table>
 
-            <tr><!--th is a row in a table -->
-                <th>Recipe #</th><!--th is a header in a table -->
-                <th>Recipe Name</th>
-                <th>Ingredients</th>
-                <th>Steps</th>
-                <th>Creator</th>
-            </tr>
-            <!-- Loop through rows in table -->
-            {% for row in table %}
-                <!-- build elements in table -->
-                <tr>
-                    <th>{{ row['recipenum'] }}</th>
-                    <th>{{ row['recipe_name'] }}</th>
-                    <th>{{ row['ingredients'] }}</th>
-                    <th>{{ row['steps'] }}</th>
-                    <th>{{ row['creator'] }}</th>
-                </tr>
-            {% endfor %}
+  <tr><!--th is a row in a table -->
+    <th>Recipe #</th><!--th is a header in a table -->
+    <th>Recipe Name</th>
+    <th>Ingredients</th>
+    <th>Steps</th>
+    <th>Creator</th>
+  </tr><!-- Loop through rows in table -->
+    {% for row in table %}<!-- build elements in table -->
+  
+  <tr>
+    <th>{{ row['recipenum'] }}</th>
+    <th>{{ row['recipe_name'] }}</th>
+    <th>{{ row['ingredients'] }}</th>
+    <th>{{ row['steps'] }}</th>
+    <th>{{ row['creator'] }}</th>
+  </tr>
+    {% endfor %}
+    
 </table>
 
 <br>
@@ -123,38 +99,15 @@ Add Recipes <!-- text on the page tab -->
 
 </div>
 
-
-
 <div class = "read">
-    <br>
-    <h1>Read</h1>
-
+  <br>
+  <h1>Read</h1>
 
 </div>
-<br>
+
+</p>
 <h1>Update</h1>
-<br>
+</p>
 <h1>Delete</h1>
-
-
-
-
-
-<style>
-   <style>
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            margin-left: auto;
-            margin-right: auto;
-        }
- 
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-</style>
-
 
 {% endblock %}
