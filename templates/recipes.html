@@ -1,13 +1,89 @@
 <!DOCTYPE html>
-
 {% extends "base.html" %}
 
 {% block title %}
-Recipes
+Recipe Generator
 {% endblock %}
 
 {% block content %}
-<h1>Recipes</h1>
-<p class="setup">{{setup}}</p>
-<p class=""
+<body>
+ 
+<div class="filters">
+ 
+<div class="button-group js-radio-button-group" data-filter-group="meal-type">
+<button class="button is-checked" data-filter="">meal type</button>
+
+<button class="button" data-filter=".BREAKFAST"> BREAKFAST </button>
+<button class="button" data-filter=".LUNCH"> LUNCH </button>
+<button class="button" data-filter=".DINNER"> DINNER </button>
+<button class="button" data-filter=".DESSERT"> DESSERT </button>
+</div>
+
+<div class="button-group js-radio-button-group" data-filter-group="preference">
+<button class="button is-checked" data-filter="">dietary pref.</button>
+
+<button class="button" data-filter=".NOPREF"> NO PREFERENCE </button>
+<button class="button" data-filter=".VEGETARIAN"> VEGETARIAN </button>
+<button class="button" data-filter=".PESCATARIAN"> PESCATARIAN </button>
+</div>
+ 
+<!--end filters-->
+
+</div>
+</header>
+ 
+<section>
+
+<article class="BREAKFAST VEGETARIAN">
+ 
+<h1>blueberry waffles</h1> ::
+<a href="link url">a link</a>
+ 
+<div class="d">
+ 
+<i>meal summary goes here.</i>
+short description about the food
+
+</div>
+ 
+<span>type</span>
+<span>pref.</span>
+<span>★★★★</span>
+ 
+<div class="tags">
+<i>breakfast </i>
+<i>vegetarian </i>
+<i>tastes great! </i>
+</div>
+</article>
+ 
+
+<article class="LUNCH NOPREF">
+ 
+<h1>meal name</h1> ::
+<a href="link url">link</a>,
+<a href="link url">anotha link</a>
+ 
+<div class="d">
+ 
+<i>meal summary goes here.</i>
+short description about the food
+
+</div>
+ 
+<span>type</span>
+<span>pref.</span>
+<span>★★★★★</span>
+ 
+<div class="tags">
+<i>lunch </i>
+<i>no pref </i>
+<i>おいしい！！</i>
+</div>
+</article>
+ 
+</section>
+</div>
+ 
+</body>
 {% endblock %}
