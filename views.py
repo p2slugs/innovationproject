@@ -16,7 +16,7 @@ def recipes():
 
 @app.route('/overview')
 def p_overview():
-    return render_template('p_overview.html')
+    return render_template('overview.html')
 
 @app.route('/add')
 def add():
