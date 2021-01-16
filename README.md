@@ -3,7 +3,7 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 
 ### [Scrum Board](https://github.com/orgs/p2slugs/projects/1) (tracking sheet + schedule) | includes ticket items/cards
 
-### Link to Running Code: http://99.88.196.26/
+### Link to Running Code: http://99.88.196.26/ | [Repository](https://github.com/p2slugs/recipebox/)
 
 ## Big Tickets/Goals Completed Week 1/11-1/15
 ###  1. HTML, Project Overview Page 
