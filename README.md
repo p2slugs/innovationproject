@@ -19,8 +19,8 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 - __link to code:__ [wsgi.py](https://github.com/p2slugs/recipebox/blob/main/wsgi.py), [init.py](https://github.com/p2slugs/recipebox/blob/main/__init__.py), [views.py](https://github.com/p2slugs/recipebox/blob/main/views.py), [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html); Check Github Contributions above for specific changes
 - __instructions to evaluate:__ the website can been viewed from this link http://99.88.196.26/ 
 ### 4. User Request Form Output/Storing Inputted Data 
-- __description:__ after building a user input form, Ali's goal was to try and store a user's inputted name and comment on a seperate page or index by making a index template page to intake information from the input form. He was successful in getting the index page to work for the user's name, but it still working on finding a solution for the comment.
-- __link to code:__ 99.88.196.22 ; Check Github Contributions above for specific changes
+- __description:__ after building a user input form, Ali's goal was to try and store a user's inputted name and comment on a seperate page or index by making a index template page to intake information from the input form. He was successful in getting the index page to work for the user's name, but it still working on finding a solution for the comment. This ticket is in the Scrum Board called *User Request Form Output/Storing Inputted Data*
+- __link to code:__ http://99.88.196.26/ ; Check Github Contributions above for specific changes
 - __instructions to evaluate:__ the website can been viewed from this link http://99.88.196.26/.  Click on the recipe request page and you will see a fill-in section. After clicking submit, a page redirect should occur where the name typed in should be stored.
 
 ## Scrum Master Grading Based on Above and Individual Support
