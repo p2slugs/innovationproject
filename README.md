@@ -26,10 +26,10 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 ## Scrum Master Grading Based on Above and Individual Support
 __Individual Support__
 
-Ali
-1. tickets/cards:
-2. evidence of code:
-3. guidance for running and reviewing code:
+Ali 19/20
+1. tickets/cards: User Request Form Output/Storing Inputted Data; Ali would lose a point this week because the ticket didn't perfectly match up with his code. Though he was ale to store user inputted names on a seperate page through the index template, he wasn't able to store user comments on that same page, which he needs to try and fix next week. Everything else went well with Ali, regarding his code and success with the templates he worked on.
+2. evidence of code: [views.py](https://github.com/p2slugs/recipebox/blob/main/views.py), [sign.html](https://github.com/p2slugs/recipebox/blob/main/templates/sign.html), [index.html](https://github.com/p2slugs/recipebox/blob/main/templates/index.html)
+3. guidance for running and reviewing code: the website can been viewed from this link http://99.88.196.26/. Click on the recipe request page and you will see a fill-in section. After clicking submit, a page redirect should occur where the name typed in should be stored.
 
 Linda
 1. tickets/cards:
