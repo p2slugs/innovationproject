@@ -21,7 +21,7 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 ### 4. User Request Form Output/Storing Inputted Data 
 - __description:__ after building a user input form, Ali's goal was to try and store a user's inputted name and comment on a seperate page or index by making a index template page to intake information from the input form. He was successful in getting the index page to work for the user's name, but it still working on finding a solution for the comment.
 - __link to code:__ 99.88.196.22 ; Check Github Contributions below for specific changes
-- __instructions to evaluate:__
+- __instructions to evaluate:__ the website can been viewed from this link http://99.88.196.26/
 
 ## Scrum Master Grading Based on Above and Individual Support
 __Individual Support__
