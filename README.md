@@ -21,30 +21,30 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 ### 4. User Request Form Output/Storing Inputted Data 
 - __description:__ after building a user input form, Ali's goal was to try and store a user's inputted name and comment on a seperate page or index by making a index template page to intake information from the input form. He was successful in getting the index page to work for the user's name, but it still working on finding a solution for the comment.
 - __link to code:__ 99.88.196.22 ; Check Github Contributions below for specific changes
-- __instructions to evaluate:__
+- __instructions to evaluate:__ the website can been viewed from this link http://99.88.196.26/
 
 ## Scrum Master Grading Based on Above and Individual Support
 __Individual Support__
 
 Ali 19/20
-1. tickets/cards: User Request Form Output/Storing Inputted Data; Ali would lose a point this week because the ticket didn't perfectly match up with his code. Though he was ale to store user inputted names on a seperate page through the index template, he wasn't able to store user comments on that same page, which he needs to try and fix next week. Everything else went well with Ali, regarding his code and success with the templates he worked on.
-2. evidence of code: [views.py](https://github.com/p2slugs/recipebox/blob/main/views.py), [sign.html](https://github.com/p2slugs/recipebox/blob/main/templates/sign.html), [index.html](https://github.com/p2slugs/recipebox/blob/main/templates/index.html)
-3. guidance for running and reviewing code: the website can been viewed from this link http://99.88.196.26/. Click on the recipe request page and you will see a fill-in section. After clicking submit, a page redirect should occur where the name typed in should be stored.
+__1. tickets/cards:__ User Request Form Output/Storing Inputted Data; Ali would lose a point this week because the ticket didn't perfectly match up with his code. Though he was ale to store user inputted names on a seperate page through the index template, he wasn't able to store user comments on that same page, which he needs to try and fix next week. Everything else went well with Ali, regarding his code and success with the templates he worked on.
+__2. evidence of code:__ [views.py](https://github.com/p2slugs/recipebox/blob/main/views.py), [sign.html](https://github.com/p2slugs/recipebox/blob/main/templates/sign.html), [index.html](https://github.com/p2slugs/recipebox/blob/main/templates/index.html)
+__3. guidance for running and reviewing code:__ the website can been viewed from this link http://99.88.196.26/. Click on the recipe request page and you will see a fill-in section. After clicking submit, a page redirect should occur where the name typed in should be stored.
 
 Linda
-1. tickets/cards:
-2. evidence of code:
-3. guidance for running and reviewing code:
+__1. tickets/cards:__
+__2. evidence of code:__
+__3. guidance for running and reviewing code:__
 
 Sophie
-1. tickets/cards:
-2. evidence of code:
-3. guidance for running and reviewing code:
+__1. tickets/cards:__
+__2. evidence of code:__
+__3. guidance for running and reviewing code:__
 
 Eva
-1. tickets/cards: I completed the the raspberry pi big ticket item, also helped with minor changes like adding in the about us pictures
-2. evidence of code: code can be seen in links above in description of big ticket #3 as well as commits in repo
-3. guidance for running and reviewing code: to run and review code, you can view the running website and see the files in github
+__1. tickets/cards:__ I completed the the raspberry pi big ticket item, also helped with minor changes like adding in the about us pictures
+__2. evidence of code:__ code can be seen in links above in description of big ticket #3 as well as commits in repo
+__3. guidance for running and reviewing code:__ to run and review code, you can view the running website and see the files in github
 
 
 __Grades From Scrum Master__
