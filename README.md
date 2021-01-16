@@ -52,7 +52,7 @@ __Grades From Scrum Master__
 | ----------- | ------ | --------- |
 | Eva (SM)    |   18/20   |      I focused most of my attention on getting our website to run with the raspberry pi this week. I setup our project with the following files: wsgi.py, init.py, requirements1.txt, and edited files like about.py, views.py, and imported images. I would have liked to get the website running with the new way that Mr. M provided directions for, but after getting the virtual environment to work I ran into more problems. I still fufilled my task of getting it running but plan to do it the new way in the following week(s) by going to tutorial again. For this reason, I'm taking off 2 points.        |
 | Ali         |   19/20   |     Ali got the recipe request form to store user's inputs and display what they entered. There is also a link that takes you back to the main page. It was much needed in our website. I agree with his score and give him 19/20.      |
-| Sophie      |        |           |
+| Sophie      |   20/20   |     Sophie changed the css of the website, added the recipe cards, formatted the aboutus page better, as well as the add recipes page and definitely put in a lot of work. It was a hard task and I think her score should be 20 instead of 19.      |
 | Linda       |   19/20   |           |
 
 ## Project Overview
