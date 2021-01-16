@@ -1,6 +1,6 @@
 #This page is our views page in git which establishes app routes and renders html
 #It is has the main navigation for our website
-from flask import Flask, render_template,redirect,url_for
+from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from __init__ import app
 import aboutus

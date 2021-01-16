@@ -15,10 +15,10 @@ About Us
       {% set image = about["image"] %}
       {% set grade = about["grade"] %}
       {% set funfact = about["funfact"] %}
-      <h3>Name: {{name}}</h3>
-      <img src="{{ url_for('static', filename= image) }}">
-      <li>Grade: {{grade}}</li>
-      <li>About: {{funfact}}</li>
+      <h3 style="text-align: center;">Name: {{name}}</h3>
+      <img src="{{ url_for('static', filename= image) }}" style="float: center;">
+      <li style="text-align: center;">Grade: {{grade}}</li>
+      <li style="text-align: center;">About: {{funfact}}</li>
       <br>
 </div>
     {% endfor %}
