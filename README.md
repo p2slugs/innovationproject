@@ -11,7 +11,7 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 - __link to code:__ [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html) and [overview.html](https://github.com/p2slugs/recipebox/blob/main/templates/overview.html)
 - __instructions to evaluate:__ review [here](http://99.88.196.26/) to see updates on the filtering system and overall appearance.
 ### 2. Sign Up Form 
-- __description:__ creating a sign up form with html/css/js using a recipes theme. Changed the background color, font color and format to make the website more user-friendly. 
+- __description:__ creating a sign up form with html/css/js using a recipes theme. Changed the background color, font color and format to make the website more user-friendly. Goal for next week is to find out how to store the data input after users sign up.
 - __link to code:__ [form.html](https://github.com/p2slugs/recipebox/blob/main/templates/form.html), [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html) and [views.py](https://github.com/p2slugs/recipebox/blob/main/views.py); Check Github Contributions above for specific changes.
 - __instructions to evaluate:__ the website can been viewed from this link http://99.88.196.26/. Click on the sign up form tab and you will see information & profile pages where you can fill out to be our subscriber. You can check the box to rate the website, and click on the yellow bar and scroll through and select your favorite snack, so that we can genenerate users' responses and recommend you personalized meals.  
 ### 3. Deploy with Raspberry Pi 
