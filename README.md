@@ -11,9 +11,9 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 - __link to code:__ [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html) and [overview.html](https://github.com/p2slugs/recipebox/blob/main/templates/overview.html)
 - __instructions to evaluate:__ review [here](http://99.88.196.26/) to see updates on the filtering system and overall appearance.
 ### 2. Sign Up Form 
-- __description:__
-- __link to code:__
-- __instructions to evaluate:__
+- __description:__ creating a sign up form with html/css/js using a recipes theme. Changed the background color, font color and format to make the website more user-friendly. 
+- __link to code:__ [form.html](https://github.com/p2slugs/recipebox/blob/main/templates/form.html), [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html) and [views.py](https://github.com/p2slugs/recipebox/blob/main/views.py)
+- __instructions to evaluate:__ review [here](http://99.88.196.26/) to see our website. Click on the sign up form tab and you will see information & profile pages where you can fill out to be our subscriber. You can check the box to rate the website, and click on the yellow bar and scroll through and select your favorite snack, so that we can genenerate users' responses and recommend you personalized meals.  
 ### 3. Deploy with Raspberry Pi 
 - __description:__ getting the website deployed this week was a big ticket which is a card in the Scrum Board called *deploy with raspberry pi*. First, Eva had to get the site running well through Intellij, as there was a problem after transfering from repl. She edited the base.html to make room for other pages' content and allow the pages to be seen when navigated from the navabar. She edited the views.py file, made a wsgi.py file, made an init.py file, and a requirements1.txt file in prep of deployment. Following Mr. Mortensen's steps for deploying, she was able to get a virtual environment finally created but ran into more problems later on. By the running the website through her raspberry pi, she got the website up for everyone to see on her personal ip address (port forwarded).
 - __link to code:__ [wsgi.py](https://github.com/p2slugs/recipebox/blob/main/wsgi.py), [init.py](https://github.com/p2slugs/recipebox/blob/main/__init__.py), [views.py](https://github.com/p2slugs/recipebox/blob/main/views.py), [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html); Check Github Contributions above for specific changes
