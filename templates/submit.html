@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends "base.html" %} {% block content %}
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Recipe Request</title>
+
+</head>
+
+<body>
+
+	<div class="container" style="margin: 80px;">
+
+		<form class="form-request" method="post" action="/process" style="border-radius: 25px;
+      background-color: #f8d849">
+			<h2 class="form-request-heading">Recipe Requests</h2>
+			<br>
+        <div class="form-group" style="border-radius: 25px;">
+          <label for="inputName" class="sr-only"> Name</label>
+          <input type="text" id="inputName" name="name" class="form-control" placeholder="Name" required autofocus>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="comment" class="sr-only">Your Recipe:</label>
+            <textarea class="form-control" name="comment" rows="5" id="comment" placeholder="Comment" required></textarea>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit Recipe</button>
+      </form>
+
+    </div>
+
+  </body>
+</html>
+{% endblock %}
