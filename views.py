@@ -14,7 +14,7 @@ def home_route():
 def recipes():
     return render_template('recipes.html')
 
-@app.route('/p_overview')
+@app.route('/overview')
 def p_overview():
     return render_template('p_overview.html')
 
