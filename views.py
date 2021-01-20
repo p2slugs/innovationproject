@@ -44,5 +44,9 @@ def generator():
 def sign():
     return render_template('sign.html')
 
+@app.route('/form')
+def form():
+    return render_template('form.html')
+
 if __name__ == '__main__':
     app.run(debug=True, port='3000')

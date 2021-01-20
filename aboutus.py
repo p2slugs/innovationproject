@@ -27,7 +27,7 @@ def linda():
   name = "Linda Long"
   image = ""
   grade = "senior"
-  funfact = ""
+  funfact = "Linda Long is a senior at Del Norte High School in Computer Science Principles. She likes psychology and wants to know more about data science :)"
   profile = {"name": name, "image": image, "grade": grade, "funfact": funfact}
   return profile
 
