@@ -44,6 +44,10 @@ def form():
 def index():
     return render_template('index.html')
 
+@app.route('/submit')
+def submit():
+    return render_template('submit.html')
+
 @app.route('/process', methods=['POST'])
 def process():
   name = request.form['name']
