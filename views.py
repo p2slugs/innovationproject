@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from __init__ import app
 import aboutus
-
+import requests
 
 @app.route('/')
 def home_route():
@@ -27,10 +27,11 @@ def about():
     return render_template('about.html', aboutus=aboutus.about())
 
 @app.route('/generator', methods=['GET','POST'])
-#call to web api 
 def generator():
-  url = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/extract"
-  return render_template('generator.html')
+    return render_template('generator.html')
+
+#call to web api 
+
 
 @app.route('/sign')
 def sign():

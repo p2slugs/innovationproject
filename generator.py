@@ -1,14 +1,43 @@
 import requests
+import json
+import sqlite3 as sl
 
-url = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/extract"
+url ='http://www.recipepuppy.com/api/.'
+querystring = {'url':'http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3'}
+response = requests.request('GET', url, params=querystring)
+#print(response.text)
 
-querystring = {"url":"http://www.melskitchencafe.com/the-best-fudgy-brownies/"}
+json_obj=json.loads(response.text)
 
-headers = {
-    'x-rapidapi-key': "40f738febfmsh8cb2be57094b599p10d15fjsn99576bbf8743",
-    'x-rapidapi-host': "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
-    }
+data_list= []
+n=1
+for results in (json_obj ['results']):
+    rec= (n, results['title'], results ['ingredients'])
+    n= n+1
+    data_list.append(rec)
 
-response = requests.request("GET", url, headers=headers, params=querystring)
+con= sl.connect('recipe.db')
 
-print(response.text)
+try:
+    with con:
+        con.execute("""          
+            CREATE TABLE RECIPES (
+                id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+                title TEXT,
+                ingredients TEXT
+                 );
+        """)
+except:
+    print ('This table already exists')
+
+with con:
+    data= con.execute ("DELETE FROM RECIPES")
+
+sql = 'INSERT INTO RECIPES (id, title, ingredients) values(?, ?, ?)'
+with con:
+    con.executemany(sql, data_list)
+
+with con:
+    data= con.execute ('SELECT * FROM RECIPES')
+    for row in data:
+        print(row)
