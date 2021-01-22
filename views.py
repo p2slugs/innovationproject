@@ -5,7 +5,8 @@ from flask_sqlalchemy import SQLAlchemy
 from __init__ import app
 import aboutus
 import requests
-#hello
+#ali
+
 @app.route('/')
 def home_route():
     return render_template("base.html",)
@@ -30,7 +31,8 @@ def about():
 def generator():
     return render_template('generator.html')
 
-#call to web api
+#call to web api 
+
 
 @app.route('/sign')
 def sign():
