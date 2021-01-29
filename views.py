@@ -4,8 +4,19 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from __init__ import app
 import aboutus
+import sqlite3 as sl3
 import requests
-#ali
+
+
+@app.route('/generator', methods=['GET','POST'])
+def testapi():
+    # call to random joke web api
+    url = 'https://official-joke-api.appspot.com/jokes/programming/random'
+    response = requests.get(url)
+    # formatting variables from return
+    setup = response.json()[0]['setup']
+    punchline = response.json()[0]['punchline']
+    return render_template("generator.html",  setup=setup, punchline=punchline)
 
 @app.route('/')
 def home_route():
@@ -27,11 +38,19 @@ def add():
 def about():
     return render_template('about.html', aboutus=aboutus.about())
 
-@app.route('/generator', methods=['GET','POST'])
-def generator():
-    return render_template('generator.html')
+#@app.route('/generator', methods=['GET','POST'])
+#def generator():
+   # conn = sl3.connect('recipe.db')
+   # c = conn.cursor()
+    #c.execute('SELECT * FROM RECIPES')
+   # rows=c.fetchall()
+    #print(rows)
+  #  with conn:
+    #    data = conn.execute('SELECT * FROM RECIPES')
+   # for row in data:
+    #    print(row)
 
-#call to web api 
+    #return render_template('generator.html', rows=c.fetchall(), model=model.setup())
 
 
 @app.route('/sign')
