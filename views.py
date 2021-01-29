@@ -9,7 +9,7 @@ import requests
 
 
 @app.route('/generator', methods=['GET','POST'])
-def testapi():
+def generator():
     # call to random joke web api
     url = 'https://official-joke-api.appspot.com/jokes/programming/random'
     response = requests.get(url)
