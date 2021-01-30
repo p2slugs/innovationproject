@@ -84,6 +84,10 @@ def easteregg():
 def APjournals():
     return render_template('APjournals.html')
 
+@app.route('/collegetargets')
+def collegetargets():
+    return render_template('collegetargets.html')
+
 
 
 
