@@ -76,4 +76,14 @@ def process():
   
   return render_template('index.html', name=name, comment=comment)
 
+@app.route('/easteregg')
+def easteregg():
+    return render_template('easteregg.html')
+
+@app.route('/APjournals')
+def APjournals():
+    return render_template('APjournals.html')
+
+
+
 
