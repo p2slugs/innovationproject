@@ -5,6 +5,8 @@ Welcome to our Trimester 2 Portfolio! This is where you can find and access our 
 
 ### Link to Running Code: http://99.88.196.26/ | [Git Repository](https://github.com/p2slugs/recipebox/)
 
+### [Easter Egg Location](http://recipebox.cf/easteregg?)
+
 ## Big Tickets/Goals Completed Week 1/11-1/15
 ###  1. HTML, Project Overview Page 
 - __description:__ Changing the look of the website included updating the color palette, the fonts, font size, and formatting of the text. The CSS was updated to make the website more interactive and user-friendly. Although there are some pages that are not up to date, the recipes page is working well with the new format.
