@@ -88,6 +88,14 @@ def APjournals():
 def collegetargets():
     return render_template('collegetargets.html')
 
+@app.route('/profiles')
+def profiles():
+    return render_template('profiles.html')
+
+@app.route('/egg_home')
+def egg_home():
+    return render_template('egg_home.html')
+
 
 
 
