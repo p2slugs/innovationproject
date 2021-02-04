@@ -59,7 +59,21 @@ body {
   -webkit-font-smoothing:antialiased;
   font-smoothing:antialiased;
 }
- 
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+::selection {
+    background: #faf5ea;
+    color: #767676;
+}
+::-moz-selection {
+    background: #faf5ea;
+    color: #767676;
+}
+
 a {
   color:#a4afc1;
   text-decoration:none;
@@ -69,8 +83,7 @@ a {
   width:900px;
   margin:100px auto;
 }
- 
- 
+
 h1 {
   font-weight:400;
   color:#444;
@@ -194,17 +207,24 @@ input {float: right;}
 .info{
   width: 200px;
 }
- 
+
 </style>
 </head>
 <body>
 
-<a href="/test">*</a>
+<button onclick="myFunction()">☺</button>
+
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
 
 <div id="container">
- 
+
 <header>
- 
+
 <h1>recipe box</h1> ::
 
 <a href="/">home</a>
@@ -220,8 +240,6 @@ input {float: right;}
  
 {% block content %}
 {% endblock %}
-
-
 
 </body>
 </html>
