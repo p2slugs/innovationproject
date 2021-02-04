@@ -96,6 +96,23 @@ def profiles():
 def egg_home():
     return render_template('egg_home.html')
 
+@app.route('/evaprofile')
+def evaprofile():
+    return render_template('evaprofile.html')
+
+@app.route('/lindaprofile')
+def lindaprofile():
+    return render_template('lindaprofile.html')
+
+@app.route('/sophieprofile')
+def sophieprofile():
+    return render_template('sophieprofile.html')
+
+@app.route('/aliprofile')
+def aliprofile():
+    return render_template('aliprofile.html')
+
+
 
 
 
