@@ -1,13 +1,22 @@
 # P2 Slugs - Recipe Website
 Welcome to our Trimester 2 Portfolio! This is where you can find and access our code and important pieces throughout the course.
 
-### [Scrum Board](https://github.com/orgs/p2slugs/projects/1) (tracking sheet + schedule) | includes ticket items/cards
+### > [Scrum Board](https://github.com/orgs/p2slugs/projects/1) (tracking sheet + schedule) | includes ticket items/cards
 
-### Link to Running Code: http://99.88.196.26/ | [Git Repository](https://github.com/p2slugs/recipebox/)
+### > Link to Running Code: http://99.88.196.26/ | [Git Repository](https://github.com/p2slugs/recipebox/)
 
-### [Easter Egg Location](http://recipebox.cf/easteregg?)
+### > [Easter Egg Location](http://recipebox.cf/easteregg?)
 
-## Big Tickets/Goals Completed Week 1/11-1/15
+## Big Tickets
+### Login Session
+
+### Easter Egg Work
+
+### Crud Database
+
+### HTML and CSS
+
+## Past Completed Goals 1/11-1/15
 ###  1. HTML, Project Overview Page 
 - __description:__ Changing the look of the website included updating the color palette, the fonts, font size, and formatting of the text. The CSS was updated to make the website more interactive and user-friendly. Although there are some pages that are not up to date, the recipes page is working well with the new format.
 - __link to code:__ [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html) and [overview.html](https://github.com/p2slugs/recipebox/blob/main/templates/overview.html)
