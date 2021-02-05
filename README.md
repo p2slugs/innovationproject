@@ -1,11 +1,35 @@
 # P2 Slugs - Recipe Website
-Welcome to our Trimester 2 Portfolio! This is where you can find and access our code and important pieces throughout the course.
+Welcome to our Trimester 2 Portfolio! This is where you can find and access our code and important pieces throughout the course. 
+You can access the website from our runtime link below or run our code on your own computer by downloading the repository files.
 
-### [Scrum Board](https://github.com/orgs/p2slugs/projects/1) (tracking sheet + schedule) | includes ticket items/cards
+### > [Scrum Board](https://github.com/orgs/p2slugs/projects/1) (tracking sheet + schedule) | includes ticket items/cards
 
-### Link to Running Code: http://99.88.196.26/ | [Git Repository](https://github.com/p2slugs/recipebox/)
+### > Link to Running Code: http://99.88.196.26/ | [Git Repository](https://github.com/p2slugs/recipebox/)
 
-## Big Tickets/Goals Completed Week 1/11-1/15
+### > [Easter Egg Location](http://recipebox.cf/easteregg?)
+
+## Big Tickets
+### Login Session
+Users can login to the website via the sign in page. The ticket can be found [here](https://github.com/orgs/p2slugs/projects/1#card-53870964) in the scrum board.
+
+[See Code]()
+
+### Easter Egg Work
+In the hidden menu of our website (the easter egg), there are College Board project considerations which includes information about how our project meets the standards in a table, a profiles page for every member of the team with their "I am" statements, and track of AP learnings with our jorunals. The layout of the easter egg was imrpoved this week and this ticket can be found [here](https://github.com/orgs/p2slugs/projects/1#card-54303099) in the scrum board.
+
+[See Code](https://github.com/p2slugs/recipebox/commit/5a0dc45a4533a57e53dfa2c32e0499e1cf045330)
+
+### Crud Database
+Users are going to be able to create their own recipes which get added into a table. It will store their name, the recipe name, ingredients, and steps. The ticket can be found [here](https://github.com/orgs/p2slugs/projects/1#card-53870824) in the scrum board. Work is still being done on these files and curating is in the process.
+
+See Code- [html file](https://github.com/p2slugs/recipebox/blob/main/templates/add.html), see in intellij: [view/control file](), [model definition file](), [model crud file]()
+
+### HTML and CSS
+The UI work done this week includes a dark/light mode button that changes our website's theme when clicked! Click the button in the top left corner of the website to test out this feature. Sophie did this ticket and the ticket it can be found [here](https://github.com/orgs/p2slugs/projects/1#card-53870926) in the scrum board.
+
+[See Code](https://github.com/p2slugs/recipebox/blob/main/templates/base.html)
+
+## Past Completed Goals 1/11-1/15
 ###  1. HTML, Project Overview Page 
 - __description:__ Changing the look of the website included updating the color palette, the fonts, font size, and formatting of the text. The CSS was updated to make the website more interactive and user-friendly. Although there are some pages that are not up to date, the recipes page is working well with the new format.
 - __link to code:__ [base.html](https://github.com/p2slugs/recipebox/blob/main/templates/base.html) and [overview.html](https://github.com/p2slugs/recipebox/blob/main/templates/overview.html)

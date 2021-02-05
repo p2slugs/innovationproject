@@ -1,19 +1,32 @@
 <!DOCTYPE html>
+
 {% extends "base.html" %}
-
-{% block title %}
-Recipe Generator
-{% endblock %}
-
 {% block content %}
+<br>
+<h1>Generator</h1>
+<h3>Setup:</h3>
+<p class="setup">{{setup}}</p>
+<h3>Punchline:</h3>
+<p class="punchline">{{punchline}}</p>
+<form method="POST" ID="myForm" action="{{ setup['setup']}}">
+    <input type="submit" value="Generate!">
+</form>
+
+<style>
+
+        h1, p, form{
+            margin-top: 2.5%;
+            margin-left: 2.5%;
+        }
+
+
+    </style>
 
 <br>
-<h2>Recipe Generator</h2>
 
-<div class="row justify-content-left" style="margin: 2%;">
-    <h1><strong>Recipe API</strong></h1>
-    <form action=/generator>
-        <button>Generate!</button>
+<div class="row justify-content-left" style="margin: 90%;">
+    <form action=/easteregg>
+        <button>Shhh...</button>
     </form>
 </div>
 

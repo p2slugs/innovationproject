@@ -1,0 +1,54 @@
+Ingredient, Category, Hearts, Price
+heart durian, fruit, 3, 15
+palm fruit, fruit, 1, 4
+apple, fruit, 1/2, 3
+wildberry, fruit, 1/2, 3
+hydromelon, fruit, 1/2, 4
+spicy pepper, fruit, 1/2, 3
+voltfruit, fruit, 1/2, 4
+fleet-lotus seeds, fruit, 1/2, 5
+mighty bananas, fruit, 1/2, 5
+big hearty truffle, mushroom, 3, 15
+hearty truffle, mushroom, 2, 6
+endura shroom, mushroom, 1, 6
+hylian shroom, mushroom, 1/2, 3
+stamella shroom, mushroom, 1/2, 5
+chillshroom, mushroom, 1/2, 4
+sunshroom, mushroom, 1/2, 4
+zapshroom, mushroom, 1/2, 4
+rushroom, mushroom, 1/2, 3
+razorshroom, mushroom, 1/2, 5
+ironshroom, mushroom, 1/2, 5
+silent shroom, mushroom, 1/2, 3
+big hearty radish, vegetable, 4, 15
+hearty radish, vegetable, 2 1/2, 8
+endura carrot, vegetable, 2, 30
+hyrule herb, vegetable, 1, 3
+swift carrot, vegetable, 1/2, 4
+fortified pumpkin, vegetable, 1/2, 5
+cool safflina, flower/herb, 0, 3
+warm safflina, flower/herb, 0, 3
+electric safflina, flower/herb, 0, 3
+swift violet, flower/herb, 0, 10
+mighty thistle, flower/herb, 0, 5
+armoranth, flower/herb, 0, 5
+blue nightshade, flower/herb, 0, 4
+silent princess, flower/herb, 0, 10
+raw gourmet meat, meat, 3, 35
+raw whole bird, meat, 3, 35
+raw prime meat, meat, 1 1/2, 15
+raw bird thigh, meat, 1 1/2, 15
+raw meat, meat, 1, 8
+raw bird drumstick, meat, 1, 8
+courser bee honey, other, 2, 10
+hylian rice, other, 1, 3
+bird egg, other, 1, 3
+tabantha wheat, other, 1, 3
+fresh milk, other, 1/2, 3
+acorn, other, 1/4, 2
+chickaloo tree nut, other, 1/4, 3
+cane sugar, other, 0, 3
+goat butter, other, 0, 3
+goron spice, other, 0, 4
+rock salt, other, 0, 2
+monster extract, other, 0, 3

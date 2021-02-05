@@ -7,16 +7,16 @@ querystring = {'url':'http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p
 response = requests.request('GET', url, params=querystring)
 #print(response.text)
 
-json_obj=json.loads(response.text)
+json_obj = json.loads(response.text)
 
-data_list= []
-n=1
+data_list = []
+n = 1
 for results in (json_obj ['results']):
-    rec= (n, results['title'], results ['ingredients'])
-    n= n+1
+    rec = (n, results['title'], results ['ingredients'])
+    n = n+1
     data_list.append(rec)
 
-con= sl.connect('recipe.db')
+con = sl.connect('recipe.db')
 
 try:
     with con:
@@ -38,6 +38,6 @@ with con:
     con.executemany(sql, data_list)
 
 with con:
-    data= con.execute ('SELECT * FROM RECIPES')
+    data = con.execute ('SELECT * FROM RECIPES')
     for row in data:
         print(row)

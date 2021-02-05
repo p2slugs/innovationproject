@@ -1,34 +1,27 @@
-<!DOCTYPE html>
-<head>
- 
-<title> recipe box </title>
- 
 <link rel="shortcut icon" href="{Favicon}">
 <link rel="alternate" type="application/rss+xml" href="{RSS}">
 
-    <script src="https://official-joke-api.appspot.com/jokes/programming/random"></script>
 <link href='https://fonts.googleapis.com/css?family=Fraunces:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://static.tumblr.com/fuu6t9w/eubml0pm0/jquery.isotope.min.js"></script>
 <script src="https://static.tumblr.com/aptzszz/s5fp15zyp/candlelight.js"></script>
-
 <style type="text/css">
- 
+
 @-webkit-keyframes fadein {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
- 
+
 @-moz-keyframes fadein {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
- 
+
 @keyframes fadein {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
- 
+
 ::-webkit-scrollbar {height:3px; width:1px;}
 ::-webkit-scrollbar-thumb {background:#eee;}
 ::-webkit-scrollbar-track {background:transparent;}
@@ -40,12 +33,12 @@ a,.button {
 }
 
 b,strong {color:#444;}
- 
+
 a:hover {
   color:#444;
   text-decoration:none;
 }
- 
+
 body {
   background:#fff;
   font-family:'Fraunces', serif;
@@ -60,29 +53,16 @@ body {
   font-smoothing:antialiased;
 }
 
-.dark-mode {
-    background-color: #222;
-    color: #fff;
-}
-
-::selection {
-    background: #faf5ea;
-    color: #767676;
-}
-::-moz-selection {
-    background: #faf5ea;
-    color: #767676;
-}
-
 a {
   color:#a4afc1;
   text-decoration:none;
 }
- 
+
 #container {
   width:900px;
   margin:100px auto;
 }
+
 
 h1 {
   font-weight:400;
@@ -91,7 +71,7 @@ h1 {
   display:inline;
   border-bottom:1px solid #a4afc1;
 }
- 
+
 header a,h1 {margin-right:7px;}
 
 header a:first-of-type, article a:first-of-type {margin-left:7px;}
@@ -100,7 +80,7 @@ header {
   width:860px;
   margin:auto;
 }
- 
+
 .button {
   background:#fff;
   border:0;
@@ -118,12 +98,12 @@ header {
   letter-spacing:inherit;
   margin-right:10px;
 }
- 
+
 .button:hover {color:#a4afc1;}
 .button:active,.button.is-checked {color:#444;}
 .button-group:last-of-type {border:none;}
 .button-group:first-of-type {margin-top:20px;}
- 
+
 article {
   position:relative;
   width:260px;
@@ -137,7 +117,7 @@ article {
   -webkit-transition-duration:.35s;
   -o-transition-duration:.35s;
 }
- 
+
 section {margin-top:40px;}
 .fave:after{
   font-size:10px;
@@ -148,7 +128,7 @@ section {margin-top:40px;}
   color:#aa4271;
   font-family:'saturnicons';
 }
- 
+
 .complete:before {
   font-size:10px;
   top:2px;
@@ -171,7 +151,7 @@ section {margin-top:40px;}
   display:block;p
   osition:relative;
 }
- 
+
 .tags i {margin-right:5px;}
 .tags i:before {content:'#';}
 .c {
@@ -179,7 +159,7 @@ section {margin-top:40px;}
   right:27px;
   position:fixed;
 }
- 
+
 span {
   background:#fff;
   margin:0px 2px;
@@ -212,35 +192,21 @@ input {float: right;}
 </head>
 <body>
 
-<button onclick="myFunction()">☺</button>
-
-<script>
-    function myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-    }
-</script>
+<a href="/test">*</a>
 
 <div id="container">
 
-<header>
+    <header>
 
-<h1>recipe box</h1> ::
+        <h1>EASTER EGG</h1> ::
 
-<a href="/">home</a>
-<a href="/recipes">recipes</a>
-<a href="/add">add recipes</a>
-<a href="/generator">generator</a>
-<a href="/submit">submit</a>
-<a href="/index">database</a>
-<a href="/overview">project overview</a>
-<a href="/about">about us</a>
-<a href="/form">sign up</a>
-<a href="/getupdates">getupdates</a>
+        <a href="/egg_home">easter egg</a>
+        <a href="/APjournals">AP Journals</a>
+        <a href="/collegetargets">CollegeBoard Targets</a>
+        <a href="/profiles">profiles</a>
+        <a href="/sampleprojects">sample projects</a>
+        <a href="/">back to home</a>
 
- 
-{% block content %}
-{% endblock %}
 
-</body>
-</html>
+        {% block content %}
+        {% endblock %}
