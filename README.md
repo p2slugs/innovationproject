@@ -10,7 +10,7 @@ You can access the website from our runtime link below or run our code on your o
 
 ## Big Tickets
 ### Login Session
-Users can login to the website via the sign in page. 
+Users can login to the website via the sign in page. The ticket can be found [here](https://github.com/orgs/p2slugs/projects/1#card-53870964) in the scrum board.
 
 [See Code]()
 
