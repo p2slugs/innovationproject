@@ -22,7 +22,7 @@ I can port forward a Raspberry Pi web server.
 I am learning how to do backend work with SQL databases, specifically SQLite and SQLalchemy utilizing the Flask framework.
 
 ### Sophie Lee
-hello! i'm sophie. i'm currently a senior at del norte. i took ap comp sci because i wanted to expand my horizons and learn some coding basics. i've become familiar with building flask web servers and with python in general. due to my previous html and css experience, i've also improved and learned more about frontend coding as well.
+I took APCSP because I wanted to expand my horizons and learn some coding basics. I've become familiar with building Flask web servers and with Python in general. Due to my previous HTML and CSS experience, I've also improved and learned more about frontend coding as well.
 
 ### Eva Gravin
 I know how to build a Python/Flask web server.
