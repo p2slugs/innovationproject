@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--about us page-->
 {% extends "base.html" %}
@@ -9,20 +10,20 @@
 {% block content %}
 
 <div class = "info">
-  <h1>About Us</h1>
-  <br>
-      {% for about in aboutus: %} <!-- for loop displays the data -->
-      {% set name = about["name"] %}
-      {% set image = about["image"] %}
-      {% set grade = about["grade"] %}
-      {% set funfact = about["funfact"] %}
-      <h3>{{name}}</h3>
-      <img src="{{ url_for('static', filename= image) }}">
-      <li>Grade: {{grade}}</li>
-      <li>A little about them: {{funfact}}</li>
-      <br>
+    <h1>About Us</h1>
+    <br>
+    {% for about in aboutus: %} <!-- for loop displays the data -->
+    {% set name = about["name"] %}
+    {% set image = about["image"] %}
+    {% set grade = about["grade"] %}
+    {% set funfact = about["funfact"] %}
+    <h3>{{name}}</h3>
+    <img src="{{ url_for('static', filename= image) }}">
+    <li>Grade: {{grade}}</li>
+    <li>A little about them: {{funfact}}</li>
+    <br>
 </div>
 
-    {% endfor %}
+{% endfor %}
 
 {% endblock %}

@@ -1,212 +1,783 @@
-<link rel="shortcut icon" href="{Favicon}">
-<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<html>
+<head>  
+<!DOCTYPE>
 
-<link href='https://fonts.googleapis.com/css?family=Fraunces:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="https://static.tumblr.com/fuu6t9w/eubml0pm0/jquery.isotope.min.js"></script>
-<script src="https://static.tumblr.com/aptzszz/s5fp15zyp/candlelight.js"></script>
+<title>recipebox - easter egg</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="altertnate" type="application/rss+xml" href="{RSS}">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/e094aec265.js" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,600,600italic,700,700italic" rel="stylesheet"> 
+<link href='https://fonts.googleapis.com/css?family=Fraunces:400,400italic,500, 500italic600,600italic' rel='stylesheet' type='text/css'>
+
+<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = $(this).attr('href');
+ 
+        $('.tabs ' + currentAttrValue).fadeIn(600).siblings().hide();
+ 
+        $(this).parent('li').addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function() {
+  $('#filterOptions li a').click(function() {
+    var ourClass = $(this).attr('class');
+
+    $('#filterOptions li').removeClass('active');
+    $(this).parent().addClass('active');
+
+    if(ourClass == 'all') {
+      $('#ourHolder').children('div.item').show();
+    }
+    else {
+      $('#ourHolder').children('div:not(.' + ourClass + ')').hide();
+      $('#ourHolder').children('div.' + ourClass).show();
+    }
+    return false;
+  });
+});
+</script>
+
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:300,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
 <style type="text/css">
 
+:root {
+  --accent:#f2f2f2;
+  --body-text:#666;
+  --heading:#333;
+  --link-color:#666;
+  --link-hover:#a6afbf;
+  --body-font:'Roboto';
+  --text-size:12px;
+}
+
 @-webkit-keyframes fadein {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0%   {opacity: 0;}
+  100% { opacity: 1; }
 }
-
+ 
 @-moz-keyframes fadein {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
-
+ 
 @keyframes fadein {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-::-webkit-scrollbar {height:3px; width:1px;}
-::-webkit-scrollbar-thumb {background:#eee;}
-::-webkit-scrollbar-track {background:transparent;}
-
-a,.button {
-  transition:0.2s ease-in;
-  -webkit-transition:0.2s ease-in;
-  -moz-transition:0.2s ease-in;
-}
-
-b,strong {color:#444;}
-
-a:hover {
-  color:#444;
-  text-decoration:none;
+#s-m-t-tooltip {
+  max-width:300px;
+  margin-top:-40px;
+  margin-left:0px;
+  font-size:8.5px;
+  letter-spacing:0.5px;
+  font-weight:400;
+  text-align:center;
+  text-transform:uppercase;
+  color:var(--heading);
+  z-index:999999;
 }
 
 body {
-  background:#fff;
-  font-family:'Fraunces', serif;
-  font-size:14px;
-  font-weight:300;
-  line-height:190%;
-  color:#767676;
-  -webkit-animation-name: fadein;
-  -webkit-animation-duration: 1s;
-  -moz-osx-font-smoothing:grayscale;
-  -webkit-font-smoothing:antialiased;
-  font-smoothing:antialiased;
+  ackground-color:#fff;
+  color:var(--body-text);
+  font-family:var(--body-font);
+  font-size:var(--text-size);
+  letter-spacing:0px;
+  text-align:justify;
+  line-height:16px;
+  word-wrap: break-word;
+  -webkit-animation: fadein 1.5s;
+  -moz-animation:fadein 1.5s;
+  animation:fadein 1.5s;
 }
 
 a {
-  color:#a4afc1;
-  text-decoration:none;
+  color:var(--link-color);
+  text-decoration: none;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
-#container {
-  width:900px;
-  margin:100px auto;
+a:hover {
+  color:var(--link-hover);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
-
 
 h1 {
+  font-family:'Fraunces';
+  font-size:14px;
+  color:var(--heading);
+  font-weight:500;
+  margin:10px 0px 5px 0px;
+  letter-spacing:0.5px;
+}
+
+h2 {
+  font-size:10px;
+  color:var(--heading);
   font-weight:400;
-  color:#444;
-  font-size:16px;
-  display:inline;
-  border-bottom:1px solid #a4afc1;
+  margin:5px 0px;
+  text-transform:uppercase;
+  letter-spacing:0.4px;
 }
 
-header a,h1 {margin-right:7px;}
-
-header a:first-of-type, article a:first-of-type {margin-left:7px;}
-
-header {
-  width:860px;
-  margin:auto;
+h3 {
+  font-family:'Fraunces';
+  font-size:12px;
+  font-style:italic;
+  color:var(--heading);
+  font-weight:500;
+  margin:0px;
+  letter-spacing:0.25px;
 }
 
-.button {
-  background:#fff;
-  border:0;
-  border-radius:0;
-  outline:0;
-  padding:0;
-  display:inline-block;
-  cursor:help;
-  text-shadow:none;
-  box-shadow:none;
-  line-height:inherit;
-  color:#767676;
-  font-size:inherit;
-  font-family:inherit;
-  letter-spacing:inherit;
-  margin-right:10px;
-}
+i, em {letter-spacing:0.25px;}
 
-.button:hover {color:#a4afc1;}
-.button:active,.button.is-checked {color:#444;}
-.button-group:last-of-type {border:none;}
-.button-group:first-of-type {margin-top:20px;}
-
-article {
+#container {
+  display:block;
   position:relative;
-  width:260px;
-  margin:20px;
-  box-sizing:border-box;
-  padding:15px;
-  border:1px solid #eee;
+  top:50px;
+  left:0px;
+  right:0px;
+  width:650px;
+  height:500px;
+  margin:auto;
+} 
+
+#header {
+  display:block;
+  width:650px;
+  height:40px;
+  padding-bottom:20px;
+  margin-bottom:0px;
+  border-bottom:1px solid #f1f1f1;
+} 
+
+#title {
   display:inline-block;
-  transition-duration:.35s;
-  -moz-transition-duration:.35s;
-  -webkit-transition-duration:.35s;
-  -o-transition-duration:.35s;
+  font-family:'Fraunces';
+  color:var(--heading);
+  padding-top:8px;
+  text-transform:uppercase;
+  font-size:16px;
+  font-weight:600;
+  line-height:16px;
+  letter-spacing:0.5px;
+  text-align:left;
+} 
+
+#nav {
+  display:inline-block;
+  color:#444;
+  float:right;
+  text-align:right;
+  margin-top:8px;
+  font-size:9px;
 }
 
-section {margin-top:40px;}
-.fave:after{
-  font-size:10px;
-  top:2px;
-  right:5px;
-  content:"\e12c";
+#nav a {
+  color:var(--heading);
+  margin-left:10px;
+}
+
+#nav a:hover {color:var(--link-hover);} 
+
+#sidebar {
+  display:block;
   position:absolute;
-  color:#aa4271;
-  font-family:'saturnicons';
+  width:150px;
+  height:414px;
+} 
+
+#tab-bar {
+  display:block;
+  width:150px;
+  padding-top:20px;
 }
 
-.complete:before {
+#tab-bar i {
+  float:right;
+  line-height:16px;
+}
+
+.tabcontent {
+  display:block;
+  position:static;
+  width:433px;
+  height:auto;
+  margin-left:180px;
+  margin-bottom:100px;
+  border-left:1px solid #f1f1f1;
+  padding:20px 15px 0px 30px;
+}
+
+.tabs {
+  width:100%;
+  display:inline-block;
+} 
+
+.tab-links {
+  padding-left:0px;
+  margin:0px;
+  text-align:left;
+}
+
+.tab-links:after {
+  display:block;
+  clear:both;
+  content:'';
+}
+
+.tab-links li {
+  display:block;
+  list-style:none;
+  margin:0px;padding:0px;
+}
+  
+.tab-links a {
+  display:block;
+  padding:10px 15px;
+  margin:auto auto;
+  margin-bottom:8px;
+  display:block;
+  color:var(--body-text);
+  font-size:9.5px;
+  letter-spacing:0.5px;
+  font-weight:700;
+  text-transform:uppercase;
+  transition:all linear 0.15s;
+  border-radius:2px;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+} 
+
+.tab-links a:hover {
+  background-color:var(--accent);
+  padding:10px 20px;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+li.active a, li.active a:hover {
+  background-color:#f7f7f7;
+  color:#666;
+  padding:10px 20px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.tab {display:none;}
+
+.tab.active {display:block;}
+
+section {margin-bottom:35px;}
+
+.linkbox {
+  display:grid;
+  grid-template-columns:33% 33% 33%;
+  grid-gap:5px;
+  margin-bottom:25px;
+}
+
+.linkbox a {
+  display:block;
+  padding:4px 0px;
+  background-color:#fff;
+  border-radius:2px;
+}
+
+.linkbox a:hover {
+  color:var(--heading);
+  background-color:var(--accent);
+}
+
+h1 i {
+  width:10px;
   font-size:10px;
-  top:2px;
-  right:5px;
-  content:"\e086";
-  position:absolute;
-  color:#4286f4;
-  font-family:'saturnicons';
+  margin-right:8px;
 }
 
-/* filters & tag system */
+.details {
+  display:grid;
+  grid-template-columns:33% 33% 33%;
+  grid-gap:5px;
+  margin-bottom:25px;
+}
 
-.mine {background:#fafafa;}
-.mine .tags {background:#fff;}
-.mine span {width:calc(49% - 16px);}
-.complete.fave:before { top:14px;}
-.d i {color:#444;display:block;}
-.d {
+.details span {
+  background-color:#fafafa;
+  border:1px solid #f7f7f7;
+  padding:3px 5px;
+  border-radius:2px;
+}
+
+.details span b {
+  font-size:9px;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+  margin-right:3px;
+}
+
+.kw {
+  margin:25px 0px;
+  text-align:left;
+}
+
+.keyword {
+  font-family:var(--body-font);
+  font-size:10px;
+  color:#999;
+  padding:4px 8px 5px 8px;
+  height:25px;
+  background-color:#fafafa;
+  border:1px solid #f7f7f7;
+  margin-right:8px;
+  margin-bottom:6px;
+  border-radius:2px;
+  outline:0px;
+  -webkit-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.keyword:hover {
+  background-color:var(--accent);
+  border-color:var(--accent);
+  color:var(--heading);
+  -webkit-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+} 
+
+.quote {
+  font-family:'Fraunces';
+  font-size:14px;
+  line-height:18px;
+  margin-bottom:5px;
+  font-weight:600;
+  font-style:italic;
+  text-align:left;
+  letter-spacing:0.25px;
+}
+
+.quote i {
+  font-size:12px;
+  color:#ddd;
+}
+
+.quote span {
+  display:inline-block;
+  font-family:var(--body-font);
+  font-size:9.5px;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+  margin-left:3px;
+  font-style:normal;
+  margin-top:5px;
+  font-weight:400;
+} 
+
+.person {
+  width:410px;
+  min-height:120px;
+  padding:5px 10px 0px 10px;
+  border-radius:3px;
+}
+
+.person h1 a {
+  color:var(--heading);
+  border:0px;
+}
+
+.person h1 a:hover {color:var(--link-hover);}
+
+.person-image {
+  width:100px;
+  height:100px;
+  display:inline-block;
+  overflow-y:hidden;
+  overflow-x:hidden;
+  float:left;
+  border-radius:3px;
+}
+
+.person-image img {
+  width:100%;
+  height:auto;
+}
+
+.bio {
+  display:block;
+  width:270px;
+  height:90px;
+  margin-left:110px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  background-color:#fafafa;
+  padding:5px 10px;
+  border-radius:2px;
+  text-align:left;
+}
+
+.bio a {border-bottom:1px solid #eee;}
+
+.bio::-webkit-scrollbar {
+  width:9px;
+  height:9px;
+}
+
+.bio::-webkit-scrollbar {background-color:transparent;}
+
+.bio::-webkit-scrollbar-track {
+  border:4px solid #fafafa;
+  background-color:#f1f1f1;
+}
+
+.bio::-webkit-scrollbar-thumb {
+  border:4px solid #fafafa;
+  background-color:#ddd;
+  min-height:24px;
+  min-width:24px;
+}
+
+.info span {
+  display:block;
   margin:10px 0px;
-  display:block;p
-  osition:relative;
 }
 
-.tags i {margin-right:5px;}
-.tags i:before {content:'#';}
-.c {
-  bottom:27px;
-  right:27px;
-  position:fixed;
+.info a {border-bottom:1px solid #eee;}
+
+.extra p:first-of-type {
+  font-size:9.5px;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+  color:var(--heading);
+  font-weight:600;
 }
 
-span {
-  background:#fff;
-  margin:0px 2px;
-  padding:5px;
-  border:1px solid #eee;
-  color:#a4afc1;
-  width:calc(32% - 16px);
-  text-align:center;
-  display:inline-block;
+/* extras */
+
+* { cursor: url(https://i.imgur.com/dHusUiR.png),auto }
+a:hover { cursor: url(https://i.imgur.com/ZM41vky.png),progress!important }
+
+::selection {
+  background: #ffc1c8;
+  color: #3a84c3;
 }
-
-.tags {
-  margin:10px -15px -15px;
-  background:#fafafa;
-  padding:5px 15px;
-  border-top:1px solid #eee;
-}
-
-/* submissions table */
-table {margin: auto;}
-th {}
-input {float: right;}
-
-/* about us info */
-.info{
-  width: 200px;
+::-moz-selection {
+  background: #ffc1c8;
+  color: #3a84c3;
 }
 
 </style>
 </head>
-<body>
 
-<a href="/test">*</a>
+<!-- end of css + start of html :) -->
+
+<body>
 
 <div id="container">
 
-    <header>
+<div id="header">
+<div id="title">easter egg</div>
 
-        <h1>EASTER EGG</h1> ::
+<div id="nav">
 
-        <a href="/egg_home">easter egg</a>
-        <a href="/APjournals">AP Journals</a>
-        <a href="/collegetargets">CollegeBoard Targets</a>
-        <a href="/profiles">profiles</a>
-        <a href="/sampleprojects">sample projects</a>
-        <a href="/">back to home</a>
+<a href="/" title="home"><i class="fas fa-home"></i></a>
+<a href="https://github.com/p2slugs" title="github"><i class="fas fa-code"></i></a>
+<a href="https://github.com/p2slugs/recipebox/projects/1" title="scrum board"><i class="fas fa-edit"></i></a>
+<a href="http://nighthawkcoders.cf/lesson/python-cbproj/" title="apcsp timeline"><i class="fas fa-stream"></i></a>
 
+</div>
+</div>
 
-        {% block content %}
-        {% endblock %}
+<div id="sidebar">
+
+<div id="tab-bar">
+<div class="tabs">
+<ul class="tab-links">
+<li class="active">
+
+<a href="#tab1">about <i class="fas fa-bookmark"></i></a></li>
+<li><a href="#tab2">ap journals <i class="fas fa-keyboard"></i></a></li>
+<li><a href="#tab3">CB targets <i class="fas fa-bullseye"></i></a></li>
+<li><a href="#tab4">ali <i class="fas fa-cat"></i></a></li>
+<li><a href="#tab5">sophie <i class="fas fa-frog"></i></a></li>
+<li><a href="#tab6">linda <i class="fas fa-dove"></i></a></li>
+<li><a href="#tab7">eva <i class="fas fa-dog"></i></a></li>
+<!--<li><a href="#tab8">about us <i class="fas fa-users"></i></a></li>-->
+
+</ul>
+</div>
+</div></div>
+
+<!-- TAB 1: ABOUT -->
+<div class="tabs">
+
+<div id="tab1" class="tab active">
+<div class="tabcontent">
+
+<section><h1>hello!</h1>
+You have found our Easter Egg! Here, you can look through our AP Learnings, College Board Focus, and our About Us tabs.
+<br><br>
+Our Recipe Box website is inspired by the Zelda game, <i>Breath of the Wild</i>. It's a place where you can look up in-game recipes and their various types of buffs, ingredients, and prices.
+</section>
+
+<h1>details</h1>
+<section class="details">
+<span><b>class:</b> ap comp sci</span>
+<span><b>started:</b> nov 2020</span>
+<span><b>status:</b> wip</span>
+<span><b>item:</b> content</span>
+<span><b>item:</b> content</span>
+<span><b>item:</b> content</span>
+</section>
+
+</section>
+
+</div></div>
+
+<!-- TAB 2: AP JOURNALS -->
+<div id="tab2" class="tab">
+<div class="tabcontent">
+<div class="info">
+
+<h1>ap journals</h1>
+
+<p>On this page, you can look through our AP journals embedded down below! You can also click the links to open them in a new tab.</p>
+
+<br>
+
+<h1>ali & eva</h1>
+<p><a href="https://docs.google.com/document/d/1HmvBTISX06TAPqfT0Pxhp11LQsKP4UEvgfFTPWZ9xjg/edit" target="_blank">link to journal</a></p>
+<iframe width="500" height="300" src="https://docs.google.com/document/d/1HmvBTISX06TAPqfT0Pxhp11LQsKP4UEvgfFTPWZ9xjg/edit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</br></br>
+
+<h1>sophie & linda</h1>
+<p><a href="https://docs.google.com/spreadsheets/d/1ADwxNDK5w394WsQn_Fks-XQ8QYRK5EoCP6nVTqNL5Ag/edit#gid=0" target="_blank">link to journal</a></p>
+<iframe width="500" height="300" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR8eh826Z-il5fs1tGNOWVGxC5EfxDMzk1T2r4FcOaaJaNuZNoGTCP8jfJGvHz90zsgN9-AOaA7356l/pubhtml?widget=true&amp;headers=false"></iframe>
+
+</div>
+</div></div>
+
+<!-- TAB 3: college board targets -->
+<div id="tab3" class="tab">
+<div class="tabcontent">
+
+<div class="person">
+<div class="person-image">
+<img src="https://www.flaticon.com/svg/vstatic/svg/2809/2809349.svg?token=exp=1612513981~hmac=66a6f1b803ecd08743d6c627fec5f9ac" />
+</div>
+
+<div class="bio">
+<h1>Big Idea 1</h1>
+<h2>Creative Development</h2>
+
+Working together as a team of 4 to come up with ideas and implement them. Collaboration between group and pair shares. Journals to keep track of progress.
+</div>
+</div>
+
+<div class="person">
+<div class="person-image">
+<img src="https://www.flaticon.com/svg/vstatic/svg/2809/2809281.svg?token=exp=1612513986~hmac=cdf89e8b425d9b6d2d29da619e345c27" />
+</div>
+
+<div class="bio">
+<h1>Big Idea 2</h1>
+<h2>Data</h2>
+
+Using SQLalchemy to create a database for our recipes and have the ability to add more recipes. Going beyond the Python fundamentals with logic and data. Using GET and POST, Python backend, and creating a data related UI. Having the ability to create, read, update, and delete recipes.
+</div>
+</div>
+
+<div class="person">
+<div class="person-image">
+<img src="https://www.flaticon.com/svg/vstatic/svg/2809/2809431.svg?token=exp=1612514141~hmac=7be09c3068ae962aef14c1f811a533c2" />
+</div>
+
+<div class="bio">
+<h1>Big Idea 3</h1>
+<h2>Algorithms & Programming</h2>
+
+Creating a great UI design for our data-filled website. Using HTML, CSS, and Javascript. Making a visual storyboard before putting it into our website. We will have options to go to different recipe pages and add in your own recipes.
+</div>
+</div>
+
+<div class="person">
+<div class="person-image">
+<img src="https://www.flaticon.com/svg/vstatic/svg/2809/2809022.svg?token=exp=1612514210~hmac=106b6e8b74eb5e1e9ae4fe0791bfd81d" />
+</div>
+
+<div class="bio">
+<h1>Big Idea 4</h1>
+<h2>Computing Systems & Networks	</h2>
+
+Deploying our website on a Raspberry Pi server, using HTTP protocol for communication, using GET to request data, and POST to update the data. We will use an internet router.
+</div>
+</div>
+
+<div class="person">
+<div class="person-image">
+<img src="https://www.flaticon.com/svg/vstatic/svg/2809/2809337.svg?token=exp=1612514141~hmac=04a892984e9b7f1035d8b1d72f884a29" />
+</div>
+
+<div class="bio">
+<h1>Big Idea 5</h1>
+<h2>Impact of Computing</h2>
+
+Deploying our website onto the Internet with a Raspberry Pi, sharing it to the community at the Night at the Museum and with College Board through the AP exam.
+</div>
+</div>
+    
+</div></div>
+
+<!-- TAB 4: Ali's Tab -->
+<div id="tab4" class="tab">
+<div class="tabcontent">
+
+<section><h1>Ali Saad</h1>
+<p>I have solidified my basics in python coding and am working to achieve mastery</p>
+<p>I have grasped the concept of HTML5 forms and pages and the front/back end data exchanging. </p>
+<p>I am just now learning about the basics of curating data and am working on improving my workflow between front end and back end code. </p>
+</section>
+
+<h1>details</h1>
+<section class="details">
+<span><b>class:</b> senior</span>
+<span><b>bday:</b> month ##</span>
+<span><b>item:</b> content</span>
+</section>
+
+</div></div>
+
+<!-- TAB 5: Sophie's Tab -->
+<div id="tab5" class="tab">
+<div class="tabcontent">
+
+<section><h1>Sophie Lee</h1>
+hello! i'm sophie. i'm currently a senior at del norte. i took ap comp sci because i wanted to expand my horizons and learn some coding basics. i've become familiar with building flask web servers and with python in general. due to my previous html and css experience, i've also improved and learned more about frontend coding as well.
+</section>
+
+<h1>details</h1>
+<section class="details">
+<span><b>class:</b> senior</span>
+<span><b>bday:</b> dec 17</span>
+<span><b>item:</b> content</span>
+</section>
+
+<section class="kw">
+
+<h1>interests</h1>
+<button class="keyword">design</button>
+<button class="keyword">food</button>
+<button class="keyword">video games</button>
+<button class="keyword">tennis</button>
+<button class="keyword">sleep</button>
+</section>
+
+<section class="quote"><i class="fas fa-quote-left" style="margin-right:3px;"></i>
+
+my goals in computer science are to have a deeper understanding of python and to improve on my design skills through html and css.
+
+<i class="fas fa-quote-right" style="margin-left:3px;"></i>
+
+<span> &mdash; random person</span>
+</section>
+
+</div></div>
+
+<!-- TAB 6: Linda's Tab -->
+<div id="tab6" class="tab">
+<div class="tabcontent">
+
+<section><h1>Linda Long</h1>
+    <p>I can develop web frontends  using HTML, CSS, and BootStrap.</p>
+    <p>I know how to use HTML forms, HTML5 validation, and build Jinja templates.</p>
+    <p>I understand Database concepts like using web sessions & establishing tables to setup and manage user accounts</p>
+    <p>I can port forward a Raspberry Pi web server.</p>
+    <p>I am learning how to do backend work with SQL databases, specifically SQLite and SQLalchemy utilizing the Flask framework.</p>
+</section>
+
+<h1>details</h1>
+<section class="details">
+<span><b>class:</b> senior</span>
+<span><b>bday:</b> month ##</span>
+<span><b>item:</b> content</span>
+</section>
+
+</div></div>
+
+<!-- TAB 7: Eva's Tab -->
+<div id="tab7" class="tab">
+<div class="tabcontent">
+
+<section><h1>Eva Gravin</h1>
+<p>I know how to build a Python/Flask web server.</p>
+<p>I can run a Flask server from a Raspberry Pi machine with a virtual environment, Gunicorn, and Nginx.</p>
+<p>I can use some Linux commands in terminal.</p>
+<p>I know how to port forward.</p>
+<p>I am confident in using Jinja, Flask templates, app routes, and variables.</p>
+<p>I have designed frontends with HTML, CSS, and Bootstrap.</p>
+<p>I have a basic understanding of Python.</p>
+<p>I have worked with REST APIS and have a basic understanding of how they work.</p>
+
+</section>
+
+<h1>details</h1>
+<section class="details">
+<span><b>class:</b> junior</span>
+<span><b>bday:</b> month ##</span>
+<span><b>item:</b> content</span>
+</section>
+
+</div></div>
+
+</div></div>
+</div>
+
+</body>
+</html>
