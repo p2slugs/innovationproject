@@ -10,6 +10,9 @@ You can access the website from our runtime link below or run our code on your o
 
 ## Big Tickets
 ### Login Session
+Users can login to the website via the sign in page. 
+
+[See Code]()
 
 ### Easter Egg Work
 In the hidden menu of our website (the easter egg), there are College Board project considerations which includes information about how our project meets the standards in a table, a profiles page for every member of the team with their "I am" statements, and track of AP learnings with our jorunals. The layout of the easter egg was imrpoved this week and this ticket can be found [here](https://github.com/orgs/p2slugs/projects/1#card-53870824) in the scrum board.
@@ -17,6 +20,9 @@ In the hidden menu of our website (the easter egg), there are College Board proj
 [See Code](https://github.com/p2slugs/recipebox/commit/5a0dc45a4533a57e53dfa2c32e0499e1cf045330)
 
 ### Crud Database
+Users are going to be able to create their own recipes which get added into a table. It will store their name, the recipe name, ingredients, and steps.
+
+See Code- [html file](), [view/control file](), [model definition file](), [model crud file]()
 
 ### HTML and CSS
 The UI work done this week includes a dark/light mode button that changes our website's theme when clicked! Click the button in the top left corner of the website to test out this feature. Sophie did this ticket and the ticket it can be found [here](https://github.com/orgs/p2slugs/projects/1#card-53870926) in the scrum board.
