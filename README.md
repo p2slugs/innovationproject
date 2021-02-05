@@ -20,7 +20,7 @@ In the hidden menu of our website (the easter egg), there are College Board proj
 [See Code](https://github.com/p2slugs/recipebox/commit/5a0dc45a4533a57e53dfa2c32e0499e1cf045330)
 
 ### Crud Database
-Users are going to be able to create their own recipes which get added into a table. It will store their name, the recipe name, ingredients, and steps.
+Users are going to be able to create their own recipes which get added into a table. It will store their name, the recipe name, ingredients, and steps. The ticket can be found [here](https://github.com/orgs/p2slugs/projects/1#card-53870824) in the scrum board.
 
 See Code- [html file](), [view/control file](), [model definition file](), [model crud file]()
 
