@@ -1,27 +1,27 @@
 Meal, Ingredients, Buff, Category
-Creamy Heart Soup, "radish, hydromelon, voltfruit, fresh milk", hearty, vegetarian
-Pumpkin Stew, "fortified pumpkin, goat butter, fresh milk, tabantha wheat", tough, vegetarian
-Veggie Cream Soup, "any carrot/pumpkin, fresh milk, rock salt", "energizing, hasty, mighty", vegetarian
-Cream of Mushroom, "any mushroom, any vegetable/herb/flower, fresh milk, rock salt", "chilly, electro, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetarian
-Cream of Vegetable, "any herb/vegetable/flower, fresh milk, rock salt", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetarian
-Carrot Stew, "any carrot, goat butter, fresh milk, tabantha wheat", "energizing, hasty", vegetarian
-Vegetable Risotto, "any carrot/pumpkin, goat butter, hylian rice, rock salt", "energizing, hasty, mighty", vegetarian
-Mushroom Risotto, "any mushroom, hylian rice, goat butter, rock salt", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetarian
+Creamy Heart Soup, "radish, hydromelon, voltfruit, fresh milk", hearty, soup
+Pumpkin Stew, "fortified pumpkin, goat butter, fresh milk, tabantha wheat", tough, soup
+Veggie Cream Soup, "any carrot/pumpkin, fresh milk, rock salt", "energizing, hasty, mighty", soup
+Cream of Mushroom, "any mushroom, any vegetable/herb/flower, fresh milk, rock salt", "chilly, electro, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", soup
+Cream of Vegetable, "any herb/vegetable/flower, fresh milk, rock salt", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", soup
+Carrot Stew, "any carrot, goat butter, fresh milk, tabantha wheat", "energizing, hasty", soup
+Vegetable Risotto, "any carrot/pumpkin, goat butter, hylian rice, rock salt", "energizing, hasty, mighty", rice
+Mushroom Risotto, "any mushroom, hylian rice, goat butter, rock salt", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", rice
 Curry Pilaf, "goat butter, goron spice, hylian rice", spicy, vegetarian
-Mushroom Rice Balls, "any mushroom, hylian rice", "chilly, electro, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetarian
-Veggie Rice Balls, "any vegetable/herb/flower, hylian rice", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetarian
-Curry Rice, "goron spice, hylian rice", spicy, vegetarian
-Fried Egg & Rice, "bird egg, hylian rice", no buff, vegetarian
-Mushroom Omelet, "any mushroom, bird egg, goat butter, rock salt", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetarian
-Vegetable Omelet, "any vegetable/herb/flower, bird egg, rock salt", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetarian
-Vegetable Curry, "any carrot/pumpkin, goron spice, hylian rice", "enduring, hasty, mighty", vegetarian
-Fragrant Mushroom Sauté, "any mushroom, goron spice", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetarian
-Herb Sauté, "any vegetable/herb/flower, goron spice", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetarian
-Salt-Grilled Greens, "any vegetable/herb/flower, rock salt", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetarian
-Salt-Grilled Mushrooms, "any mushroom, rock salt", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetarian
-Steamed Mushrooms, "any vegetable/herb/flower, any mushroom", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetarian
-Mushroom Skewer, any mushroom, no buff, vegetarian
-Copious Mushroom Skewers, any four different mushrooms, no buff, vegetarian
-Fried Wild Greens, any vegetable/flower/herb combination, no buff, vegetarian
-Copious Fried Wild Greens, any four different herbs/vegetables/flowers, no buff, vegetarian
-Omelet, bird egg, no buff, vegetarian
+Mushroom Rice Balls, "any mushroom, hylian rice", "chilly, electro, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", rice
+Veggie Rice Balls, "any vegetable/herb/flower, hylian rice", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", rice
+Curry Rice, "goron spice, hylian rice", spicy, rice
+Fried Egg & Rice, "bird egg, hylian rice", no buff, rice
+Mushroom Omelet, "any mushroom, bird egg, goat butter, rock salt", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetables
+Vegetable Omelet, "any vegetable/herb/flower, bird egg, rock salt", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetables
+Vegetable Curry, "any carrot/pumpkin, goron spice, hylian rice", "enduring, hasty, mighty", rice
+Fragrant Mushroom Sauté, "any mushroom, goron spice", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetables
+Herb Sauté, "any vegetable/herb/flower, goron spice", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetables
+Salt-Grilled Greens, "any vegetable/herb/flower, rock salt", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetables
+Salt-Grilled Mushrooms, "any mushroom, rock salt", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetables
+Steamed Mushrooms, "any vegetable/herb/flower, any mushroom", "chilly, electro, enduring, energizing, fireproof, hasty, hearty, mighty, sneaky, spicy, tough", vegetables
+Mushroom Skewer, any mushroom, no buff, vegetables
+Copious Mushroom Skewers, any four different mushrooms, no buff, vegetables
+Fried Wild Greens, any vegetable/flower/herb combination, no buff, vegetables
+Copious Fried Wild Greens, any four different herbs/vegetables/flowers, no buff, vegetables
+Omelet, bird egg, no buff, other
