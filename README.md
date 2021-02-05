@@ -1,5 +1,5 @@
 # P2 Slugs - Recipe Website
-Welcome to our Trimester 2 Portfolio! This is where you can find and access our code and important pieces throughout the course.
+Welcome to our Trimester 2 Portfolio! This is where you can find and access our code and important pieces throughout the course. You can access the website from our runtime link below or run our code on your own computer by downloading the repository files.
 
 ### > [Scrum Board](https://github.com/orgs/p2slugs/projects/1) (tracking sheet + schedule) | includes ticket items/cards
 
