@@ -14,8 +14,7 @@ db = SQLAlchemy(app)
 class Users(db.Model):
     userid = db.Column(db.Integer, primary_key=True)
     creator_name = db.Column(db.String(255), unique=True, nullable=False)
- 
- 
+
 # Declare ingredients database model
 class Ingredients(db.Model):
     userid = db.Column(db.Integer, primary_key=True)

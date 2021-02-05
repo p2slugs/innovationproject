@@ -1,96 +1,222 @@
 <!DOCTYPE html>
 <head>
-<title>recipe box</title>
-
+ 
+<title> recipe box </title>
+ 
 <link rel="shortcut icon" href="{Favicon}">
 <link rel="alternate" type="application/rss+xml" href="{RSS}">
  
-<link href="https://fonts.googleapis.com/css?family=Karla:400,400italic,600,600italic" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
- 
+<link href='https://fonts.googleapis.com/css?family=Fraunces:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://static.tumblr.com/fuu6t9w/eubml0pm0/jquery.isotope.min.js"></script>
+<script src="https://static.tumblr.com/aptzszz/s5fp15zyp/candlelight.js"></script> 
 <style type="text/css">
  
-* { margin:0;padding:0; }
- 
- 
 @-webkit-keyframes fadein {
-  0%   {opacity: 0;}
+  0% {opacity: 0;}
   100% {opacity: 1;}
 }
  
 @-moz-keyframes fadein {
-  0%   {opacity: 0;}
+  0% {opacity: 0;}
   100% {opacity: 1;}
 }
  
 @keyframes fadein {
-  0%   {opacity: 0;}
+  0% {opacity: 0;}
   100% {opacity: 1;}
 }
-  
-a {transition:0.15s ease-in;} 
-b,strong {color:#333;}
+ 
+::-webkit-scrollbar {height:3px; width:1px;}
+::-webkit-scrollbar-thumb {background:#eee;}
+::-webkit-scrollbar-track {background:transparent;}
 
-header {
-  padding: 40px;
-  text-align: center;
-  background: #f8d849;
+a,.button {
+  transition:0.2s ease-in;
+  -webkit-transition:0.2s ease-in;
+  -moz-transition:0.2s ease-in;
 }
 
+b,strong {color:#444;}
+ 
+a:hover {
+  color:#444;
+  text-decoration:none;
+}
+ 
 body {
-  font-family:'Karla';
-  font-size:14px;
+  background:#fff;
+  font-family:'Fraunces', serif;
+  font-size:12px;
+  font-weight:300;
   line-height:190%;
-  letter-spacing:0px;
-  color:#666;
-  -webkit-animation-name: fadein;-webkit-animation-duration: 1s;
+  color:#767676;
+  -webkit-animation-name: fadein;
+  -webkit-animation-duration: 1s;
   -moz-osx-font-smoothing:grayscale;
   -webkit-font-smoothing:antialiased;
   font-smoothing:antialiased;
 }
  
 a {
-  color:#333;
+  color:#a4afc1;
   text-decoration:none;
 }
  
-a:hover  {
-  color:#333;
+#container {
+  width:900px;
+  margin:100px auto;
 }
  
-section {
-  width:calc(180px * 4);
-	margin:0 auto;
-  background:#fff;
-  text-align:center;
-  border-left:1px solid #eee;
-  border-right:1px solid #eee;
+ 
+h1 {
+  font-weight:400;
+  color:#444;
+  font-size:14px;
+  display:inline;
+  border-bottom:1px solid #a4afc1;
 }
  
-header {margin-bottom:100px;}
-h1 {font-style:italic;color:#333;font-weight:400;margin-bottom:5px;}
+header a,h1 {margin-right:7px;}
 
+header a:first-of-type, article a:first-of-type {margin-left:7px;}
+
+header {
+  width:860px;
+  margin:auto;
+}
+ 
+.button {
+  background:#fff;
+  border:0;
+  border-radius:0;
+  outline:0;
+  padding:0;
+  display:inline-block;
+  cursor:help;
+  text-shadow:none;
+  box-shadow:none;
+  line-height:inherit;
+  color:#767676;
+  font-size:inherit;
+  font-family:inherit;
+  letter-spacing:inherit;
+  margin-right:10px;
+}
+ 
+.button:hover {color:#a4afc1;}
+.button:active,.button.is-checked {color:#444;}
+.button-group:last-of-type {border:none;}
+.button-group:first-of-type {margin-top:20px;}
+ 
+article {
+  position:relative;
+  width:260px;
+  margin:20px;
+  box-sizing:border-box;
+  padding:15px;
+  border:1px solid #eee;
+  display:inline-block;
+  transition-duration:.35s;
+  -moz-transition-duration:.35s;
+  -webkit-transition-duration:.35s;
+  -o-transition-duration:.35s;
+}
+ 
+section {margin-top:40px;}
+.fave:after{
+  font-size:10px;
+  top:2px;
+  right:5px;
+  content:"\e12c";
+  position:absolute;
+  color:#aa4271;
+  font-family:'saturnicons';
+}
+ 
+.complete:before {
+  font-size:10px;
+  top:2px;
+  right:5px;
+  content:"\e086";
+  position:absolute;
+  color:#4286f4;
+  font-family:'saturnicons';
+}
+
+/* filters & tag system */
+
+.mine {background:#fafafa;}
+.mine .tags {background:#fff;}
+.mine span {width:calc(49% - 16px);}
+.complete.fave:before { top:14px;}
+.d i {color:#444;display:block;}
+.d {
+  margin:10px 0px;
+  display:block;p
+  osition:relative;
+}
+ 
+.tags i {margin-right:5px;}
+.tags i:before {content:'#';}
+.c {
+  bottom:27px;
+  right:27px;
+  position:fixed;
+}
+ 
+span {
+  background:#fff;
+  margin:0px 2px;
+  padding:5px;
+  border:1px solid #eee;
+  color:#a4afc1;
+  width:calc(32% - 16px);
+  text-align:center;
+  display:inline-block;
+}
+
+.tags {
+  margin:10px -15px -15px;
+  background:#fafafa;
+  padding:5px 15px;
+  border-top:1px solid #eee;
+}
+
+/* submissions table */
+table {margin: auto;}
+th {}
+input {float: right;}
+
+/* about us info */
+.info{
+  width: 200px;
+}
+ 
 </style>
 </head>
 <body>
 
-    <section>
-    <header>
-      <h1><b>recipe box</b></h1>
-      <a href="/recipes">recipes</a> |
-      <a href="/about">about us</a> |
-      <a href="/add_recipes">add recipes</a> |
-      <a href="/p_overview">project overview</a> |
-      <a href="/recipe_generator">recipe generator</a> |
-      <a href="/sign">recipe request</a> |
-        <a href="/form">sign up form</a>
-    </header>
-    </section>
+<a href="/test">*</a>
 
-</body>
-
+<div id="container">
+ 
+<header>
+ 
+<h1>recipe box</h1> ::
+ 
+<a href="/">home</a>
+<a href="/recipes">recipes</a>
+<a href="/add">add recipes</a>
+<a href="/generator">generator</a>
+<a href="/submit">submit</a>
+<a href="/index">database</a>
+<a href="/overview">project overview</a>
+<a href="/about">about us</a>
+<a href="/form">sign up</a>
+ 
 {% block content %}
-
 {% endblock %}
 
+</body>
 </html>

@@ -1,18 +1,10 @@
 #This page is our views page in git which establishes app routes and renders html
 #It is has the main navigation for our website
-from flask import Flask, render_template,redirect,url_for
+from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
+from __init__ import app
 import aboutus
-
-
-#title = data.setup() from app route /
-
-app = Flask(__name__)
-dbURI = 'sqlite:///models/myDB.db'
-
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
-db = SQLAlchemy(app)
+import requests
 
 @app.route('/')
 def home_route():
@@ -22,9 +14,9 @@ def home_route():
 def recipes():
     return render_template('recipes.html')
 
-@app.route('/p_overview')
+@app.route('/overview')
 def p_overview():
-    return render_template('p_overview.html')
+    return render_template('overview.html')
 
 @app.route('/add')
 def add():
@@ -35,10 +27,11 @@ def about():
     return render_template('about.html', aboutus=aboutus.about())
 
 @app.route('/generator', methods=['GET','POST'])
-#call to web api 
 def generator():
-  url = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/extract"
-  return render_template('generator.html')
+    return render_template('generator.html')
+
+#call to web api 
+
 
 @app.route('/sign')
 def sign():
@@ -48,5 +41,19 @@ def sign():
 def form():
     return render_template('form.html')
 
-if __name__ == '__main__':
-    app.run(debug=True, port='3000')
+@app.route('/index')
+def index():
+    return render_template('index.html')
+
+@app.route('/submit')
+def submit():
+    return render_template('submit.html')
+
+@app.route('/process', methods=['POST'])
+def process():
+  name = request.form['name']
+  comment = request.form['comment']
+  
+  return render_template('index.html', name=name, comment=comment)
+
+

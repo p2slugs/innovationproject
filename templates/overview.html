@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %} {% block title %} Project Overview {% endblock %}
+
+{% block content %}
+
+<br>
+<br>
+
+<b>Summary</b>
+<p class = "summary">This website is a collection of recipes! You can generate random recipes from thousands of different ones and also create your own recipes in the <i>Add Recipes</i> section. Recipe Box allows recipes to be created, stored, and gathered to one place.</p>
+
+<br>
+
+<b>Other Info</b>
+<p class = "summary">This website was made by Linda Long, Sophie Lee, Ali Saad, and Eva Gravin. Check out our<u><a target="_blank" rel="noopener noreferrer" href="https://github.com/p2slugs/recipebox">repository</a></u>and<u><a target="_blank" rel="noopener noreferrer" href="https://github.com/p2slugs/recipebox/projects/1">scrum board</a></u>as well!</p>
+
+<br>
+
+<button type="button" class="btn btn-secondary clickhere" onclick="openForm()">here's a cool button</button>
+
+<div class="container"
+  <div class="row"
+    
+    <div class="row-3 chat-popup" id="popout"
+    style= "display: none;">
+      sorry this is a bit boring
+    <br>
+    <button type="button" class="btn close" onclick="closeForm()">
+      close</button>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    function openForm() {
+        document.getElementById("popout").style.display = "block";
+        document.getElementById("clickhere").style.display = "none";
+    }
+
+    function closeForm() {
+        document.getElementById("popout").style.display = "none";
+        document.getElementById("clickhere").style.display = "block";
+    }
+</script>
+
+{% endblock %}

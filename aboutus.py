@@ -1,7 +1,7 @@
 # data for the about us page
 def sophie():
   name = "Sophie Lee"
-  image = ""
+  image = "sl.jpg"
   grade = "senior"
   funfact = ""
   profile = {"name": name, "image": image, "grade": grade, "funfact": funfact}
@@ -17,7 +17,7 @@ def eva():
 
 def ali():
   name = "Ali Saad"
-  image = "a_aboutus.jpg"
+  image = "as_aboutus.jpg"
   grade = "senior"
   funfact = "Ali Saad is a senior at Del Norte High School in Computer Science Principles. He shares the same birthday as Travis Scott!"
   profile = {"name": name, "image": image, "grade": grade, "funfact": funfact}
@@ -25,7 +25,7 @@ def ali():
 
 def linda():
   name = "Linda Long"
-  image = ""
+  image = "l_aboutus.jpg"
   grade = "senior"
   funfact = "Linda Long is a senior at Del Norte High School in Computer Science Principles. She likes psychology and wants to know more about data science :)"
   profile = {"name": name, "image": image, "grade": grade, "funfact": funfact}
