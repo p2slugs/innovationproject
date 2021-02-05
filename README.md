@@ -14,7 +14,7 @@ You can access the website from our runtime link below or run our code on your o
 ### Easter Egg Work
 In the hidden menu of our website (the easter egg), there are College Board project considerations which includes information about how our project meets the standards in a table, a profiles page for every member of the team with their "I am" statements, and track of AP learnings with our jorunals. The layout of the easter egg was imrpoved this week and this ticket can be found [here](https://github.com/orgs/p2slugs/projects/1#card-53870824) in the scrum board.
 
-[See Code]()
+[See Code](https://github.com/p2slugs/recipebox/commit/5a0dc45a4533a57e53dfa2c32e0499e1cf045330)
 
 ### Crud Database
 
