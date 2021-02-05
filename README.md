@@ -16,6 +16,9 @@ You can access the website from our runtime link below or run our code on your o
 ### Crud Database
 
 ### HTML and CSS
+The UI work done this week includes a dark/light mode button that changes our website's theme when clicked! Click the button in the top left corner of the website to test out this feature. Sophie did this ticket and the ticket it can be found [here](https://github.com/orgs/p2slugs/projects/1#card-53870926) in the scrum board.
+
+[See Code](https://github.com/p2slugs/recipebox/blob/main/templates/base.html)
 
 ## Past Completed Goals 1/11-1/15
 ###  1. HTML, Project Overview Page 
