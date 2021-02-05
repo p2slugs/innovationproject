@@ -112,6 +112,10 @@ def sophieprofile():
 def aliprofile():
     return render_template('aliprofile.html')
 
+@app.route('/getupdates')
+def getupdates():
+    return render_template('getupdates')
+
 
 
 
