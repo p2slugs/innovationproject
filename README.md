@@ -4,7 +4,7 @@ You can access the website from our runtime link below or run our code on your o
 
 ### > [Scrum Board](https://github.com/orgs/p2slugs/projects/1) (tracking sheet + schedule) | includes ticket items/cards
 
-### > Link to Running Code: http://99.88.196.26/ | [Git Repository](https://github.com/p2slugs/recipebox/)
+### > Link to Running Code: http://recipebox.cf | [Git Repository](https://github.com/p2slugs/recipebox/)
 
 ### > [Easter Egg Location](http://recipebox.cf/easteregg?)
 
