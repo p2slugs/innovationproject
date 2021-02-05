@@ -116,6 +116,11 @@ def aliprofile():
 def getupdates():
     return render_template('getupdates')
 
+@app.route('/sampleprojects')
+def sampleprojects():
+    return render_template('sampleprojects.html')
+
+
 
 
 

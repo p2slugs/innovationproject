@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+{% extends "easteregg.html" %}
+
+{% block content %}
+
+<p>--Sample Projects--</p>
+
+<p>Sample projects that show AP Computer Science learnings.</p>
+    <div class = "info">
+        {% for about in sampleprojects2: %} <!-- for loop displays the data -->
+        {% set name = sampleprojects["name"] %}
+        {% set description = sampleprojects["description"] %}
+        {% set link = sampleprojects["link"] %}
+
+        <p>Project: {{name}}</p>
+        <h3>Description: {{description}}</h3>
+        <iframe width="1200" height="1000" src="{{link}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        {% endfor %}
+
+
+    </div>
+
+{% endblock %}
