@@ -8,6 +8,32 @@ You can access the website from our runtime link below or run our code on your o
 
 ### > [Easter Egg Location](http://recipebox.cf/easteregg?)
 
+## Who am I in computer science?
+### Ali Saad
+I have solidified my basics in python coding and am working to achieve mastery.
+I have grasped the concept of HTML5 forms and pages and the front/back end data exchanging.
+I am just now learning about the basics of curating data and am working on improving my workflow between front end and back end code.
+
+### Linda Long
+I can develop web frontends  using HTML, CSS, and BootStrap.
+I know how to use HTML forms, HTML5 validation, and build Jinja templates.
+I understand Database concepts like using web sessions & establishing tables to setup and manage user accounts
+I can port forward a Raspberry Pi web server.
+I am learning how to do backend work with SQL databases, specifically SQLite and SQLalchemy utilizing the Flask framework.
+
+### Sophie Lee
+hello! i'm sophie. i'm currently a senior at del norte. i took ap comp sci because i wanted to expand my horizons and learn some coding basics. i've become familiar with building flask web servers and with python in general. due to my previous html and css experience, i've also improved and learned more about frontend coding as well.
+
+### Eva Gravin
+I know how to build a Python/Flask web server.
+I can run a Flask server from a Raspberry Pi machine with a virtual environment, Gunicorn, and Nginx.
+I can use some Linux commands in terminal.
+I know how to port forward.
+I am confident in using Jinja, Flask templates, app routes, and variables.
+I have designed frontends with HTML, CSS, and Bootstrap.
+I have a basic understanding of Python.
+I have worked with REST APIS and have a basic understanding of how they work.
+
 ## Big Tickets
 ### Login Session
 Users can login to the website via the sign in page. Fill in information for each field in order to have your data stored. The ticket can be found [here](https://github.com/orgs/p2slugs/projects/1#card-53870964) in the scrum board.
