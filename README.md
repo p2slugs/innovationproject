@@ -36,6 +36,13 @@ I have designed frontends with HTML, CSS, and Bootstrap.
 I have a basic understanding of Python.
 I have worked with REST APIS and have a basic understanding of how they work.
 
+## Big Tickets Week of February 8 - Crossover
+### Ingredients Page
+Users can get indredients which they can makes recipes with. The ingredients will be shown on a different page and kept track of how many the user has. (eva)
+
+### Displaying Data in HTML
+(sophie?)
+
 ## Big Tickets
 ### Login Session
 Users can login to the website via the sign in page. Fill in information for each field in order to have your data stored. The ticket can be found [here](https://github.com/orgs/p2slugs/projects/1#card-53870964) in the scrum board.
