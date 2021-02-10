@@ -21,6 +21,10 @@ print("Dictionary of people")
 # write some code to Print People from Dictionary
 print(type(dict_people))
 print(dict_people)
+people = dict_people['people']
+for person in people:
+    print(person['name'] + "," + str(person['age']) + "," + person['city'])
+print()
 
 # prepare list for JSON, this can be sent via a browser
 json_people = json.dumps(dict_people)
