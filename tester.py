@@ -33,6 +33,11 @@ print("JSON People")
 # write some code to Print People from JSon
 print(type(json_people))
 print(json_people)
+x = json.loads(json_people)
+people = x['people']
+for person in people:
+    print(person['name'] + "," + str(person['age']) + "," + person['city'])
+print()
 
 # unwind people back to JSON
 dict_people = json.loads(json_people)
