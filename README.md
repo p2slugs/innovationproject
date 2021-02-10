@@ -13,7 +13,7 @@ You can access the website from our runtime link below or run our code on your o
 ## Who am I in computer science?
 ### Ali Saad
 I have solidified my basics in python coding and am working to achieve mastery.
-I have grasped the concept of HTML5 forms and pages and the front/back end data exchanging.
+I have grasped the concept of HTML5 forms and pages and the front/back end data exchanging along with buidling up template pages with Jinja code.
 I am just now learning about the basics of curating data and am working on improving my workflow between front end and back end code.
 
 ### Linda Long
