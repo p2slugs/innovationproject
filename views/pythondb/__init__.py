@@ -1,4 +1,3 @@
-"""__init.py__ has responsibility of defining interfaces for blueprint"""
 from flask import Blueprint
 
 pythondb_bp = Blueprint(
