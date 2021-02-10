@@ -2,6 +2,8 @@
 #It is has the main navigation for our website
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
+
+import ingredients
 from __init__ import app
 import aboutus
 import sqlite3 as sl3
@@ -119,6 +121,10 @@ def getupdates():
 @app.route('/sampleprojects')
 def sampleprojects():
     return render_template('sampleprojects.html')
+
+@app.route('/ingredients1')
+def ingredients1():
+    return render_template('ingredients1.html', ingredients=ingredients.ingredients())
 
 
 

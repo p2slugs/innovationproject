@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block title %}
+Recipe Generator
+{% endblock %}
+
+{% block content %}
+
+<div>
+    <p style="text-align: right">Your ingredients:</p>
+    <p>Ingredients</p>
+    <p>Click an ingredient to collect it!</p>
+
+    <br>
+    {% for ingredients in ingredients: %} <!-- for loop displays the data -->
+    {% set ingredient = ingredients["ingredient"] %}
+    {% set category = ingredients["category"] %}
+    {% set hearts = ingredients["hearts"] %}
+    {% set price = ingredients["price"] %}
+    <article class="HEARTY SOUP">
+        <p>{{ingredient}}</p>
+        <p>category: {{category}}</p>
+        <p>hearts: {{hearts}}</p>
+        <p>price: {{price}}</p>
+    </article>
+
+</div>
+
+
+
+
+{% endfor %}
+{% endblock %}
