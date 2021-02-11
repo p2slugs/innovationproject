@@ -126,6 +126,10 @@ def sampleprojects():
 def ingredients1():
     return render_template('ingredients1.html', ingredients=ingredients.ingredients())
 
+@app.route('/customersupport')
+def customersupport():
+    return render_template('customersupport.html')
+
 
 
 
