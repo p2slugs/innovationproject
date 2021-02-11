@@ -7,27 +7,41 @@ Recipe Generator
 
 {% block content %}
 
-<div>
-    <p style="text-align: right">Your ingredients:</p>
-    <p>Ingredients</p>
-    <p>Click an ingredient to collect it!</p>
+<!-- <p style="text-align: right" onclick="drawScore()">Your ingredients: {{score}}</p> -->
+<p style="text-align: center">Ingredients</p>
+<p style="text-align: center">Click "collect" on an ingredient to collect it!</p>
 
-    <br>
+
+
     {% for ingredients in ingredients: %} <!-- for loop displays the data -->
+    {% set box = ingredients["box"] %}
     {% set ingredient = ingredients["ingredient"] %}
     {% set category = ingredients["category"] %}
     {% set hearts = ingredients["hearts"] %}
     {% set price = ingredients["price"] %}
-    <article class="HEARTY SOUP">
-        <p>{{ingredient}}</p>
+
+    <article class="HEARTY SOUP" id="id" style="text-align:center; float: center;">
+        <p><u>{{ingredient}}</u></p>
         <p>category: {{category}}</p>
         <p>hearts: {{hearts}}</p>
         <p>price: {{price}}</p>
+        <!-- <button id="collect" onclick="changeColor()">Collect</button> -->
+        <button type="button" class="btn btn-secondary clickhere" onclick="changeColor()" id="collectbutton">Collect</button>
+        <button type="button" class="btn btn-secondary clickhere" onclick="changeColor()" id="collectedbutton" style= "display: none;">Collected</button>
     </article>
 
-</div>
 
 
+<script type="text/javascript">
+    var score = 0;
+
+    function changeColor() {
+        document.getElementById("id").style.backgroundColor = "lightgrey";
+        document.getElementById("collectbutton").style.display = "none";
+        document.getElementById("collectedbutton").style.display = "block";
+        document.getElementById("collectedbutton").style.color = "green";
+    }
+</script>
 
 
 {% endfor %}
