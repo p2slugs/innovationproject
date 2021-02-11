@@ -40,8 +40,22 @@ I have worked with REST APIS and have a basic understanding of how they work.
 ### Ingredients Page
 Users can get indredients which they can makes recipes with. The ingredients will be shown on a different page and kept track of how many the user has. (eva)
 
+[See Frontend](https://github.com/p2slugs/recipebox/blob/main/templates/ingredients1.html), [See Backend](https://github.com/p2slugs/recipebox/blob/main/ingredients.py)
+
 ### Displaying Data in HTML
-(sophie?)
+Updated HTML, CSS, and overall frontend. Worked on the data and figuring out how to display it from the csv file. (sophie)
+
+See github commits for track of code.
+
+### Login Session
+Users can become premium members and login to the website via the sign in page. Fill in information for each field in order to have your data stored. The preferences you put in can influence the ingredients you see later. The ticket can be found [here](https://github.com/orgs/p2slugs/projects/1#card-53870964) in the scrum board. (linda)
+
+[See Code](https://github.com/p2slugs/recipebox/tree/main/views/pythondb), [See Form](https://github.com/p2slugs/recipebox/blob/main/templates/form.html)
+
+### Customer Support Page
+This is a new page in our website and it is where users can submit questions they have to the website. The goal is for the questions to all be recored for us to see. (ali)
+
+[See Code](https://github.com/p2slugs/recipebox/blob/main/templates/customersupport.html)
 
 ## Big Tickets
 ### Login Session
