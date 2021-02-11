@@ -51,9 +51,15 @@ dict_people = json.loads(json_people)
 print("Dictionary of people")
 # write some code to Print People from Dictionary
 print(type(dict_people))
-x = json.loads(json_people)
-people = x['people']
-for person in people:
+unwind = json.loads(json_people)['people']
+for person in unwind:
     print(person['name'] + "," + str(person['age']) + "," + person['city'])
 print()
+
+#our original thinking was like the above
+#x = json.loads(json_people)
+#people = x['people']
+#for person in people:
+#    print(person['name'] + "," + str(person['age']) + "," + person['city'])
+#print()
 
