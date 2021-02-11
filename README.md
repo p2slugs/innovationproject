@@ -4,13 +4,62 @@ You can access the website from our runtime link below or run our code on your o
 
 ### > [Scrum Board](https://github.com/orgs/p2slugs/projects/1) (tracking sheet + schedule) | includes ticket items/cards
 
-### > Link to Running Code: http://99.88.196.26/ | [Git Repository](https://github.com/p2slugs/recipebox/)
+### > Link to Running Code: http://recipebox.cf | [Git Repository](https://github.com/p2slugs/recipebox/)
 
 ### > [Easter Egg Location](http://recipebox.cf/easteregg?)
 
+### > [College Board Project Considerations](http://recipebox.cf/easteregg?)
+
+## Who am I in computer science?
+### Ali Saad
+I have solidified my basics in python coding and am working to achieve mastery.
+I have grasped the concept of HTML5 forms and pages and the front/back end data exchanging along with buidling up template pages with Jinja code.
+I am just now learning about the basics of curating data and am working on improving my workflow between front end and back end code.
+
+### Linda Long
+I can develop web frontends  using HTML, CSS, and BootStrap.
+I know how to use HTML forms, HTML5 validation, and build Jinja templates.
+I understand Database concepts like using web sessions & establishing tables to setup and manage user accounts
+I can port forward a Raspberry Pi web server.
+I am learning how to do backend work with SQL databases, specifically SQLite and SQLalchemy utilizing the Flask framework.
+
+### Sophie Lee
+I took APCSP because I wanted to expand my horizons and learn some coding basics. I've become familiar with building Flask web servers and with Python in general. Due to my previous HTML and CSS experience, I've also improved and learned more about frontend coding as well.
+
+### Eva Gravin
+I know how to build a Python/Flask web server.
+I can run a Flask server from a Raspberry Pi machine with a virtual environment, Gunicorn, and Nginx.
+I can use some Linux commands in terminal.
+I know how to port forward.
+I am confident in using Jinja, Flask templates, app routes, and variables.
+I have designed frontends with HTML, CSS, and Bootstrap.
+I have a basic understanding of Python.
+I have worked with REST APIS and have a basic understanding of how they work.
+
+## Big Tickets Week of February 8 - Crossover
+### Ingredients Page
+Users can get indredients which they can makes recipes with. The ingredients will be shown on a different page and kept track of how many the user has. The ticket can be found [here](https://github.com/p2slugs/recipebox/projects/1#card-54620246).(eva)
+
+[See Frontend](https://github.com/p2slugs/recipebox/blob/main/templates/ingredients1.html), [See Backend](https://github.com/p2slugs/recipebox/blob/main/ingredients.py)
+
+### Displaying Data in HTML
+Updated HTML, CSS, and overall frontend. Worked on the data and figuring out how to display it from the csv file. The ticket can be found [here](https://github.com/p2slugs/recipebox/projects/1#card-54580718).(sophie)
+
+See github commits for track of code.
+
+### Login Session
+Users can become premium members and login to the website via the sign in page. Fill in information for each field in order to have your data stored. The preferences you put in can influence the ingredients you see later. The ticket can be found [here](https://github.com/orgs/p2slugs/projects/1#card-53870964) in the scrum board. (linda)
+
+[See Code](https://github.com/p2slugs/recipebox/tree/main/views/pythondb), [See Form](https://github.com/p2slugs/recipebox/blob/main/templates/form.html)
+
+### Customer Support Page
+This is a new page in our website and it is where users can submit questions they have to the website. The goal is for the questions to all be recored for us to see. The ticket can be found [here](https://github.com/p2slugs/recipebox/projects/1#card-54727793).(ali)
+
+[See Code](https://github.com/p2slugs/recipebox/blob/main/templates/customersupport.html)
+
 ## Big Tickets
 ### Login Session
-Users can login to the website via the sign in page. The ticket can be found [here](https://github.com/orgs/p2slugs/projects/1#card-53870964) in the scrum board.
+Users can become premium members and login to the website via the sign in page. Fill in information for each field in order to have your data stored. The preferences you put in can influence the ingredients you see later. The ticket can be found [here](https://github.com/orgs/p2slugs/projects/1#card-53870964) in the scrum board.
 
 [See Code](https://github.com/p2slugs/recipebox/tree/main/views/pythondb), [See Form](https://github.com/p2slugs/recipebox/blob/main/templates/form.html)
 
