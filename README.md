@@ -10,6 +10,8 @@ You can access the website from our runtime link below or run our code on your o
 
 ### > [College Board Project Considerations](http://recipebox.cf/easteregg?)
 
+scroll down for 15pts review (Friday 2/18) ↓
+
 ## Who am I in computer science?
 ### Ali Saad
 I have solidified my basics in python coding and am working to achieve mastery.
@@ -35,6 +37,14 @@ I am confident in using Jinja, Flask templates, app routes, and variables.
 I have designed frontends with HTML, CSS, and Bootstrap.
 I have a basic understanding of Python.
 I have worked with REST APIS and have a basic understanding of how they work.
+
+## Review Via READme Guidance - 2/18
+
+### Big Tickets
+
+### Suggestions
+
+### College Board and Crossover visibility
 
 ## Big Tickets Week of February 8 - Crossover
 ### Ingredients Page
