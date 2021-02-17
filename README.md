@@ -40,7 +40,19 @@ I have worked with REST APIS and have a basic understanding of how they work.
 
 ## Review Via READme Guidance - 2/18
 
-### Big Tickets
+## Big Tickets
+
+### HTML
+sophie
+
+### Ingredients Page
+eva
+
+### ticket
+linda
+
+### ticket 
+ali
 
 ### Suggestions
 
