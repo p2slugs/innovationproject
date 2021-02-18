@@ -51,8 +51,8 @@ eva
 ### ticket
 linda
 
-### ticket 
-ali
+### social contact page 
+ali: This is going to be a page where users can access the developers contact information like email, phone numbers, and youtube vdeos/channel
 
 ### Suggestions
 
