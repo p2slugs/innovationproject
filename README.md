@@ -48,7 +48,7 @@ sophie
 ### Ingredients Page
 eva: Users can now deselect the "hearty durian" ingredient, and select ingredients from the bottom section which will get highlighted in the right column. The buttons turn green when you select them, and all of this was done using Javascript functions and events. It aligns with the College Board requirements and our goals because we need to have more algorithmns, procedures, and use of lists in our project. These functions are a step towards that and I also begun working with a list of ingredients at the very bottom of the page. I'm learning how to use Jinja with lists and can get elements out of the list using indexes.
 
-[Ticket](), [Code]()
+[Ticket](), [Code](), [Runtime Page]()
 
 ### ticket
 linda
