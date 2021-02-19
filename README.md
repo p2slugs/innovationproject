@@ -25,7 +25,7 @@ eva: Users can now deselect the "hearty durian" ingredient, and select ingredien
 [See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-55130180), [See Code](https://github.com/p2slugs/recipebox/commit/15b8e762d4e805d83618d2d3f87f126c3c4c0efb), [See Runtime Page on Website](http://recipebox.cf/ingredients1)
 
 ### ticket
-linda: Users can now access the Terms and Conditions page, which tells the customer what will be legally required of them if they subscribe to our service. Including sections such as definitions, acknowledgements, disclaimers and disputes resolutions, the T&C agreement protects our team and helps us developers to notify and communicate with users in advance. 
+linda: Users can now access the Terms and Conditions page, which tells the customer what will be legally required of them if they subscribe to our service. Including sections such as definitions, acknowledgements, disclaimers and disputes resolutions, the T&C agreement protects our team and helps us developers to notify and communicate with users in advance. It aligns with the College Board requirements and our goals because we plan to implement more algorithmns, procedures, and use of lists in our project.
 
 [See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-55262851), [See Code](https://github.com/p2slugs/recipebox/blob/main/templates/terms.html), [See Generated Terms and Conditions](https://www.termsfeed.com/live/2590dfed-f4b7-4b3a-b46f-559db16d0ac0)
 
