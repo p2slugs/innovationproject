@@ -12,6 +12,32 @@ You can access the website from our runtime link below or run our code on your o
 
 scroll down for 15pts review (Friday 2/18) ↓
 
+## Review Via READme - 2/18 ✔️
+
+## Big Tickets
+
+### HTML
+sophie
+
+### Ingredients Page
+eva: Users can now deselect the "hearty durian" ingredient, and select ingredients from the bottom section which will get highlighted in the right column. The buttons turn green when you select them, and all of this was done using Javascript functions and events. It aligns with the College Board requirements and our goals because we need to have more algorithmns, procedures, and use of lists in our project. These functions are a step towards that and I also begun working with a list of ingredients at the very bottom of the page. I'm learning how to use Jinja with lists and can get elements out of the list using indexes.
+
+[See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-55130180), [See Code](https://github.com/p2slugs/recipebox/commit/15b8e762d4e805d83618d2d3f87f126c3c4c0efb), [See Runtime Page on Website](http://recipebox.cf/ingredients1)
+
+### ticket
+linda
+
+### social contact page 
+ali: This is going to be a page where users can access the developers contact information like email, phone numbers, and youtube vdeos/channel
+
+## College Board and Crossover visibility / Suggestions
+Our project is aligning with the Collge Board requirements, as we are starting to implement more algorithmns, procedures, and lists into our project. We will continue to focus on these things each week. During the crossover week, we got feedback that we should focus on the CSS on some of our underdeveloped pages, spread out the workload better, organize our files with sub-folders, and add more comments to our code. These are all our focuses and futhermore for Collegeboard, our inputs/outputs with our submit page can be developed more which are ideas for the coming weeks. 
+
+[Our Report From Crossover Team](https://docs.google.com/document/d/1a8aOv7v6ZQF4VBPI6NaddAspdjPGlw_P2BT_Aga_Bxg/edit?usp=sharing)
+
+## Code Review Focus
+See our tickets listed above with links to code. ^
+
 ## Who am I in computer science?
 ### Ali Saad
 I have solidified my basics in python coding and am working to achieve mastery.
@@ -37,29 +63,6 @@ I am confident in using Jinja, Flask templates, app routes, and variables.
 I have designed frontends with HTML, CSS, and Bootstrap.
 I have a basic understanding of Python.
 I have worked with REST APIS and have a basic understanding of how they work.
-
-## Review Via READme Guidance - 2/18
-
-## Big Tickets
-
-### HTML
-sophie
-
-### Ingredients Page
-eva
-
-### ticket
-linda
-
-### social contact page 
-ali: This is going to be a page where users can access the developers contact information like email, phone numbers, and youtube vdeos/channel
-
-### Suggestions
-
-### College Board and Crossover visibility
-
-### Code Review Focus
-See our tickets listed above with links to code.
 
 ## Big Tickets Week of February 8 - Crossover
 ### Ingredients Page
