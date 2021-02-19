@@ -16,10 +16,8 @@ scroll down for 15pts review (Friday 2/18) ↓
 
 ## Big Tickets
 
-### HTML & CSS
-sophie: gave home page a new look (updated the css and html). we now have more color, a website that has larger text and more elements (rather than the previous minimalist look), and a nicer dark mode appearance. as you can see on the repl sample code, we now have an webpage icon on the tab and a different looking cursor and scrollbar. since this is a completely new html and css code, I am working on repl as I feel that it is less risky to make sure I don't lose any important information. I've been learning more about css elements and commands, as well as javascripts.
-
-[scrum board ticket](https://github.com/p2slugs/recipebox/projects/1#card-54300634), [code on repl](https://repl.it/@sophieleeajh/recipebox#index.html), [view site on repl - LINKS DO NOT WORK B/C I ONLY WORKED ON HOMEPAGE THIS WEEK](https://recipebox.sophieleeajh.repl.co/)
+### HTML
+sophie
 
 ### Ingredients Page
 eva: Users can now deselect the "hearty durian" ingredient, and select ingredients from the bottom section which will get highlighted in the right column. The buttons turn green when you select them, and all of this was done using Javascript functions and events. It aligns with the College Board requirements and our goals because we need to have more algorithmns, procedures, and use of lists in our project. These functions are a step towards that and I also begun working with a list of ingredients at the very bottom of the page. I'm learning how to use Jinja with lists and can get elements out of the list using indexes.
@@ -30,12 +28,12 @@ eva: Users can now deselect the "hearty durian" ingredient, and select ingredien
 linda
 
 ### social contact page 
-ali: This is going to be a page where users can access the developers contact information like email, phone numbers, and youtube vdeos/channel
+ali: This is going to be a page where users can access the developers contact information like email, phone numbers, and youtube videos/channel. It is a good addition to the website because it gives information about us and allows the users to contact us. It connects to the users and hopefully allows our website to have a greater impact on the web and in the community. This aligns with the College Board requirement, the impact of computing. It shows how we have coded something that can have an outreach to people.
 
-[See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-54727793), [See Code](), [See Runtime Page](http://recipebox.cf/contact)
+[See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-54727793), [See Code](https://github.com/p2slugs/recipebox/blob/main/templates/contact.html), [See Runtime Page](http://recipebox.cf/contact)
 
 ## College Board and Crossover visibility / Suggestions
-Our project is aligning with the Collge Board requirements, as we are starting to implement more algorithmns, procedures, and lists into our project. We will continue to focus on these things each week. During the crossover week, we got feedback that we should focus on the CSS on some of our underdeveloped pages, spread out the workload better, organize our files with sub-folders, and add more comments to our code. These are all our focuses and futhermore for Collegeboard, our inputs/outputs with our submit page can be developed more which are ideas for the coming weeks. 
+Our project is aligning with the Collge Board requirements, as we are starting to implement more algorithmns, procedures, and lists into our project. We will continue to focus on these things each week. During the crossover week, we got feedback that we should focus on the CSS on some of our underdeveloped pages, spread out the workload better, organize our files with sub-folders, and add more comments to our code. These are all our focuses and futhermore for Collegeboard, our inputs/outputs with our submit page can be developed more which are ideas for the coming weeks. Our project is also meeting the College Board Project Requirements by showing an impact of computing with the contact page, showing computing systems and newtworks functioning on the internet with the runtime link, showing creative development throughout our programming process together overtime, showing programming with UI to design/present to the user, and showing data, algorithmns, and programming to create code as we develop our recipe database, ingredients page, and user submit form.
 
 [Our Report From Crossover Team](https://docs.google.com/document/d/1a8aOv7v6ZQF4VBPI6NaddAspdjPGlw_P2BT_Aga_Bxg/edit?usp=sharing)
 
