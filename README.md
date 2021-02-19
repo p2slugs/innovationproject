@@ -12,7 +12,7 @@ You can access the website from our runtime link below or run our code on your o
 
 scroll down for 15pts review (Friday 2/18) ↓
 
-## Review Via READme Guidance - 2/18
+## Review Via READme - 2/18
 
 ## Big Tickets
 
