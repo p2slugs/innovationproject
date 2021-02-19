@@ -18,6 +18,7 @@ scroll down for 15pts review (Friday 2/18) ↓
 
 ### HTML & CSS
 sophie: gave home page a new look (updated the css and html). we now have more color, a website that has larger text and more elements (rather than the previous minimalist look), and a nicer dark mode appearance. as you can see on the repl sample code, we now have an webpage icon on the tab and a different looking cursor and scrollbar. since this is a completely new html and css code, I am working on repl as I feel that it is less risky to make sure I don't lose any important information. I've been learning more about css elements and commands, as well as javascripts.
+
 [scrum board ticket](https://github.com/p2slugs/recipebox/projects/1#card-54300634), [code on repl](https://repl.it/@sophieleeajh/recipebox#index.html), [view site on repl - LINKS DO NOT WORK B/C I ONLY WORKED ON HOMEPAGE THIS WEEK](https://recipebox.sophieleeajh.repl.co/)
 
 ### Ingredients Page
