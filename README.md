@@ -35,7 +35,7 @@ ali: This is going to be a page where users can access the developers contact in
 ## College Board and Crossover visibility / Suggestions
 Our project is aligning with the Collge Board requirements, as we are starting to implement more algorithmns, procedures, and lists into our project. We will continue to focus on these things each week. During the crossover week, we got feedback that we should focus on the CSS on some of our underdeveloped pages, spread out the workload better, organize our files with sub-folders, and add more comments to our code. These are all our focuses and futhermore for Collegeboard, our inputs/outputs with our submit page can be developed more which are ideas for the coming weeks. Our project is also meeting the College Board Project Requirements by showing an impact of computing with the contact page, showing computing systems and newtworks functioning on the internet with the runtime link, showing creative development throughout our programming process together overtime, showing programming with UI to design/present to the user, and showing data, algorithmns, and programming to create code as we develop our recipe database, ingredients page, and user submit form.
 
-[Our Report From Crossover Team](https://docs.google.com/document/d/1a8aOv7v6ZQF4VBPI6NaddAspdjPGlw_P2BT_Aga_Bxg/edit?usp=sharing)
+[Our AP CSP Requirements Reflection](https://docs.google.com/document/d/173X2eir2LUV-Z-eAH6PlOcD8ZvoSYqaGP_Du7umYL2w/edit), [Our Report From Crossover Team](https://docs.google.com/document/d/1a8aOv7v6ZQF4VBPI6NaddAspdjPGlw_P2BT_Aga_Bxg/edit?usp=sharing)
 
 ## Code Review Focus
 See our tickets listed above with links to code. ^
