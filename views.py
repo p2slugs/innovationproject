@@ -130,6 +130,10 @@ def ingredients1():
 def customersupport():
     return render_template('customersupport.html')
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
 
 
 
