@@ -16,8 +16,9 @@ scroll down for 15pts review (Friday 2/18) ↓
 
 ## Big Tickets
 
-### HTML
-sophie
+### HTML & CSS
+sophie: gave home page a new look (updated the css and html). we now have more color, a website that has larger text and more elements (rather than the previous minimalist look), and a nicer dark mode appearance. as you can see on the repl sample code, we now have an webpage icon on the tab and a different looking cursor and scrollbar. since this is a completely new html and css code, I am working on repl as I feel that it is less risky to make sure I don't lose any important information. I've been learning more about css elements and commands, as well as javascripts.
+[scrum board ticket](https://github.com/p2slugs/recipebox/projects/1#card-54300634), [code on repl](https://repl.it/@sophieleeajh/recipebox#index.html), [view site on repl - LINKS DO NOT WORK B/C I ONLY WORKED ON HOMEPAGE THIS WEEK](https://recipebox.sophieleeajh.repl.co/)
 
 ### Ingredients Page
 eva: Users can now deselect the "hearty durian" ingredient, and select ingredients from the bottom section which will get highlighted in the right column. The buttons turn green when you select them, and all of this was done using Javascript functions and events. It aligns with the College Board requirements and our goals because we need to have more algorithmns, procedures, and use of lists in our project. These functions are a step towards that and I also begun working with a list of ingredients at the very bottom of the page. I'm learning how to use Jinja with lists and can get elements out of the list using indexes.
