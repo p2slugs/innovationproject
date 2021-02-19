@@ -56,9 +56,8 @@ linda
 ### social contact page 
 ali: This is going to be a page where users can access the developers contact information like email, phone numbers, and youtube vdeos/channel
 
-### Suggestions
-
-### College Board and Crossover visibility
+### College Board and Crossover visibility / Suggestions
+Our project is aligning with the Collge Board requirements, as we are starting to implement more algorithmns, procedures, and lists into our project. We will continue to focus on these things each week. During the crossover week, we got feedback that we should focus on the CSS on some of our underdeveloped pages, spread out the workload better, organize our files with sub-folders, and add more comments to our code. These are all our focuses and futhermore for Collegeboard, our inputs/outputs with our submit page can be developed more which are ideas for the coming weeks. 
 
 ### Code Review Focus
 See our tickets listed above with links to code.
