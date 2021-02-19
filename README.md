@@ -27,7 +27,7 @@ eva: Users can now deselect the "hearty durian" ingredient, and select ingredien
 ### ticket
 linda
 
-[See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1), [See Code](https://github.com/p2slugs/recipebox/blob/main/templates/terms.html), [See Generated Terms and Conditions](https://www.termsfeed.com/live/2590dfed-f4b7-4b3a-b46f-559db16d0ac0)
+[See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-55262851), [See Code](https://github.com/p2slugs/recipebox/blob/main/templates/terms.html), [See Generated Terms and Conditions](https://www.termsfeed.com/live/2590dfed-f4b7-4b3a-b46f-559db16d0ac0)
 
 ### social contact page 
 ali: This is going to be a page where users can access the developers contact information like email, phone numbers, and youtube videos/channel. It is a good addition to the website because it gives information about us and allows the users to contact us. It connects to the users and hopefully allows our website to have a greater impact on the web and in the community. This aligns with the College Board requirement, the impact of computing. It shows how we have coded something that can have an outreach to people.
