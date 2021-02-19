@@ -36,7 +36,7 @@ Our project is aligning with the Collge Board requirements, as we are starting t
 [Our Report From Crossover Team](https://docs.google.com/document/d/1a8aOv7v6ZQF4VBPI6NaddAspdjPGlw_P2BT_Aga_Bxg/edit?usp=sharing)
 
 ### Code Review Focus
-See our tickets listed above with links to code.
+See our tickets listed above with links to code. ^
 
 ## Who am I in computer science?
 ### Ali Saad
