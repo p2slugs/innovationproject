@@ -10,6 +10,7 @@ import sqlite3 as sl3
 import requests
 
 
+
 @app.route('/generator', methods=['GET','POST'])
 def generator():
     # call to random joke web api
@@ -101,9 +102,3 @@ def customersupport():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
-
-
-
-
-
-

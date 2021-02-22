@@ -1,3 +1,4 @@
+<!-- Front end HTML Code for CRUD Database -->
 
 <!DOCTYPE html>
 {% extends "base.html" %} {% block title %} Add Recipes
@@ -18,7 +19,7 @@
     {% for row in table %}<!-- build elements in table -->
 
     <tr>
-        <th>{{ row['recipenum'] }}</th>
+        <th>{{ row['recipe_num'] }}</th>
         <th>{{ row['recipe_name'] }}</th>
         <th>{{ row['ingredients'] }}</th>
         <th>{{ row['steps'] }}</th>
@@ -35,66 +36,29 @@
         <table>
             <tr>
                 <!--th is a header in a table -->
-                <th>Recipe Name</th>
-                <th>Ingredients</th>
-                <th>Steps</th>
-                <th>Creator (Your Name)</th>
+                <th><label for="recipe_name">Recipe Name</label></th>
+                <th><label for="ingredients">Ingredients</label></th>
+                <th><label for="steps">Steps</label></th>
+                <th><label for="creator">Creator (Your Name)</label></th>
             </tr>
             <tr>
-                <th><input type="text" name="Recipe Name">
-                    <br><br><br><br><br><br><br><br><br><br>
+                <th>
+                    <input type="text" name="recipe_name" id="recipe_name" required>
                 </th>
                 <th>
-                    1. <input type="text" name="Ingredients">
-                    <br>
-                    2. <input type="text" name="Ingredients">
-                    <br>
-                    3. <input type="text" name="Ingredients">
-                    <br>
-                    4. <input type="text" name="Ingredients">
-                    <br>
-                    5. <input type="text" name="Ingredients">
-                    <br>
-                    6. <input type="text" name="Ingredients">
-                    <br>
-                    7. <input type="text" name="Ingredients">
-                    <br>
-                    8. <input type="text" name="Ingredients">
-                    <br>
-                    9. <input type="text" name="Ingredients">
-                    <br>
-                    10. <input type="text" name="Ingredients">
-                    <br>
+                    <input type="text" name="ingredients" id="ingredients" placeholder="ex: eggs, sugar, flour" required>
                 </th>
-                <th>1. <input type="text" name="Steps">
-                    <br>
-                    2. <input type="text" name="Steps">
-                    <br>
-                    3. <input type="text" name="Steps">
-                    <br>
-                    4. <input type="text" name="Steps">
-                    <br>
-                    5. <input type="text" name="Steps">
-                    <br>
-                    6. <input type="text" name="Steps">
-                    <br>
-                    7. <input type="text" name="Steps">
-                    <br>
-                    8. <input type="text" name="Steps">
-                    <br>
-                    9. <input type="text" name="Steps">
-                    <br>
-                    10. <input type="text" name="Steps">
-                    <br>
+                <th>
+                    <input type="text" name="steps" id="steps" placeholder="ex: 1. Preheat oven to 375..." required>
                 </th>
-                <th><input type="text" name="Creator">
-                    <br><br><br><br><br><br><br><br><br><br>
+                <th>
+                    <input type="text" name="creator" id="creator" placeholder="First Last" required>
                 </th>
             </tr>
 
         </table>
         <br>
-        <input type="submit" value="Create" style="margin-right: 250px;">
+        <input type="submit" value="Create" style="margin-right: 85px;">
     </form>
 
 </div>
@@ -105,7 +69,7 @@
 
 </div>
 
-</p>
+
 <h1>Update</h1>
 </p>
 <h1>Delete</h1>
