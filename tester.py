@@ -6,12 +6,10 @@ p1 = { "name":"John", "age":30, "city":"New York"}
 p2 = { "name":"Betty", "age":10, "city":"Alaska"}
 p3 = { "name":"George", "age":40, "city":"San Diego"}
 p4 = { "name":"Eva", "age":17, "city":"Seattle"}
-p5 = { "name":"Sophie", "age":17, "city":"San Fran"}
-p6 = { "name":"Linda", "age":17, "city":"London"}
-p7 = { "name":"Ali", "age":17, "city":"Paris"}
+
 
 # a list of dictionaries
-list_of_people = [p1, p2, p3, p4, p5, p6, p7]
+list_of_people = [p1, p2, p3, p4]
 # write some code to Print List of people one by one
 print("List of people")
 print(type(list_of_people))
@@ -56,7 +54,7 @@ for person in unwind:
     print(person['name'] + "," + str(person['age']) + "," + person['city'])
 print()
 
-#our original thinking was like the above
+#this is what i tried doing first for the unwind section but it was just doing the same as the above section
 #x = json.loads(json_people)
 #people = x['people']
 #for person in people:

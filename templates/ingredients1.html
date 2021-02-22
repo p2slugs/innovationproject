@@ -10,6 +10,18 @@ Recipe Generator
 <!-- <p style="text-align: right" onclick="drawScore()">Your ingredients: {{score}}</p> -->
 <p style="text-align: center">Ingredients</p>
 <p style="text-align: center">Click "collect" on an ingredient to collect it!</p>
+<p style="text-align: right">Your Ingredients: </p>
+
+<aside style="float: right">
+    <p id="hearty">- Hearty Durian</p>
+    <p id="palm">- Palm Fruit</p>
+    <p id="apple">- Apple</p>
+    <p id="wildberry">- Wildberry</p>
+    <p id="hydromelon">- Hydromelon</p>
+    <p id="spicy_pepper">- Spicy Pepper</p>
+    <p id="voltfruit">- Voltfruit</p>
+    <p id="bighearty_radish">- Big Hearty Radish</p>
+</aside>
 
 
 
@@ -27,8 +39,42 @@ Recipe Generator
         <p>price: {{price}}</p>
         <!-- <button id="collect" onclick="changeColor()">Collect</button> -->
         <button type="button" class="btn btn-secondary clickhere" onclick="changeColor()" id="collectbutton">Collect</button>
-        <button type="button" class="btn btn-secondary clickhere" onclick="changeColor()" id="collectedbutton" style= "display: none;">Collected</button>
+        <button type="button" class="btn btn-secondary clickhere" onclick="revert()" id="collectedbutton" style= "display: none;">Collected</button>
     </article>
+
+{% endfor %}
+
+
+<br>
+<br>
+<br>
+
+<p>----------------------------------------------------------------Work In Progress----------------------------------------------------------------</p>
+<br>
+<br>
+<button type="button" class="btn btn-secondary container li" onclick="myOne()" id="one" style="float: center;">Hearty Durian</button>
+<button type="button" class="btn btn-secondary container li" onclick="myTwo()" id="two" style="text-align: center;">Palm Fruit</button>
+<button type="button" class="btn btn-secondary container li" onclick="myThree()" id="three" style="text-align: center;">Apple</button>
+<button type="button" class="btn btn-secondary container li" onclick="myFour()" id="four" style="text-align: center;">Wildberry</button>
+<button type="button" class="btn btn-secondary container li" onclick="myFive()" id="five" style="float: center;">Hydromelon</button>
+<button type="button" class="btn btn-secondary container li" onclick="mySix()" id="six" style="text-align: center;">Spicy Pepper</button>
+<button type="button" class="btn btn-secondary container li" onclick="mySeven()" id="seven" style="text-align: center;">Voltfruit</button>
+<button type="button" class="btn btn-secondary container li" onclick="myEight()" id="eight" style="text-align: center;">Big Hearty Radish</button>
+<br>
+<br>
+<br>
+<aside style="text-align: right;">
+    <p>Amount:</p>
+</aside>
+{% set myList = ["hearty_durian", "palm_fruit", "apple", "wildberry"] %}
+<br>
+<p>Ingredients List:</p>
+{{myList}}
+<p>Ingredients:</p>
+{{ myList[0] ~ ',' }} {{ myList[1] ~ ',' }} {{ myList[2] ~ ',' }} {{ myList[3] }}
+<br>
+<br>
+
 
 
 
@@ -41,8 +87,53 @@ Recipe Generator
         document.getElementById("collectedbutton").style.display = "block";
         document.getElementById("collectedbutton").style.color = "green";
     }
+
+     function revert() {
+        document.getElementById("collectedbutton").style.display = "none";
+        document.getElementById("collectbutton").style.display = "block";
+        document.getElementById("id").style.backgroundColor = "white";
+    }
+
+    function myOne() {
+        document.getElementById("one").style.backgroundColor = "lightgreen";
+        document.getElementById("hearty").style.backgroundColor = "lightgreen";
+    }
+
+    function myTwo() {
+        document.getElementById("two").style.backgroundColor = "lightgreen";
+        document.getElementById("palm").style.backgroundColor = "lightgreen";
+    }
+
+    function myThree() {
+        document.getElementById("three").style.backgroundColor = "lightgreen";
+        document.getElementById("apple").style.backgroundColor = "lightgreen";
+    }
+
+    function myFour() {
+        document.getElementById("four").style.backgroundColor = "lightgreen";
+        document.getElementById("wildberry").style.backgroundColor = "lightgreen";
+    }
+
+    function myFive() {
+        document.getElementById("five").style.backgroundColor = "lightgreen";
+        document.getElementById("hydromelon").style.backgroundColor = "lightgreen";
+    }
+
+    function mySix() {
+        document.getElementById("six").style.backgroundColor = "lightgreen";
+        document.getElementById("spicy_pepper").style.backgroundColor = "lightgreen";
+    }
+
+    function mySeven() {
+        document.getElementById("seven").style.backgroundColor = "lightgreen";
+        document.getElementById("voltfruit").style.backgroundColor = "lightgreen";
+    }
+
+    function myEight() {
+        document.getElementById("eight").style.backgroundColor = "lightgreen";
+        document.getElementById("bighearty_radish").style.backgroundColor = "lightgreen";
+    }
+
 </script>
 
-
-{% endfor %}
 {% endblock %}
