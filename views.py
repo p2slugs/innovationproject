@@ -82,38 +82,6 @@ def process():
 def easteregg():
     return render_template('easteregg.html')
 
-@app.route('/APjournals')
-def APjournals():
-    return render_template('APjournals.html')
-
-@app.route('/collegetargets')
-def collegetargets():
-    return render_template('collegetargets.html')
-
-@app.route('/profiles')
-def profiles():
-    return render_template('profiles.html')
-
-@app.route('/egg_home')
-def egg_home():
-    return render_template('egg_home.html')
-
-@app.route('/evaprofile')
-def evaprofile():
-    return render_template('evaprofile.html')
-
-@app.route('/lindaprofile')
-def lindaprofile():
-    return render_template('lindaprofile.html')
-
-@app.route('/sophieprofile')
-def sophieprofile():
-    return render_template('sophieprofile.html')
-
-@app.route('/aliprofile')
-def aliprofile():
-    return render_template('aliprofile.html')
-
 @app.route('/getupdates')
 def getupdates():
     return render_template('getupdates')
