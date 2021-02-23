@@ -4,10 +4,14 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 
 import ingredients
-from __init__ import app
+from __init__ import app,db,User
 import aboutus
 import sqlite3 as sl3
 import requests
+
+
+# standard flask view support
+from flask import render_template, request, redirect, url_for
 
 
 
@@ -63,6 +67,23 @@ def sign():
 @app.route('/form')
 def form():
     return render_template('form.html')
+
+# create/add a new record to the table
+@app.route('/signup/', methods=["POST"])
+def signup():
+    name = request.form['name']
+    email = request.form['email']
+    phone = request.form['phone']
+    password = request.form['password']
+
+
+    new = User(name, email, phone, password)
+    db.session.add(new)
+    db.session.commit()
+
+    #here for now, should go to scores eventually.
+    return redirect(url_for('form'))
+
 
 @app.route('/index')
 def index():
