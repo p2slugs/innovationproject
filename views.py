@@ -5,6 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 import ingredients
 from __init__ import app, db, User
+from addpython import app, db, Recipe
 import aboutus
 import sqlite3 as sl3
 import requests
@@ -35,9 +36,9 @@ def recipes():
 def p_overview():
     return render_template('overview.html')
 
-@app.route('/add')
-def add():
-    return render_template('add.html')
+@app.route('/addtable')
+def addtable():
+    return render_template('addtable.html')
 
 @app.route('/about')
 def about():
@@ -82,6 +83,19 @@ def signup():
     #here for now, should go to scores eventually.
     return redirect(url_for('form'))
 
+#CRUD database add recipes
+@app.route('/addrecipe/', methods=["POST"])
+def addrecipe():
+    recipename = request.form['recipename']
+    youringredients = request.form['youringredients']
+    steps = request.form['steps']
+    creator = request.form['creator']
+
+    new = Recipe(recipename, youringredients, steps, creator)
+    db.session.add(new)
+    db.session.commit()
+
+    return redirect(url_for('addtable'))
 
 @app.route('/index')
 def index():

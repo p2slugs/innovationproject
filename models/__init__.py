@@ -16,7 +16,7 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 
 # declare the users database model
-class Recipes(db.Model):
+class Users(db.Model):
     recipe_num = db.Column(db.Integer, primary_key=True)
     recipe_name = db.Column(db.String(255), unique=True, nullable=False)
     creator = db.Column(db.String(255), unique=True, nullable=False)
