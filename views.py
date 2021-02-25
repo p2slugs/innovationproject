@@ -9,7 +9,6 @@ import aboutus
 import sqlite3 as sl3
 import requests
 
-
 # standard flask view support
 from flask import render_template, request, redirect, url_for
 
@@ -82,7 +81,25 @@ def signup():
     db.session.commit()
 
     #here for now, should go to scores eventually.
-    return redirect(url_for('form'))
+    return redirect(url_for('login'))
+
+
+# if login url, show phones table only
+@app.route('/login/', methods=["GET", "POST"])
+def login():
+    if request.form:
+        # validation should be in HTML
+        user_dict = {
+            'name': request.form.get("txtUsername"),
+            'email': request.form.get("txtEmail"),
+            'phone': request.form.get("txtPhone"),
+            'password': request.form.get("txtPassword")
+        }
+        if model_login(user_dict):
+            return redirect(url_for('base'))
+
+    # if not logged in, show the login page
+    return render_template("login.html")
 
 
 @app.route('/index')
