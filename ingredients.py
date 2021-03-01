@@ -69,7 +69,7 @@ def spicy_pepper():
     return profile
 
 def big_hearty_radish():
-    box = "box7"
+    box = "box8"
     box2 = "hdg"
     ingredient = "big hearty radish"
     category = "vegetable"
