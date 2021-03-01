@@ -1,6 +1,7 @@
 #This page is our views page in git which establishes app routes and renders html
 #It is has the main navigation for our website
 from flask import Flask, render_template, request, redirect, url_for
+from flask_login import login_user, current_user
 from flask_sqlalchemy import SQLAlchemy
 
 import ingredients
@@ -11,7 +12,6 @@ import requests
 
 # standard flask view support
 from flask import render_template, request, redirect, url_for
-
 
 
 @app.route('/generator', methods=['GET','POST'])
@@ -96,10 +96,27 @@ def login():
             'password': request.form.get("txtPassword")
         }
         if model_login(user_dict):
-            return redirect(url_for('base'))
+            return render_template('base.html')
+        else:
+            return "failed login"
 
     # if not logged in, show the login page
     return render_template("login.html")
+
+# if login url, show phones table only
+def model_login(user_dict):
+    # Bypass if user is logged in
+    #!
+    if current_user.is_authenticated:
+        return True
+    # if not already logged in, show the login form
+    print(user_dict['email'])
+    user_record = User.query.filter_by(name=user_dict['name']).first()
+    if user_record and User.check_password(user_record, user_dict['password']):
+        login_user(user_record)
+        return True
+    # login failed
+    return False
 
 
 @app.route('/index')
@@ -140,3 +157,7 @@ def customersupport():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/terms')
+def terms():
+    return render_template('terms.html')
