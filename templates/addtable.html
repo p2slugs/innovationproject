@@ -19,9 +19,9 @@
     {% for row in table %}<!-- build elements in table -->
 
     <tr>
-        <th>{{ row['recipe_num'] }}</th>
-        <th>{{ row['recipe_name'] }}</th>
-        <th>{{ row['ingredients'] }}</th>
+        <th>{{ row['ID'] }}</th>
+        <th>{{ row['recipename'] }}</th>
+        <th>{{ row['youringredients'] }}</th>
         <th>{{ row['steps'] }}</th>
         <th>{{ row['creator'] }}</th>
     </tr>
@@ -32,21 +32,21 @@
 <br>
 <h1>Create</h1>
 <div class = "add">
-    <form mehtod = 'POST' ID = 'myForm' >
+    <form method = 'POST' ID = 'myForm' action={{url_for('.addrecipe')}}>
         <table>
             <tr>
                 <!--th is a header in a table -->
-                <th><label for="recipe_name">Recipe Name</label></th>
-                <th><label for="ingredients">Ingredients</label></th>
+                <th><label for="recipename">Recipe Name</label></th>
+                <th><label for="youringredients">Ingredients</label></th>
                 <th><label for="steps">Steps</label></th>
                 <th><label for="creator">Creator (Your Name)</label></th>
             </tr>
             <tr>
                 <th>
-                    <input type="text" name="recipe_name" id="recipe_name" required>
+                    <input type="text" name="recipename" id="recipename" placeholder="ex: Blueberry Waffles" required>
                 </th>
                 <th>
-                    <input type="text" name="ingredients" id="ingredients" placeholder="ex: eggs, sugar, flour" required>
+                    <input type="text" name="youringredients" id="youringredients" placeholder="ex: eggs, sugar, flour" required>
                 </th>
                 <th>
                     <input type="text" name="steps" id="steps" placeholder="ex: 1. Preheat oven to 375..." required>
@@ -55,7 +55,6 @@
                     <input type="text" name="creator" id="creator" placeholder="First Last" required>
                 </th>
             </tr>
-
         </table>
         <br>
         <input type="submit" value="Create" style="margin-right: 85px;">
