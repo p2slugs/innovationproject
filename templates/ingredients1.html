@@ -8,9 +8,18 @@ Recipe Generator
 {% block content %}
 
 <!-- <p style="text-align: right" onclick="drawScore()">Your ingredients: {{score}}</p> -->
-<p style="text-align: center">Ingredients</p>
-<p style="text-align: center">Click "collect" on an ingredient to collect it!</p>
-<p style="text-align: right">Your Ingredients: </p>
+<p style="text-align: center">Ingredients Inventory</p>
+<p style="text-align: center">Click on an ingredient to buy it!</p>
+<form action="/ingredients1">
+    <input type="submit" value="Reset" ></form>
+<br>
+<p style="text-align: right;">Total Dollars: $ <button id="theirmoney" style="text-align: right;"></button></p>
+<p id="user" style="text-align: right;"></p>
+<p style="text-align: right">Amount: <button id="amount" style="text-align: right"></button></p>
+
+<br>
+
+
 
 <aside style="float: right">
     <p id="hearty">- Hearty Durian</p>
@@ -23,7 +32,20 @@ Recipe Generator
     <p id="bighearty_radish">- Big Hearty Radish</p>
 </aside>
 
+<button type="button" class="btn btn-secondary container li" onclick="myOne()" id="one" style="float: center;">Hearty Durian</button>
+<button type="button" class="btn btn-secondary container li" onclick="myTwo()" id="two" style="text-align: center;">Palm Fruit</button>
+<button type="button" class="btn btn-secondary container li" onclick="myThree()" id="three" style="text-align: center;">Apple</button>
+<button type="button" class="btn btn-secondary container li" onclick="myFour()" id="four" style="text-align: center;">Wildberry</button>
+<button type="button" class="btn btn-secondary container li" onclick="myFive()" id="five" style="float: center;">Hydromelon</button>
+<button type="button" class="btn btn-secondary container li" onclick="mySix()" id="six" style="text-align: center;">Spicy Pepper</button>
+<button type="button" class="btn btn-secondary container li" onclick="mySeven()" id="seven" style="text-align: center;">Voltfruit</button>
+<button type="button" class="btn btn-secondary container li" onclick="myEight()" id="eight" style="text-align: center;">Big Hearty Radish</button>
+<br>
+<br>
+<br>
 
+
+<p style="text-align:center"><< Ingredient Information >></p>
 
     {% for ingredients in ingredients: %} <!-- for loop displays the data -->
     {% set box = ingredients["box"] %}
@@ -38,48 +60,39 @@ Recipe Generator
         <p>hearts: {{hearts}}</p>
         <p>price: {{price}}</p>
         <!-- <button id="collect" onclick="changeColor()">Collect</button> -->
-        <button type="button" class="btn btn-secondary clickhere" onclick="changeColor()" id="collectbutton">Collect</button>
-        <button type="button" class="btn btn-secondary clickhere" onclick="revert()" id="collectedbutton" style= "display: none;">Collected</button>
+        <!--<button type="button" class="btn btn-secondary clickhere" onclick="changeColor()" id="collectbutton">Collect</button>
+        <button type="button" class="btn btn-secondary clickhere" onclick="revert()" id="collectedbutton" style= "display: none;">Collected</button>-->
     </article>
 
 {% endfor %}
 
 
-<br>
-<br>
-<br>
-
-<p>----------------------------------------------------------------Work In Progress----------------------------------------------------------------</p>
-<br>
-<br>
-<button type="button" class="btn btn-secondary container li" onclick="myOne()" id="one" style="float: center;">Hearty Durian</button>
-<button type="button" class="btn btn-secondary container li" onclick="myTwo()" id="two" style="text-align: center;">Palm Fruit</button>
-<button type="button" class="btn btn-secondary container li" onclick="myThree()" id="three" style="text-align: center;">Apple</button>
-<button type="button" class="btn btn-secondary container li" onclick="myFour()" id="four" style="text-align: center;">Wildberry</button>
-<button type="button" class="btn btn-secondary container li" onclick="myFive()" id="five" style="float: center;">Hydromelon</button>
-<button type="button" class="btn btn-secondary container li" onclick="mySix()" id="six" style="text-align: center;">Spicy Pepper</button>
-<button type="button" class="btn btn-secondary container li" onclick="mySeven()" id="seven" style="text-align: center;">Voltfruit</button>
-<button type="button" class="btn btn-secondary container li" onclick="myEight()" id="eight" style="text-align: center;">Big Hearty Radish</button>
-<br>
-<br>
-<br>
-<aside style="text-align: right;">
+<!--<aside style="text-align: right;">
     <p>Amount:</p>
-</aside>
+</aside>-->
+
 {% set myList = ["hearty_durian", "palm_fruit", "apple", "wildberry"] %}
 <br>
-<p>Ingredients List:</p>
+<!--<p>Ingredients List:</p>
 {{myList}}
 <p>Ingredients:</p>
 {{ myList[0] ~ ',' }} {{ myList[1] ~ ',' }} {{ myList[2] ~ ',' }} {{ myList[3] }}
 <br>
-<br>
+<br>-->
 
 
 
 
 <script type="text/javascript">
-    var score = 0;
+
+    var score = 0
+    document.getElementById('amount').innerHTML = score;
+
+    var money = 50
+    document.getElementById('theirmoney').innerHTML = money;
+
+    var user = prompt("What is your name?");
+    document.getElementById('user').innerHTML = user += "'s Ingredients:";
 
     function changeColor() {
         document.getElementById("id").style.backgroundColor = "lightgrey";
@@ -97,41 +110,163 @@ Recipe Generator
     function myOne() {
         document.getElementById("one").style.backgroundColor = "lightgreen";
         document.getElementById("hearty").style.backgroundColor = "lightgreen";
+        if (money < 1) {
+
+            document.getElementById('theirmoney').innerHTML = 0;
+
+        }
+        else {
+
+            console.log(++score);
+            document.getElementById('amount').innerHTML = score;
+            console.log(--money);
+            document.getElementById('theirmoney').innerHTML = money;
+
+        }
     }
 
     function myTwo() {
         document.getElementById("two").style.backgroundColor = "lightgreen";
         document.getElementById("palm").style.backgroundColor = "lightgreen";
+        if (money < 4) {
+
+            document.getElementById('theirmoney').innerHTML = 0;
+
+        }
+        else {
+
+            console.log(++score);
+            document.getElementById('amount').innerHTML = score;
+            console.log(--money);
+            console.log(--money);
+            console.log(--money);
+            console.log(--money);
+            document.getElementById('theirmoney').innerHTML = money;
+
+        }
     }
 
     function myThree() {
         document.getElementById("three").style.backgroundColor = "lightgreen";
         document.getElementById("apple").style.backgroundColor = "lightgreen";
+        if (money < 1) {
+
+            document.getElementById('theirmoney').innerHTML = 0;
+
+        }
+        else {
+
+            console.log(++score);
+            document.getElementById('amount').innerHTML = score;
+            console.log(--money);
+            document.getElementById('theirmoney').innerHTML = money;
+
+        }
     }
 
     function myFour() {
         document.getElementById("four").style.backgroundColor = "lightgreen";
         document.getElementById("wildberry").style.backgroundColor = "lightgreen";
+        if (money < 3) {
+
+            document.getElementById('theirmoney').innerHTML = 0;
+
+        }
+        else {
+
+            console.log(++score);
+            document.getElementById('amount').innerHTML = score;
+            console.log(--money);
+            console.log(--money);
+            console.log(--money);
+            document.getElementById('theirmoney').innerHTML = money;
+
+        }
     }
 
     function myFive() {
         document.getElementById("five").style.backgroundColor = "lightgreen";
         document.getElementById("hydromelon").style.backgroundColor = "lightgreen";
+        if (money < 3) {
+
+            document.getElementById('theirmoney').innerHTML = 0;
+
+        }
+        else {
+
+            console.log(++score);
+            document.getElementById('amount').innerHTML = score;
+            console.log(--money);
+            console.log(--money);
+            console.log(--money);
+            document.getElementById('theirmoney').innerHTML = money;
+
+        }
     }
 
     function mySix() {
         document.getElementById("six").style.backgroundColor = "lightgreen";
         document.getElementById("spicy_pepper").style.backgroundColor = "lightgreen";
+        if (money < 5) {
+
+            document.getElementById('theirmoney').innerHTML = 0;
+
+        }
+        else {
+
+            console.log(++score);
+            document.getElementById('amount').innerHTML = score;
+            console.log(--money);
+            console.log(--money);
+            console.log(--money);
+            console.log(--money);
+            console.log(--money);
+            document.getElementById('theirmoney').innerHTML = money;
+
+        }
     }
 
     function mySeven() {
         document.getElementById("seven").style.backgroundColor = "lightgreen";
         document.getElementById("voltfruit").style.backgroundColor = "lightgreen";
+        if (money < 7) {
+
+            document.getElementById('theirmoney').innerHTML = 0;
+
+        }
+        else {
+
+            console.log(++score);
+            document.getElementById('amount').innerHTML = score;
+            console.log(--money);
+            console.log(--money);
+            console.log(--money);
+            console.log(--money);
+            console.log(--money);
+            console.log(--money);
+            console.log(--money);
+            document.getElementById('theirmoney').innerHTML = money;
+
+        }
     }
 
     function myEight() {
         document.getElementById("eight").style.backgroundColor = "lightgreen";
         document.getElementById("bighearty_radish").style.backgroundColor = "lightgreen";
+        if (money < 2) {
+
+            document.getElementById('theirmoney').innerHTML = 0;
+
+        }
+        else {
+
+            console.log(++score);
+            document.getElementById('amount').innerHTML = score;
+            console.log(--money);
+            console.log(--money);
+            document.getElementById('theirmoney').innerHTML = money;
+
+        }
     }
 
 </script>
