@@ -4,7 +4,7 @@ def hearty_durian():
     ingredient = "hearty durian"
     category = "fruit"
     hearts = "3"
-    price = "15"
+    price = "1"
     profile = {"box": box, "box2": box2, "category": category, "ingredient": ingredient, "hearts": hearts, "price": price}
     return profile
 
@@ -24,7 +24,7 @@ def apple():
     ingredient = "apple"
     category = "fruit"
     hearts = "1/2"
-    price = "3"
+    price = "1"
     profile = {"box": box, "box2": box2, "category": category, "ingredient": ingredient, "hearts": hearts, "price": price}
     return profile
 
@@ -44,7 +44,7 @@ def voltfruit():
     ingredient = "voltfruit"
     category = "fruit"
     hearts = "1/2"
-    price = "4"
+    price = "7"
     profile = {"box": box, "box2": box2, "category": category, "ingredient": ingredient, "hearts": hearts, "price": price}
     return profile
 
@@ -54,7 +54,7 @@ def hydromelon():
     ingredient = "hydromelon"
     category = "fruit"
     hearts = "1/2"
-    price = "4"
+    price = "3"
     profile = {"box": box, "box2": box2, "category": category, "ingredient": ingredient, "hearts": hearts, "price": price}
     return profile
 
@@ -64,7 +64,7 @@ def spicy_pepper():
     ingredient = "spicy pepper"
     category = "fruit"
     hearts = "1/2"
-    price = "3"
+    price = "5"
     profile = {"box": box, "box2": box2, "category": category, "ingredient": ingredient, "hearts": hearts, "price": price}
     return profile
 
@@ -74,7 +74,7 @@ def big_hearty_radish():
     ingredient = "big hearty radish"
     category = "vegetable"
     hearts = "4"
-    price = "15"
+    price = "2"
     profile = {"box": box, "box2": box2, "category": category, "ingredient": ingredient, "hearts": hearts, "price": price}
     return profile
 
