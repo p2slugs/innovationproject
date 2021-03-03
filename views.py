@@ -1,12 +1,13 @@
 #This page is our views page in git which establishes app routes and renders html
 #It is has the main navigation for our website
 from flask import Flask, render_template, request, redirect, url_for
-from flask_login import login_user, current_user
+#from flask_login import login_user, current_user
 from flask_sqlalchemy import SQLAlchemy
 
 import ingredients
 from __init__ import app,db,User
 import aboutus
+from addpython import app, db, Recipe
 import sqlite3 as sl3
 import requests
 
@@ -36,9 +37,9 @@ def recipes():
 def p_overview():
     return render_template('overview.html')
 
-@app.route('/add')
-def add():
-    return render_template('add.html')
+@app.route('/addtable')
+def addtable():
+    return render_template('addtable.html')
 
 @app.route('/about')
 def about():
@@ -118,6 +119,18 @@ def model_login(user_dict):
     # login failed
     return False
 
+@app.route('/addrecipe/', methods=["POST"])
+def addrecipe():
+    recipename = request.form['recipename']
+    youringredients = request.form['youringredients']
+    steps = request.form['steps']
+    creator = request.form['creator']
+
+    new = Recipe(recipename, youringredients, steps, creator)
+    db.session.add(new)
+    db.session.commit()
+
+    return render_template('addtable.html', recipename=recipename, youringredients=youringredients, steps=steps, creator=creator)
 
 @app.route('/index')
 def index():

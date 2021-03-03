@@ -7,16 +7,26 @@
 
 <!-- makes the tables on the page-->
 </p>
-<table>
+<p style="text-align: center">Your Recipe:</p>
+<table style="border: 1px solid black;">
 
     <tr><!--th is a row in a table -->
-        <th>Recipe #</th><!--th is a header in a table -->
+        <th>Recipe-</th><!--th is a header in a table -->
         <th>Recipe Name</th>
         <th>Ingredients</th>
         <th>Steps</th>
-        <th>Creator</th>
-    </tr><!-- Loop through rows in table -->
-    {% for row in table %}<!-- build elements in table -->
+        <th>By:</th>
+    </tr>
+    <tr><!--th is a row in a table -->
+        <td style="text-align: center">👩‍🍳</td>
+        <td>{{recipename}}</td><!--th is a header in a table -->
+        <td>{{youringredients}}</td>
+        <td>{{steps}}</td>
+        <td>{{creator}}</td>
+    </tr>
+
+    <!-- Loop through rows in table -->
+    <!--{% for row in table %}
 
     <tr>
         <th>{{ row['ID'] }}</th>
@@ -25,12 +35,12 @@
         <th>{{ row['steps'] }}</th>
         <th>{{ row['creator'] }}</th>
     </tr>
-    {% endfor %}
+    {% endfor %}-->
 
 </table>
 
 <br>
-<h1>Create</h1>
+<p style="text-align: center;">Create Your Recipe:</p>
 <div class = "add">
     <form method = 'POST' ID = 'myForm' action={{url_for('.addrecipe')}}>
         <table>
@@ -62,15 +72,11 @@
 
 </div>
 
-<div class = "read">
-    <br>
-    <h1>Read</h1>
 
-</div>
-
-
-<h1>Update</h1>
-</p>
-<h1>Delete</h1>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
 
 {% endblock %}
