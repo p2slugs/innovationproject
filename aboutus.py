@@ -11,7 +11,7 @@ def eva():
   name = "Eva Gravin"
   image = "e_aboutus.jpg"
   grade = "junior"
-  funfact = "Eva Gravin is a junior at Del Norte High School in Computer Science Principles. She enjoys coding, going to the beach, and the fall."
+  funfact = "Eva Gravin is a junior at Del Norte High School in Computer Science Principles. She enjoys designing frontends and solving problems when coding."
   profile = {"name": name, "image": image, "grade": grade, "funfact": funfact}
   return profile
 
