@@ -7,22 +7,36 @@
 {% endblock %}
 
 {% block content %}
+<body>
 
-<div class = "info">
-    <h1>About Us</h1>
-    <br>
-    {% for about in aboutus: %} <!-- for loop displays the data -->
-    {% set name = about["name"] %}
-    {% set image = about["image"] %}
-    {% set grade = about["grade"] %}
-    {% set funfact = about["funfact"] %}
-    <h3>{{name}}</h3>
-    <img src="{{ url_for('static', filename= image) }}">
-    <li>Grade: {{grade}}</li>
-    <li>A little about them: {{funfact}}</li>
-    <br>
-</div>
+<main id="grid">
+
+    <article class="block bg1 row1 col1">
+        <div class="info">
+            <h1> about us </h1>
+            <br>
+            {% for about in aboutus: %} <!-- for loop displays the data -->
+            {% set name = about["name"] %}
+            {% set image = about["image"] %}
+            {% set grade = about["grade"] %}
+            {% set funfact = about["funfact"] %}
+            <h3>{{name}}</h3>
+            <img src="{{ url_for('static', filename= image) }}" style="(width: 40px, height: 40px)">
+            <li>Grade: {{grade}}</li>
+            <li>A little about them: {{funfact}}</li>
+            <br>
+        </div>
+    </article>
 
 {% endfor %}
+
+    <div class="row justify-content-left" style="margin: 90%;">
+        <form action=/easteregg>
+            <button>Shhh...</button>
+        </form>
+    </div>
+
+</main>
+</body>
 
 {% endblock %}
