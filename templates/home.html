@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block title %}
+Recipe Generator
+{% endblock %}
+
+{% block content %}
+<body>
+
+<main id="grid">
+
+    <!-- intro card -->
+    <article class="block bg1 row1 col2">
+        <div class="basic">
+
+            <h2> p2 slugs <span> (n.) </span></h2>
+            <ol>
+                <li>an ap comp sci team trying to figure out how to code</li>
+                <li>currently making a website that collects recipes</li>
+                <li>inspired by breath of the wild</li>
+            </ol>
+
+        </div>
+    </article>
+
+
+    <!-- names & grades -->
+    <article class="block bg2 row1 col1">
+        <div class="info">
+
+            <span class="line">
+                <b> eva gravin </b>
+                <span> junior </span>
+            </span>
+
+            <span class="line">
+                <b> ali saad </b>
+                <span> senior </span>
+            </span>
+
+            <span class="line">
+                <b> linda long </b>
+                <span> senior </span>
+            </span>
+
+            <span class="line">
+                <b> sophie lee </b>
+                <span> senior </span>
+            </span>
+
+        </div>
+    </article>
+
+
+    <!-- flip card-->
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <br><br><br><br>
+                <p>wanna see something cool?</p>
+                <p>hover over me!</p>
+            </div>
+            <div class="flip-card-back">
+                <h1>page stats</h1>
+                <p>currently a work in progress</p>
+                <p>project started: 3 dec 2020</p>
+                <p>click the <i class="far fa-smile"></i> to enter light/dark mode</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- and the last of the demo blocks -->
+    <article class="block bg1 row1 col2">
+        <div class="list">
+
+            <h3> summary </h3>
+            <p>
+                this website is a collection of recipes! you can generate random recipes and also create your own in the <b>add recipes</b> section. recipebox allows recipes to be created, stored, and gathered to one place.
+
+            </p>
+
+            <h3> other info </h3>
+            <p>
+                This website was made by Linda Long, Sophie Lee, Ali Saad, and Eva Gravin.
+                <br>
+                Check out our <u><a target="_blank" rel="noopener noreferrer" href="https://github.com/p2slugs/recipebox">repository</a></u> and <u><a target="_blank" rel="noopener noreferrer" href="https://github.com/p2slugs/recipebox/projects/1"> scrum board</a></u> as well!
+
+            </p>
+
+        </div>
+    </article>
+
+</main>
+
+</body>
+{% endblock %}
