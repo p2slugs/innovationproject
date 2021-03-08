@@ -1,13 +1,12 @@
 #This page is our views page in git which establishes app routes and renders html
 #It is has the main navigation for our website
 from flask import Flask, render_template, request, redirect, url_for
-#from flask_login import login_user, current_user
 from flask_sqlalchemy import SQLAlchemy
 
 import ingredients
-from __init__ import app,db,User
-import aboutus
+from __init__ import app, db, User
 from addpython import app, db, Recipe
+import aboutus
 import sqlite3 as sl3
 import requests
 
@@ -27,7 +26,7 @@ def generator():
 
 @app.route('/')
 def home_route():
-    return render_template("base.html",)
+    return render_template("home.html",)
 
 @app.route('/recipes')
 def recipes():
@@ -142,10 +141,10 @@ def submit():
 
 @app.route('/process', methods=['POST'])
 def process():
-  name = request.form['name']
-  comment = request.form['comment']
-  
-  return render_template('index.html', name=name, comment=comment)
+    name = request.form['name']
+    comment = request.form['comment']
+
+    return render_template('index.html', name=name, comment=comment)
 
 @app.route('/easteregg')
 def easteregg():
