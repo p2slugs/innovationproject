@@ -3,7 +3,7 @@ def sophie():
   name = "Sophie Lee"
   image = "sl.jpg"
   grade = "senior"
-  funfact = ""
+  funfact = "Sophie Lee is a senior at Del Norte High School in AP CSP. She is passionate about design and cognitive science, but she also spends her free time playing video games."
   profile = {"name": name, "image": image, "grade": grade, "funfact": funfact}
   return profile
 
