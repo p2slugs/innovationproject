@@ -104,7 +104,7 @@ def big_hearty_truffle():
     ingredient = "big hearty truffle"
     category = "mushroom"
     hearts = "3"
-    price = "15"
+    price = "8"
     profile = {"box": box, "box2": box2, "category": category, "ingredient": ingredient, "hearts": hearts, "price": price}
     return profile
 
