@@ -5,6 +5,8 @@ Recipebox is a website centered around recipes, where you can filter through rec
 
 ## Check out our [Padlet](https://padlet.com/evag55486/yrby94rn6jf2s3dm) with more detailed information about our project!
 
+## Project Links:
+
 ### > [Scrum Board](https://github.com/orgs/p2slugs/projects/1) (tracking sheet + schedule) | includes ticket items/cards
 
 ### > Link to Running Code: http://recipebox.cf | [Git Repository](https://github.com/p2slugs/recipebox/)
@@ -12,8 +14,14 @@ Recipebox is a website centered around recipes, where you can filter through rec
 ### > [Easter Egg Location](http://recipebox.cf/easteregg?)
 
 ### > [College Board Project Considerations](http://recipebox.cf/easteregg?)
-Welcome to our Trimester 2 Portfolio! This is where you can find and access our code and important pieces throughout the course. 
-You can access the website from our runtime link below or run our code on your own computer by downloading the repository files.
+
+## Instructions on How To Run
+You can run our website from any device by going to this link: recipebox.cf. You can also run our code on your own computer by downloading the repository files. 
+
+You will be directed to the home page, where an overview of the website is given. Toggle through the tabs at the top to explore the website!
+
+You can put in a recipe, suggestion, buy ingredients, and view the about us page, contact page, home page, and sign up forms.
+
 
 scroll down for 15pts review (Friday 2/18) ↓
 
