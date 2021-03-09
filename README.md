@@ -1,9 +1,8 @@
 # P2 Slugs - Recipe Website
 # _Recipebox_
-Recipebox is a website centered around recipes, where you can filter through recipes, select ingredients that affect your money and amount, create a recipe, and give input to the website that will be displayed as a community suggestion! It is a fun project that was inspired by Zelda's game Breath of the Wild, with the ingredients selection part and interesting food names! This project helped us learn A LOT throughout trimester 2. We gained experience working with the languages HTML, CSS, Python, and Javascript. We learned how to use GET/POST requests, got a lot of practice with app routes, learned how to layout and run our website through a views and wsgi file, learned how to work with data and transfer it across pages using Jinja, got practice with algorithmns and programming skills like functions and varibales, and used Javascript functions to do cool actions on the frontend! 
+Recipebox is a website centered around recipes, where you can filter through recipes, select ingredients that affect your money and amount, create a recipe, and give input to the website that will be displayed as a community suggestion! It is a fun project that was inspired by Zelda's game Breath of the Wild, with the ingredients selection part and interesting food names! This project helped us learn A LOT throughout Trimester 2. We gained experience working with the languages HTML, CSS, Python, and Javascript. We learned how to use GET/POST requests, got a lot of practice with app routes, learned how to layout and run our website through a views and wsgi file, learned how to work with data and transfer it across pages using Jinja, got practice with algorithmns and programming skills like functions and varibales, and used Javascript functions to do cool actions on the frontend! We even learned a lot about deployment and setting up a virtual enviornment to run our project. Our website is running from a Raspberry Pi and we have an accessible domain name to anyone. This project allowed us to learn the AP CSP College Board Fundamentals and show our knowledge in one place. As a team, we collaborated, worked toegther, and took planning steps each week to reach our goals.
 
-Welcome to our Trimester 2 Portfolio! This is where you can find and access our code and important pieces throughout the course. 
-You can access the website from our runtime link below or run our code on your own computer by downloading the repository files.
+
 ### > [Padlet](https://padlet.com/evag55486/yrby94rn6jf2s3dm)
 
 ### > [Scrum Board](https://github.com/orgs/p2slugs/projects/1) (tracking sheet + schedule) | includes ticket items/cards
@@ -13,6 +12,8 @@ You can access the website from our runtime link below or run our code on your o
 ### > [Easter Egg Location](http://recipebox.cf/easteregg?)
 
 ### > [College Board Project Considerations](http://recipebox.cf/easteregg?)
+Welcome to our Trimester 2 Portfolio! This is where you can find and access our code and important pieces throughout the course. 
+You can access the website from our runtime link below or run our code on your own computer by downloading the repository files.
 
 scroll down for 15pts review (Friday 2/18) ↓
 
