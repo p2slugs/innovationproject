@@ -13,7 +13,7 @@ Recipebox is a website centered around recipes, where you can filter through rec
 
 ### > [Easter Egg Location](http://recipebox.cf/easteregg?)
 
-### > [College Board Project Considerations](http://recipebox.cf/easteregg?)
+### > [College Board Project Considerations](http://recipebox.cf/easteregg?) located in CB Targets Page of Easter Egg
 
 ### > [The Recipe Box Commercial](https://youtu.be/d6E0ru6qDYM)
 
