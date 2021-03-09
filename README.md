@@ -1,5 +1,7 @@
 # P2 Slugs - Recipe Website
 # _Recipebox_
+Recipebox is a website centered around recipes, where you can filter through recipes, select ingredients that affect your money and amount, create a recipe, and give input to the website that will be displayed as a community suggestion! It is a fun project that was inspired by Zelda's game Breath of the Wild, with the ingredients selection part and interesting food names! This project helped us learn A LOT throughout trimester 2. We gained experience working with the languages HTML, CSS, Python, and Javascript. We learned how to use GET/POST requests, got a lot of practice with app routes, learned how to layout and run our website through a views and wsgi file, learned how to work with data and transfer it across pages using Jinja, got practice with algorithmns and programming skills like functions and varibales, and used Javascript functions to do cool actions on the frontend! 
+
 Welcome to our Trimester 2 Portfolio! This is where you can find and access our code and important pieces throughout the course. 
 You can access the website from our runtime link below or run our code on your own computer by downloading the repository files.
 ### > [Padlet](https://padlet.com/evag55486/yrby94rn6jf2s3dm)
