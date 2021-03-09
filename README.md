@@ -1,4 +1,5 @@
 # P2 Slugs - Recipe Website
+# _Recipebox_
 Welcome to our Trimester 2 Portfolio! This is where you can find and access our code and important pieces throughout the course. 
 You can access the website from our runtime link below or run our code on your own computer by downloading the repository files.
 ### > [Padlet](https://padlet.com/evag55486/yrby94rn6jf2s3dm)
