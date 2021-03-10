@@ -54,7 +54,10 @@ sophie: designed a secret(?) page for the easter egg and put in information for 
 [See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-54300711), [See Code](https://github.com/p2slugs/recipebox/blob/main/templates/easteregg.html), [See Runtime Page](recipebox.cf/easteregg)
 
 ### Recipes Page
-sophie: gathered data for the many recipes from the game we were inspired by; used a filter system to organize all the different types of potential dishes users can cook (organized by buff and category of food). added descriptions of each meal and featured what the ingredients necessary for the dish.
+sophie: gathered data for the many recipes from the game we were inspired by; used a filter system to organize all the different types of potential dishes users can cook (organized by buff and category of food). added descriptions of each meal and featured what the ingredients necessary for the dish. also learned how to host files (images on the page) via Dropbox and made use of javascript animations.
+
+[See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-55043364), [See Code](https://github.com/p2slugs/recipebox/blob/main/templates/recipes.html), [See Runtime Page](recipebox.cf/recipes)
+
 
 ### About Us Page
 eva: Uses the files about.html and aboutus.py to display every team member's data from py file. The py file defines each group memeber and uses variables to store different things like their name, fact, and grade. Another variable called profile makes a dictionary with the previous variables and is returned. Finally, a list with each defined person is returned as about. In the html page, it does for about in aboutus, and then sets all of the variables equal to what they are goes through them. This is how the data is filtered through and displayed. Jinja is used for the variables. This uses dictionaries, lists, data, algorithms, and a for loop which matches with the College Board requirements.
