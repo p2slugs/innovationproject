@@ -81,7 +81,7 @@ def signup():
     db.session.commit()
 
     #here for now, should go to scores eventually.
-    return redirect(url_for('login'))
+    return redirect(url_for('ingredients'))
 
 
 # if login url, show phones table only
