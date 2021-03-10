@@ -4,6 +4,7 @@ Recipebox is a website centered around recipes, where you can filter through rec
 
 
 ## Check out our [Padlet](https://padlet.com/evag55486/yrby94rn6jf2s3dm) with more detailed information about our project!
+Team Members: Eva Gravin, Sophie Lee, Ali Saad, Linda Long
 
 ## Project Links:
 
