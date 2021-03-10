@@ -14,9 +14,11 @@
     <link href="https://static.tumblr.com/p0knose/fW7nwe95q/normalize.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Alata|Regular:400,400i,700,700i' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=B612|B612+Mono:400,400i,700,700i' rel='stylesheet'>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://static.tumblr.com/fuu6t9w/eubml0pm0/jquery.isotope.min.js"></script>
     <script src="https://static.tumblr.com/aptzszz/s5fp15zyp/candlelight.js"></script>
+    <script src="https://static.tumblr.com/ikeq9mi/DfYl6o46t/scrolltotop.min.js"></script>
 
     <style type="text/css">
 
@@ -61,6 +63,23 @@
             border-width:0 4px;
         }
 
+        /* text selection */
+
+        ::selection {
+            background:var(--accent);
+            color:var(--accent-text);
+        }
+
+        ::-webkit-selection {
+            background:var(--accent);
+            color:var(--accent-text);
+        }
+
+        ::-moz-selection {
+            background:var(--accent);
+            color:var(--accent-text);
+        }
+
         a,.button {
             transition:0.2s ease-in;
             -webkit-transition:0.2s ease-in;
@@ -101,16 +120,6 @@
             border-bottom:1px solid #a4afc1;
         }
 
-        header a,h1 {margin-right:7px;}
-
-        header a:first-of-type, article a:first-of-type {margin-left:7px;}
-
-        header {
-            width:860px;
-            margin:auto;
-            font-family: Alata;
-        }
-
         .button {
             background:#fff;
             border:0;
@@ -135,9 +144,9 @@
         .button-group:first-of-type {margin-top:20px;}
 
         article {
-            position:relative;
+            position:center;
             width:260px;
-            margin:20px;
+            margin:20px 100px;
             box-sizing:border-box;
             padding:15px;
             border:1px solid #eee;
@@ -208,6 +217,7 @@
         .filters {
             width:60vw;
             margin:50px auto 30px;
+            font-family: Alata;
         }
 
         /* hover cursor */
@@ -216,7 +226,41 @@
         a:hover { cursor: url(https://i.imgur.com/ZM41vky.png),progress!important }
         .button:hover { cursor: url(https://i.imgur.com/ZM41vky.png),progress!important }
 
+        /* scroll to top */
+        #scrollToTop:link,
+        #scrollToTop:visited {
+            display: none;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            color: var(--text);
+            z-index: 100;
+        }
+
+        #scrollToTop:hover { color: #b4c6df; }
+
+        #totopfake {
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            opacity: 0.5;
+            color: #b4c6df;
+            z-index: 20;
+        }
+
         /* header */
+
+        #top {
+            position:fixed;
+            width:100%;
+            height:5px;
+            left:0;
+            top:0;
+            background:var(--accent);
+            z-index:9999999999999;
+            -webkit-animation:fadein 1s;
+            animation:fadein 1s;
+        }
 
         header {
             width:60vw;
@@ -228,6 +272,7 @@
         header h1 {
             font:36px/45px "Alata";
             color:var(--accent);
+            text-decoration:none;
             margin:0;
             text-transform:uppercase;
             letter-spacing: 8px;
@@ -237,6 +282,7 @@
             float:right;
             line-height:45px;
             text-transform:lowercase;
+            font:normal 12px "B612 Mono",consolas,monospace;
         }
 
         header nav a {
@@ -272,10 +318,51 @@
             padding:0 2px 0 0;
         }
 
+        /* media queries */
+
+        @media screen and (max-width:1600px){
+            main {
+                grid-auto-rows:20vw;
+                grid-template-columns:20vw 20vw 20vw;
+            }
+            header {width:63vw;}
+        }
+
+        @media screen and (max-width:1440px){
+            main {
+                grid-gap:2.5vw;
+                grid-auto-rows:25vw;
+                grid-template-columns:25vw 25vw 25vw;
+            }
+            header {width:80vw;}
+        }
+
+        @media screen and (max-width:1080px){
+            main {
+                grid-gap:1.5vw;
+                grid-auto-rows:30vw;
+                grid-template-columns:30vw 30vw 30vw;
+            }
+            header {width:93vw;}
+            .block:not(.ftr){padding:3vw;}
+        }
+
+        @media screen and (max-width:840px){
+            header nav {float:none; display:block;}
+            main {
+                grid-template-columns:45vw 45vw;
+                grid-auto-rows:45vw;
+                grid-gap:3vw;
+            }
+            .block:not(.ftr) {padding:5vw;}
+        }
+
     </style>
 </head>
 
 <body>
+
+<div id="top"></div>
 
 <header>
     <h1>recipe box</h1>
@@ -291,6 +378,11 @@
         <a href="/contact">contact</a>
     </nav>
 </header>
+
+<div class="totopwrap">
+    <a class="scrollup" href="javascript:;" id="scrollToTop" rel="nofollow" title="To top">↑</a>
+    <div id="totopfake">↑</div>
+</div>
 
 <!--filter tags-->
 
@@ -317,8 +409,9 @@
             <button class="button" data-filter=".RICE"> rice </button>
             <button class="button" data-filter=".VEGETABLES"> vegetables </button>
             <button class="button" data-filter=".MEAT"> meat </button>
-        <button class="button" data-filter=".SEAFOOD"> seafood </button>
-        <button class="button" data-filter=".DESSERT"> desserts </button>
+            <button class="button" data-filter=".SEAFOOD"> seafood </button>
+            <button class="button" data-filter=".DESSERT"> desserts </button>
+            <button class="button" data-filter=".MONSTER"> monster </button>
             <button class="button" data-filter=".OTHER"> other </button>
 
     </div>
@@ -330,7 +423,7 @@
 
     <article class="TOUGH SOUP">
 
-        <h1>pumpkin stew</h1><i>カボチャシチュー</i>
+        <h1>pumpkin stew</h1><br><i>カボチャシチュー</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Pumpkin-Stew.png" width="100" height="100" class="center">
             Simply simmer a fortified pumpkin to make this dish. A favorite in Kakariko Village.
@@ -362,24 +455,24 @@
 
     <article class="NONE DESSERT">
 
-        <h1>apple pie</h1><i>アップルパイ</i>
+        <h1>apple pie</h1><br><i>アップルパイ</i>
 
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Apple-Pie.png" width="100" height="100" class="center">
             The crispy, flaky pie crust and sweet apples are a match made in heaven.
         </div>
 
-        <span><img src="https://dl.dropbox.com/s/p4ww1l67hupabr2/apple.png" alt="apple" width="25" height="25"></span>
-        <span><img src="https://dl.dropbox.com/s/gv6asy9t2yg7pn0/cane-sugar.png" width="25" height="25"></span>
-        <span><img src="https://dl.dropbox.com/s/3jxrogdpipjbjv5/tabantha-wheat.png" alt="tabantha wheat" width="25" height="25"></span>
-        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/goat-butter.png" alt="goat butter radish" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/apple.png" alt="big hearty radish" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/cane-sugar.png" alt="big hearty radish" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/tabantha-wheat.png" alt="big hearty radish" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/goat-butter.png" alt="big hearty radish" width="25" height="25"></span>
 
     </article>
 
 
     <article class="ENDURING ENERGIZING HASTY DESSERT">
 
-        <h1>carrot cake</h1><i>ニンジンケーキ</i>
+        <h1>carrot cake</h1><br><i>ニンジンケーキ</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Carrot-Cake.png" alt="carrot cake" width="100" height="100" class="center">
             Even those who don't like carrots tend to enjoy the mild sweetness of this cake.
@@ -396,7 +489,7 @@
 
     <article class="NONE DESSERT">
 
-        <h1>egg pudding</h1><i>たまごプリン</i>
+        <h1>egg pudding</h1><br><i>たまごプリン</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Egg-Pudding.png" width="100" height="100" class="center">
             Made by cooking eggs and milk in a special mold, its soft texture melts in your mouth.
@@ -411,7 +504,7 @@
 
     <article class="NONE DESSERT">
 
-        <h1>egg tart</h1><i>エッグタルト</i>
+        <h1>egg tart</h1><br><i>エッグタルト</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Egg-Tart.png" width="100" height="100" class="center">
             You'll know this simple dessert is done baking when it smells just delightful.
@@ -427,7 +520,7 @@
 
     <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SNEAKY SPICY TOUGH SEAFOOD">
 
-        <h1>fish pie</h1><i>フィッシュパイ</i>
+        <h1>fish pie</h1><br><i>フィッシュパイ</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Fish-Pie.png" width="100" height="100" class="center">
             A mainstay in any fisherman's home, the crisp crust pairs well with the fishy flavor.
@@ -447,7 +540,7 @@
 
     <article class="ENDURING ENERGIZING HASTY SOUP">
 
-        <h1>carrot stew</h1><i>ニンジンシチュー</i>
+        <h1>carrot stew</h1><br><i>ニンジンシチュー</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Carrot-Stew.png" width="100" height="100" class="center">
             This simple stew sat simmering for a long time to bring out the sweetness of the carrots.
@@ -490,7 +583,7 @@
 
     <article class="MIGHTY TOUGH ENERGIZING SEAFOOD">
 
-        <h1>crab risotto</h1><i>カニリゾット</i>
+        <h1>crab risotto</h1><br><i>カニリゾット</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Crab-Risotto.png" width="100" height="100" class="center">
             The Goron spice used in preparing this crab pairs perfectly with the flavor of the meat.
@@ -512,7 +605,7 @@
 
     <article class="MIGHTY TOUGH ENERGIZING SEAFOOD">
 
-        <h1>crab stir-fry</h1><i>炒めガニ</i>
+        <h1>crab stir-fry</h1><br><i>炒めガニ</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Crab-Stir-Fry.png" width="100" height="100" class="center">
             The Goron spice used in preparing this crab pairs perfectly with the flavor of the meat.
@@ -534,7 +627,7 @@
 
     <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SNEAKY SPICY TOUGH SOUP">
 
-        <h1>cream of mushroom</h1><i></i>
+        <h1>cream of mushroom</h1><br><i></i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Cream-of-Mushroom-Soup.png" width="100" height="100" class="center">
             The creamy mushroom and vegetable soup is so chunky it eats like a meal!
@@ -553,7 +646,7 @@
 
 
     <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SNEAKY SPICY TOUGH SOUP VEGETABLES">
-        <h1>cream of vegetable soup</h1><i></i>
+        <h1>cream of vegetable soup</h1><br><i></i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Cream-of-Vegetable-Soup.png" width="100" height="100" class="center">
             The Goron spice used in this pilaf has given it a rich, spicy aroma.
@@ -636,7 +729,7 @@
 
     <article class="SPICY RICE VEGETABLES">
 
-        <h1>curry pilaf</h1><i>カレーピラフ</i>
+        <h1>curry pilaf</h1><br><i>カレーピラフ</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Curry-Pilaf.png" width="100" height="100" class="center">
             The Goron spice used in this pilaf has given it a rich, spicy aroma.
@@ -651,7 +744,7 @@
 
     <article class="SPICY RICE VEGETABLES">
 
-        <h1>curry rice</h1><i>カレーライス</i>
+        <h1>curry rice</h1><br><i>カレーライス</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Curry-Rice.png" width="100" height="100" class="center">
             A favorite all over Hyrule, this simple dish has a flavor you just won't get tired of.
@@ -665,7 +758,7 @@
 
     <article class="NONE OTHER">
 
-        <h1>dubious food</h1><i>微妙な料理	</i>
+        <h1>dubious food</h1><br><i>微妙な料理	</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Dubious-Food.png" width="100" height="100" class="center">
             It's too gross to even look at. A bizarre smell issues forth from this heap. Eating it won't hurt you though...probably.
@@ -682,7 +775,7 @@
 
     <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SNEAKY SPICY TOUGH MEAT">
 
-        <h1>glazed meat</h1><i>カレーライス</i>
+        <h1>glazed meat</h1><br><i>カレーライス</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Glazed-Meat.png" width="100" height="100" class="center">
             The sweetness of the honey permeates the meat, giving it a complex taste profile.
@@ -700,7 +793,7 @@
 
     <article class="NONE DESSERT">
 
-        <h1>honey candy</h1><i>カレーライス</i>
+        <h1>honey candy</h1><br><i>カレーライス</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Honey-Candy.png" width="100" height="100" class="center">
             A natural sweet, brimming with nutrition and made by stewing fresh honey.
@@ -717,7 +810,7 @@
 
     <article class="NONE DESSERT">
 
-        <h1>honeyed apple</h1><i>カレーライス</i>
+        <h1>honeyed apple</h1><br><i>カレーライス</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Honeyed-Apple.png" width="100" height="100" class="center">
             A juicy sweet-and-sour dish combining newly ripened apples with honey.
@@ -731,7 +824,7 @@
 
     <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SNEAKY SPICY TOUGH SEAFOOD">
 
-        <h1>fish skewer</h1><i>串焼き魚</i>
+        <h1>fish skewer</h1><br><i>串焼き魚</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Fish-Skewer.png" width="100" height="100" class="center">
             A simple dish made by cooking chunks of fresh fish on a skewer.
@@ -809,7 +902,7 @@
 
     <article class="MIGHTY VEGETABLES DESSERT">
 
-        <h1>fried bananas</h1><i>あげバナナ</i>
+        <h1>fried bananas</h1><br><i>あげバナナ</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Fragrant-Mushroom-Saute.png" width="100" height="100" class="center">
             Children love fried mighty bananas. The trick is frying them over very high heat.
@@ -824,7 +917,7 @@
 
     <article class="NONE RICE">
 
-        <h1>fried egg & rice</h1><i>目玉焼きライス</i>
+        <h1>fried egg & rice</h1><br><i>目玉焼きライス</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Fried-Egg-and-Rice.png" width="100" height="100" class="center">
             The soft egg yolk pairs well with the fresh rice in this simple dish.
@@ -841,9 +934,9 @@
     </article>
 
 
-    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SNEAKY SPICY TOUGH SPICY VEGETABLES">
+    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SNEAKY SPICY TOUGH SPICY NONE VEGETABLES">
 
-        <h1>fried wild greens</h1><i>焼き山菜</i>
+        <h1>fried wild greens</h1><br><i>焼き山菜</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Fried-Wild-Greens.png" width="100" height="100" class="center">
             A basic vegetable dish made by sautéing fresh wild plants.
@@ -858,7 +951,7 @@
     </article>
 
 
-    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SNEAKY SPICY TOUGH SPICY VEGETABLES">
+    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SNEAKY SPICY TOUGH SPICY NONE VEGETABLES">
 
         <h1>copious fried wild greens</h1><br><i>山盛焼き山菜</i>
         <div class="d">
@@ -878,7 +971,7 @@
     </article>
 
 
-    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SNEAKY SPICY TOUGH SPICY VEGETABLES">
+    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SNEAKY SPICY TOUGH SPICY NONE VEGETABLES">
 
         <h1>fruit & mushroom mix</h1><br><i>果実のキノコあえ</i>
         <div class="d">
@@ -898,9 +991,9 @@
     </article>
 
 
-    <article class="CHILLY ELECTRO HEARTY MIGHTY SPICY DESSERT">
+    <article class="CHILLY ELECTRO HEARTY MIGHTY SPICY NONE DESSERT">
 
-        <h1>fruit pie</h1><i>果実のキノコあえ</i>
+        <h1>fruit pie</h1><br><i>果実のキノコあえ</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Fruit-Pie.png" width="100" height="100" class="center">
             A celebration isn't a celebration until this fruit-filled crust hits the table!
@@ -920,9 +1013,9 @@
     </article>
 
 
-    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY  DESSERT">
+    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY  NONE DESSERT">
 
-        <h1>fruitcake</h1><i>フルーツケーキ</i>
+        <h1>fruitcake</h1><br><i>フルーツケーキ</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Fruitcake.png" width="100" height="100" class="center">
             Making ample use of fruits found all over Hyrule, this cake is a must for celebrations.
@@ -941,7 +1034,7 @@
     </article>
 
 
-    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY  SPICY SPICY VEGETABLES">
+    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SPICY NONE VEGETABLES">
 
         <h1>glazed mushrooms</h1><br><i>甘露煮キノコ</i>
         <div class="d">
@@ -959,9 +1052,9 @@
     </article>
 
 
-    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY  SPICY SPICY SEAFOOD">
+    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SPICY NONE SEAFOOD">
 
-        <h1>glazed seafood</h1><i>甘露煮魚</i>
+        <h1>glazed seafood</h1><br><i>甘露煮魚</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Glazed-Seafood.png" width="100" height="100" class="center">
             A seafood dish that you can actually wolf down whole!
@@ -977,9 +1070,9 @@
     </article>
 
 
-    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY  SPICY SPICY SEAFOOD">
+    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SPICY NONE VEGETABLES">
 
-        <h1>glazed veggies</h1><i>甘露煮野菜</i>
+        <h1>glazed veggies</h1><br><i>甘露煮野菜</i>
         <div class="d">
             <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Glazed-Veggies.png" width="100" height="100" class="center">
             Don't like the taste of vegetables? Simply sauté them in honey for a salty-sweet flavor!
@@ -996,7 +1089,7 @@
     </article>
 
 
-    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY  SPICY SPICY SEAFOOD">
+    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SPICY NONE MEAT RICE">
 
         <h1>gourmet meat & rice bowl</h1><br>
         <i>極上ケモノ肉丼</i>
@@ -1012,6 +1105,228 @@
         <div class="tags">
             <i>use any vegetable, flower, or herb</i>
             <i>want to make it spicy? add a spicy pepper!</i>
+        </div>
+
+    </article>
+
+
+    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SPICY NONE MEAT SEAFOOD">
+
+        <h1>gourmet meat & seafood fry</h1><br>
+        <i>極上ケモノ肉丼</i>
+        <div class="d">
+            <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Gourmet-Meat-and-Seafood-Fry.png" width="100" height="100" class="center">
+            A marriage of the choicest cuts of meat and seafood. As delicious as it is filling!
+        </div>
+
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/raw-gourmet-meat.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/sanke-carp.png" width="25" height="25"></span>
+
+        <div class="tags">
+            <i>use any gourmet meat</i>
+            <i>use any seafood</i>
+        </div>
+
+    </article>
+
+
+    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SPICY MEAT RICE">
+
+        <h1>gourmet meat curry</h1><br>
+        <i>極上肉カレー</i>
+        <div class="d">
+            <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Gourmet-Meat-Curry.png" width="100" height="100" class="center">
+            The high-quality meat used in this prized dish satisfies meat and curry lovers alike.
+        </div>
+
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/raw-gourmet-meat.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/goron-spice.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/hylian-rice.png" width="25" height="25"></span>
+
+        <div class="tags">
+            <i>use any gourmet meat</i>
+            <i>add herbs/vegetables for buffs!</i>
+        </div>
+
+    </article>
+
+
+    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SPICY NONE MEAT SOUP">
+
+        <h1>gourmet meat stew</h1><br>
+        <i>極上肉シチュー</i>
+        <div class="d">
+            <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Gourmet-Meat-Stew.png" width="100" height="100" class="center">
+            The meat has simmered for so long it melts in your mouth. A true bucket-list meal!
+        </div>
+
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/raw-gourmet-meat.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/tabantha-wheat.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/fresh-milk.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/goat-butter.png" width="25" height="25"></span>
+
+        <div class="tags">
+            <i>use any gourmet meat</i>
+            <i>add herbs/vegetables for buffs!</i>
+        </div>
+
+    </article>
+
+
+    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SPICY NONE MEAT SOUP">
+
+        <h1>gourmet poultry curry</h1><br>
+        <i>極上チキンカレー</i>
+        <div class="d">
+            <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Gourmet-Poultry-Curry.png" width="100" height="100" class="center">
+            Once served in Hyrule Castle, the poultry used in this dish is of immensely high quality.
+        </div>
+
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/raw-whole-bird.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/goron-spice.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/hylian-rice.png" width="25" height="25"></span>
+
+    </article>
+
+
+    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SPICY NONE MEAT RICE">
+
+        <h1>gourmet poultry pilaf</h1><br>
+        <i>極上チキンピラフ</i>
+        <div class="d">
+            <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Gourmet-Poultry-Pilaf.png" width="100" height="100" class="center">
+            Once served in Hyrule Castle, the poultry used in this dish is of immensely high quality.
+        </div>
+
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/raw-whole-bird.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/hylian-rice.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/goat-butter.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/bird-egg.png" width="25" height="25"></span>
+
+    </article>
+
+
+    <article class="SPICY MEAT">
+
+        <h1>gourmet spiced meat skewer</h1><br>
+        <i>極上ケモノステーキ</i>
+        <div class="d">
+            <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Gourmet-Spiced-Meat-Skewer.png" width="100" height="100" class="center">
+            The rich aroma and juicy texture of this high-quality meat puts it in a league of its own.
+        </div>
+
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/raw-gourmet-meat.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/goron-spice.png" width="25" height="25"></span>
+
+    </article>
+
+
+    <article class="HEARTY SEAFOOD SOUP">
+
+        <h1>clam chowder</h1>
+        <i>貝のチャウダー</i>
+        <div class="d">
+            <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Clam-Chowder.png" width="100" height="100" class="center">
+            The nutritional value of hearty blueshell snail combines with butter and milk in a rich soup.
+        </div>
+
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/fresh-milk.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/tabantha-wheat.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/goat-butter.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/hearty-blueshell-snail.png" width="25" height="25"></span>
+
+    </article>
+
+
+    <article class="HEARTY SEAFOOD">
+
+        <h1>salmon meunière</h1><br>
+        <i>サーモンムニエル</i>
+        <div class="d">
+            <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Salmon-Meuniere.png" width="100" height="100" class="center">
+            The crispy skin of this fried hearty salmon puts its texture in a class all its own.
+        </div>
+
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/tabantha-wheat.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/goat-butter.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/hearty-salmon.png" width="25" height="25"></span>
+
+    </article>
+
+
+    <article class="CHILLY ELECTRO ENDURING ENERGIZING HASTY HEARTY MIGHTY SNEAKY SPICY TOUGH SPICY NONE VEGETABLES">
+
+        <h1>herb sauté</h1>
+        <i>甘露煮野菜</i>
+        <div class="d">
+            <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Herb-Saute.png" width="100" height="100" class="center">
+            A fragrant mixture of herbs and spices. It's easily recognized by its unique aroma.
+        </div>
+
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/mighty-thistle.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/goron-spice.png" width="25" height="25"></span>
+
+    </article>
+
+
+    <article class="ENERGIZING NONE DESSERT">
+
+        <h1>honey crepe</h1>
+        <i>ハチミツクレープ</i>
+        <div class="d">
+            <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Honey-Crepe.png" width="100" height="100" class="center">
+            Honey has been drizzled over thin crepes to bring out their natural sweetness and flavor.
+        </div>
+
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/courser-bee-honey.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/bird-egg.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/tabantha-wheat.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/fresh-milk.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/cane-sugar.png" width="25" height="25"></span>
+
+        <div class="tags">
+            <i>my personal favorite</i>
+            <i>it can be potentially energizing!</i>
+        </div>
+
+    </article>
+
+
+    <article class="ENERGIZING NONE DESSERT">
+
+        <h1>honeyed fruits</h1>
+        <i>ハチミツ果実</i>
+        <div class="d">
+            <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Honeyed-Fruits.png" width="100" height="100" class="center">
+            A dish that combines the thick sweetness of honey with the acidity of sour fruits.
+        </div>
+
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/courser-bee-honey.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/apple.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/palm-fruit.png" width="25" height="25"></span>
+
+        <div class="tags">
+            <i>add another fruit besides apple</i>
+            <i>can be potentially energizing!</i>
+        </div>
+
+    </article>
+
+
+    <article class="ENERGIZING NONE DESSERT">
+
+        <h1>hot buttered apple</h1><br>
+        <i>リンゴバター</i>
+        <div class="d">
+            <img src="https://www.guideofthewild.com/assets/images/cookingPot/meals/Hot-Buttered-Apple.png" width="100" height="100" class="center">
+            The apple's sweetness has been enhanced by smothering it with butter and baking it.
+        </div>
+
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/apple.png" width="25" height="25"></span>
+        <span><img src="https://www.guideofthewild.com/assets/images/cookingPot/ingredients/raw/goat-butter.png" width="25" height="25"></span>
+
+        <div class="tags">
+            <i>can be potentially energizing!</i>
         </div>
 
     </article>
