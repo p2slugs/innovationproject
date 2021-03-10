@@ -51,7 +51,7 @@ ali: This is going to be a page where users can access the developers contact in
 ### Easter Egg
 sophie: designed a secret(?) page for the easter egg and put in information for our journals, AP learnings, ourselves, and addition information/resources. compiled all the various easter files into one main file to avoid confusion and messy organization. easter egg page can be found under the about us.
 
-[See Ticket in Scrum Board](put link here), [See Code](put link here), [See Runtime Page](put link here)
+[See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-54300711), [See Code](https://github.com/p2slugs/recipebox/blob/main/templates/easteregg.html), [See Runtime Page](recipebox.cf/easteregg)
 
 ### Recipes Page
 sophie: gathered data for the many recipes from the game we were inspired by; used a filter system to organize all the different types of potential dishes users can cook (organized by buff and category of food). added descriptions of each meal and featured what the ingredients necessary for the dish.
