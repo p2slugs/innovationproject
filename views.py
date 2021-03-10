@@ -158,9 +158,9 @@ def getupdates():
 def sampleprojects():
     return render_template('sampleprojects.html')
 
-@app.route('/ingredients1')
-def ingredients1():
-    return render_template('ingredients1.html', ingredients=ingredients.ingredients())
+@app.route('/ingredients')
+def ingredients():
+    return render_template('ingredients.html', ingredients=ingredients.ingredients())
 
 @app.route('/customersupport')
 def customersupport():
