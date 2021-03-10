@@ -57,10 +57,10 @@ eva: Uses the files about.html and aboutus.py to display every team member's dat
 
 [See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-56565556), [See Code, aboutus.py](https://github.com/p2slugs/recipebox/blob/main/aboutus.py),[See code, about.html](https://github.com/p2slugs/recipebox/blob/main/templates/about.html) [See Runtime Page](http://recipebox.cf/about)
 
-### Another Ticket
-name: explanation
+### Raspberry Pi Deployment 
+eva: The website is running from a Raspberry Pi, and the domain name allows it to be easily accessed by anyone and reached by the community (a CollegeBoard reuirement, impact of computing). It uses linux, nginx, and gunicorn to set up a virtual environment to run the webiste. We can verify the status of it running and update the link when the we make changes through Github by perfoming git pull. In order to run like this, our website has a wsgi.py file, in addittion to our views.py files, and a requirements1.txt file.
 
-[See Ticket in Scrum Board](put link here), [See Code](put link here), [See Runtime Page](put link here)
+[See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-52932294), [See Code, wsgi.py](https://github.com/p2slugs/recipebox/blob/main/wsgi.py) ,[See Code, requirements1.txt](https://github.com/p2slugs/recipebox/blob/main/requirements1.txt)
 
 ### Another Ticket
 name: explanation
