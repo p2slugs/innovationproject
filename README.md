@@ -8,7 +8,7 @@ Team Members: Eva Gravin, Sophie Lee, Ali Saad, Linda Long
 
 ## Project Links:
 
-### > [Scrum Board](https://github.com/orgs/p2slugs/projects/1) (tracking sheet + schedule) | includes ticket items/cards
+### > [Scrum Board](https://github.com/p2slugs/recipebox/projects/1) (tracking sheet + schedule) | includes ticket items/cards
 
 ### > Link to Running Code: http://recipebox.cf | [Git Repository](https://github.com/p2slugs/recipebox/)
 
@@ -47,15 +47,15 @@ ali: This is going to be a page where users can access the developers contact in
 
 [See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-54727793), [See Code](https://github.com/p2slugs/recipebox/blob/main/templates/contact.html), [See Runtime Page](http://recipebox.cf/contact)
 
-### Another Ticket
+### Easter Egg
 name: explanation
 
 [See Ticket in Scrum Board](put link here), [See Code](put link here), [See Runtime Page](put link here)
 
-### Another Ticket
-name: explanation
+### About Us Page
+eva: Uses the files about.html and aboutus.py to display every team member's data from py file. The py file defines each group memeber and uses variables to store different things like their name, fact, and grade. Another variable called profile makes a dictionary with the previous variables and is returned. Finally, a list with each defined person is returned as about. In the html page, it does for about in aboutus, and then sets all of the variables equal to what they are goes through them. This is how the data is filtered through and displayed. Jinja is used for the variables. This uses dictionaries, lists, data, algorithms, and a for loop which matches with the College Board requirements.
 
-[See Ticket in Scrum Board](put link here), [See Code](put link here), [See Runtime Page](put link here)
+[See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-56565556), [See Code, aboutus.py](https://github.com/p2slugs/recipebox/blob/main/aboutus.py),[See code, about.html](https://github.com/p2slugs/recipebox/blob/main/templates/about.html) [See Runtime Page](http://recipebox.cf/about)
 
 ### Another Ticket
 name: explanation
