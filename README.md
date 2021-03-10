@@ -68,7 +68,7 @@ name: explanation
 [See Ticket in Scrum Board](put link here), [See Code](put link here), [See Runtime Page](put link here)
 
 ## College Board and Crossover visibility / Suggestions
-Our project aligns with the Collge Board requirements, as we have algorithmns, procedures, lists, data, functions, variables, iteration (for loop) in our project. Our project is also meeting the College Board Project Requirements by showing an impact of computing with the contact page, showing computing systems and newtworks functioning on the internet with the runtime link, showing creative development throughout our programming process together overtime, showing programming with UI to design/present to the user, and showing data, algorithmns, and programming to create code as we develop our recipe database, ingredients page, and user submit form.
+Our project aligns with the Collge Board requirements, as we have algorithmns, procedures, lists, data, functions, variables, iteration (for loop) in our project. Our project is also meeting the College Board Project Requirements by showing an impact of computing with the contact page, showing computing systems and newtworks functioning on the internet with the runtime link, showing creative development throughout our programming process together overtime, showing programming with UI to design/present to the user, and showing data, algorithms, and programming to create code as we develop our recipe database, ingredients page, and user submit form.
 
 ## Code Review Focus
 See our tickets listed above with links to code. ^
