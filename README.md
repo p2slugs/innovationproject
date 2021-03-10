@@ -23,7 +23,7 @@ You can run our website from any device by going to this link: recipebox.cf. You
 
 You will be directed to the home page, where an overview of the website is given. Toggle through the tabs at the top to explore the website!
 
-You can put in a recipe, suggestion, buy ingredients, and view the about us page, contact page, home page, and sign up/login forms.
+You can put in a recipe, suggestion, buy ingredients, and view the about us page, contact page, home page, and sign up form.
 
 ## Descriptions on Project Technicals and Meeting College Board Requirements
 
