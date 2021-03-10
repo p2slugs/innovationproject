@@ -62,10 +62,10 @@ eva: The website is running from a Raspberry Pi, and the domain name allows it t
 
 [See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-52932294), [See Code, wsgi.py](https://github.com/p2slugs/recipebox/blob/main/wsgi.py) ,[See Code, requirements1.txt](https://github.com/p2slugs/recipebox/blob/main/requirements1.txt)
 
-### Another Ticket
-name: explanation
+### Add Recipes
+eva: On the add page of our website, you can input information about a recipe like its name, ingredients, and steps, and all of the information will get stored in a database (myrecipe.db). Then, that information is displayed to show the user they recipe they made by retriving the data from the database with Jinja and varibales on the html page. The views file, defines the function adding a recipe and sets the variables. The py file, addpython.py, creates the database and puts the information into it.
 
-[See Ticket in Scrum Board](put link here), [See Code](put link here), [See Runtime Page](put link here)
+[See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-56566247), [See Code, views.py](https://github.com/p2slugs/recipebox/blob/main/views.py), [See Code, addpython.py](https://github.com/p2slugs/recipebox/blob/main/addpython.py),[See Code, addtable.html](https://github.com/p2slugs/recipebox/blob/main/templates/addtable.html), [See Runtime Page](http://recipebox.cf/addtable)
 
 ## College Board and Crossover visibility / Suggestions
 Our project aligns with the Collge Board requirements, as we have algorithmns, procedures, lists, data, functions, variables, iteration (for loop) in our project. Our project is also meeting the College Board Project Requirements by showing an impact of computing with the contact page, showing computing systems and newtworks functioning on the internet with the runtime link, showing creative development throughout our programming process together overtime, showing programming with UI to design/present to the user, and showing data, algorithms, and programming to create code as we develop our recipe database, ingredients page, and user submit form.
