@@ -47,7 +47,25 @@ ali: This is going to be a page where users can access the developers contact in
 
 [See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-54727793), [See Code](https://github.com/p2slugs/recipebox/blob/main/templates/contact.html), [See Runtime Page](http://recipebox.cf/contact)
 
-## -- Previous Information --
+### Another Ticket
+name: explanation
+
+[See Ticket in Scrum Board](put link here), [See Code](put link here), [See Runtime Page](put link here)
+
+### Another Ticket
+name: explanation
+
+[See Ticket in Scrum Board](put link here), [See Code](put link here), [See Runtime Page](put link here)
+
+### Another Ticket
+name: explanation
+
+[See Ticket in Scrum Board](put link here), [See Code](put link here), [See Runtime Page](put link here)
+
+### Another Ticket
+name: explanation
+
+[See Ticket in Scrum Board](put link here), [See Code](put link here), [See Runtime Page](put link here)
 
 ## College Board and Crossover visibility / Suggestions
 Our project is aligning with the Collge Board requirements, as we are starting to implement more algorithmns, procedures, and lists into our project. We plan to use procedure in our project as we don't have much so far. We will continue to focus on these things each week.  During the crossover week, we got feedback that we should focus on the CSS on some of our underdeveloped pages, spread out the workload better, organize our files with sub-folders, and add more comments to our code. These are all our focuses and futhermore for Collegeboard, our inputs/outputs with our submit page can be developed more which are ideas for the coming weeks. Our project is also meeting the College Board Project Requirements by showing an impact of computing with the contact page, showing computing systems and newtworks functioning on the internet with the runtime link, showing creative development throughout our programming process together overtime, showing programming with UI to design/present to the user, and showing data, algorithmns, and programming to create code as we develop our recipe database, ingredients page, and user submit form.
