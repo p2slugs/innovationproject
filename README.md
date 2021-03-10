@@ -101,6 +101,9 @@ I have designed frontends with HTML, CSS, and Bootstrap.
 I have a basic understanding of Python.
 I have worked with REST APIS and have a basic understanding of how they work.
 
+
+##
+## Previous Weeks:
 ## Big Tickets Week of February 8 - Crossover
 ### Ingredients Page
 Users can get indredients which they can makes recipes with. The ingredients will be shown on a different page and kept track of how many the user has. The ticket can be found [here](https://github.com/p2slugs/recipebox/projects/1#card-54620246).(eva)
