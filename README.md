@@ -27,13 +27,14 @@ You can put in a recipe, suggestion, buy ingredients, and view the about us page
 
 ## Descriptions on Project Technicals and Meeting College Board Requirements
 
-### HTML
+### HTML & CSS
 sophie: gave home page a new look (updated the css and html). we now have more color, a website that has larger text and more elements (rather than the previous minimalist look), and a nicer dark mode appearance. as you can see on the repl sample code, we now have an webpage icon on the tab and a different looking cursor and scrollbar. since this is a completely new html and css code, I am working on repl as I feel that it is less risky to make sure I don't lose any important information. I've been learning more about css elements and commands, as well as javascripts.
 
 [scrum board ticket](https://github.com/p2slugs/recipebox/projects/1#card-54300634), [code on repl](https://repl.it/@sophieleeajh/recipebox#index.html), [view site on repl - LINKS DO NOT WORK B/C I ONLY WORKED ON HOMEPAGE THIS WEEK](https://recipebox.sophieleeajh.repl.co/)
 
 ### Ingredients Page
 eva: Users can select ingredients from the inventory and they will get highlighted in the right column. The buttons turn green when you select them, and all of this was done using Javascript functions and events. Also, when each ingredient is clicked, it increases the user's amount of ingredients by 1. And, the amount of money that the ingredient costs, gets subtracted from the total starting amount. This was done by using functions, varaibles, and if/then/else statements. The data for each of the ingredients' information is displayed from the ingredients.py file using Jinja and a for loop. It aligns with the College Board requirements and our goals because it uses algorithmns, procedures, lists, variables, functions, and dictionaries in our project.
+sophie: compiled information for all the ingredients necessary for the database (ingredients.py)
 
 [See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-55130180), [See Code, ingredients.py](https://github.com/p2slugs/recipebox/blob/main/ingredients.py), [See Code, ingredients1.html](https://github.com/p2slugs/recipebox/blob/main/templates/ingredients1.html), [See Runtime Page on Website](http://recipebox.cf/ingredients1)
 
@@ -48,9 +49,12 @@ ali: This is going to be a page where users can access the developers contact in
 [See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-54727793), [See Code](https://github.com/p2slugs/recipebox/blob/main/templates/contact.html), [See Runtime Page](http://recipebox.cf/contact)
 
 ### Easter Egg
-name: explanation
+sophie: designed a secret(?) page for the easter egg and put in information for our journals, AP learnings, ourselves, and addition information/resources. compiled all the various easter files into one main file to avoid confusion and messy organization. easter egg page can be found under the about us.
 
 [See Ticket in Scrum Board](put link here), [See Code](put link here), [See Runtime Page](put link here)
+
+### Recipes Page
+sophie: gathered data for the many recipes from the game we were inspired by; used a filter system to organize all the different types of potential dishes users can cook (organized by buff and category of food). added descriptions of each meal and featured what the ingredients necessary for the dish.
 
 ### About Us Page
 eva: Uses the files about.html and aboutus.py to display every team member's data from py file. The py file defines each group memeber and uses variables to store different things like their name, fact, and grade. Another variable called profile makes a dictionary with the previous variables and is returned. Finally, a list with each defined person is returned as about. In the html page, it does for about in aboutus, and then sets all of the variables equal to what they are goes through them. This is how the data is filtered through and displayed. Jinja is used for the variables. This uses dictionaries, lists, data, algorithms, and a for loop which matches with the College Board requirements.
