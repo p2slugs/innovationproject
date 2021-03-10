@@ -65,7 +65,7 @@ eva: Uses the files about.html and aboutus.py to display every team member's dat
 [See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-56565556), [See Code, aboutus.py](https://github.com/p2slugs/recipebox/blob/main/aboutus.py),[See code, about.html](https://github.com/p2slugs/recipebox/blob/main/templates/about.html) [See Runtime Page](http://recipebox.cf/about)
 
 ### Raspberry Pi Deployment 
-eva: The website is running from a Raspberry Pi, and the domain name allows it to be easily accessed by anyone and reached by the community (a CollegeBoard reuirement, impact of computing). It uses linux, nginx, and gunicorn to set up a virtual environment to run the webiste. We can verify the status of it running and update the link when the we make changes through Github by perfoming git pull. In order to run like this, our website has a wsgi.py file, in addittion to our views.py files, and a requirements1.txt file.
+eva: The website is running from a Raspberry Pi, and the domain name allows it to be easily accessed by anyone and reached by the community (a CollegeBoard requirement, impact of computing). It uses linux, nginx, and gunicorn to set up a virtual environment to run the webiste. We can verify the status of it running and update the link when the we make changes through Github by perfoming git pull. In order to run like this, our website has a wsgi.py file, in addittion to our views.py files, and a requirements1.txt file.
 
 [See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-52932294), [See Code, wsgi.py](https://github.com/p2slugs/recipebox/blob/main/wsgi.py) ,[See Code, requirements1.txt](https://github.com/p2slugs/recipebox/blob/main/requirements1.txt)
 
@@ -73,6 +73,9 @@ eva: The website is running from a Raspberry Pi, and the domain name allows it t
 eva: On the add page of our website, you can input information about a recipe like its name, ingredients, and steps, and all of the information will get stored in a database (myrecipe.db). Then, that information is displayed to show the user they recipe they made by retriving the data from the database with Jinja and varibales on the html page. The views file, defines the function adding a recipe and sets the variables. The py file, addpython.py, creates the database and puts the information into it. This ticket is important for meeting the College Board requirments because it focuses on data and using it, a main focus.
 
 [See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-56566247), [See Code, views.py](https://github.com/p2slugs/recipebox/blob/main/views.py), [See Code, addpython.py](https://github.com/p2slugs/recipebox/blob/main/addpython.py),[See Code, addtable.html](https://github.com/p2slugs/recipebox/blob/main/templates/addtable.html), [See Runtime Page](http://recipebox.cf/addtable)
+
+### Sign Up Form
+linda: Users are able to fill in their information for each field on the sign up form and the main data for your name, email, phone number and email would saved to a database (recipe.db). It will also redirect them to the ingredients page. Unfortunately, something with the updated html/css styling caused it to stop working. Worked on the background color, font color and format to make the page more user-friendly.
 
 ## College Board and Crossover visibility / Suggestions
 Our project aligns with the Collge Board requirements, as we have algorithmns, procedures, lists, data, functions, variables, iteration (for loop) in our project. Our project is also meeting the College Board Project Requirements by showing an impact of computing with the contact page, showing computing systems and newtworks functioning on the internet with the runtime link, showing creative development throughout our programming process together overtime, showing programming with UI to design/present to the user, and showing data, algorithms, and programming to create code as we develop our recipe database, ingredients page, and user submit form.
@@ -89,8 +92,8 @@ I am just now learning about the basics of curating data and am working on impro
 ### Linda Long
 I can develop web frontends  using HTML, CSS, and BootStrap.
 I know how to use HTML forms, HTML5 validation, and build Jinja templates.
-I understand Database concepts like using web sessions & establishing tables to setup and manage user accounts
 I can port forward a Raspberry Pi web server.
+I need to understand Database concepts like using web sessions & establishing tables to setup and manage user accounts
 I am learning how to do backend work with SQL databases, specifically SQLite and SQLalchemy utilizing the Flask framework.
 
 ### Sophie Lee
