@@ -77,6 +77,8 @@ eva: On the add page of our website, you can input information about a recipe li
 ### Sign Up Form
 linda: Users are able to fill in their information for each field on the sign up form and the main data for your name, email, phone number and email would saved to a database (recipe.db). It will also redirect them to the ingredients page. Unfortunately, something with the updated html/css styling caused it to stop working. Worked on the background color, font color and format to make the page more user-friendly.
 
+[See Ticket in Scrum Board](https://github.com/p2slugs/recipebox/projects/1#card-52933177), [See Code in views.py](https://github.com/p2slugs/recipebox/blob/main/views.py), [See Code, form.html](https://github.com/p2slugs/recipebox/blob/main/templates/form.html), [See Runtime Page](http://recipebox.cf/form)
+
 ## College Board and Crossover visibility / Suggestions
 Our project aligns with the Collge Board requirements, as we have algorithmns, procedures, lists, data, functions, variables, iteration (for loop) in our project. Our project is also meeting the College Board Project Requirements by showing an impact of computing with the contact page, showing computing systems and newtworks functioning on the internet with the runtime link, showing creative development throughout our programming process together overtime, showing programming with UI to design/present to the user, and showing data, algorithms, and programming to create code as we develop our recipe database, ingredients page, and user submit form.
 
